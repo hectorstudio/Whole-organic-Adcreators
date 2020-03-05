@@ -1,0 +1,25 @@
+.form-select {
+  .select-title {
+    color: #6A6A6A;
+    font-size: 13px;
+    background-color: #F4F4F4;
+    padding: 22px 29px;
+    border: none;
+    outline: none;
+    i {
+      float:right;
+      margin-top: 3px;
+    }
+  }
+  .select-body {
+    .select-option {
+      background-color: #F4F4F4;
+      padding: 22px 29px;
+      color: #6A6A6A;
+      font-size: 13px;
+      &:hover {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
