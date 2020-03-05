@@ -1,0 +1,32 @@
+button {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 301px;
+  height: 64px;
+  padding: 17px 41px;
+  text-align: left;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  @media(max-width: 312px) {
+    width: -webkit-fill-available;
+    padding-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  &.Facebook-button {
+    background-color: #4267B2;
+    i {
+      padding-right: 37px;
+      font-size: 30px;
+    }
+  }
+  &.Google-button {
+    background-color: #F14336;
+    i {
+      padding-right: 26.1px;
+      font-size: 30px;
+    }
+  }
+}
