@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router';
 import HomePage from '../../pages/HomePage/HomePage';
 import CartPage from '../../pages/CartPage/CartPage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
+import LoginPage from '../../pages/LoginPage/LoginPage'
+import RegisterPage from '../../pages/RegisterPage/RegisterPage'
 import './Main.scss';
 
 const routes = [
@@ -24,7 +26,19 @@ const routes = [
     path: '/cart',
     title: 'My Cart',
     component: CartPage
-  }
+  },
+  {
+    id: '4',
+    path: '/login',
+    title: 'Login',
+    component: LoginPage
+  },
+  {
+    id: '5',
+    path: '/register',
+    title: 'Register',
+    component: RegisterPage
+  },
 ];
 
 const Main = () => {

@@ -5,7 +5,7 @@ import './SideBlocks.scss';
 const items = [
   {
     id: '1',
-    slug: ['sign-in', 'sign-up']
+    slug: ['login', 'register']
   },
   {
     id: '2',
