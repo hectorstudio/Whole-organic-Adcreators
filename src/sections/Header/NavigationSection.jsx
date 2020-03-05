@@ -85,6 +85,9 @@ const NavigationSection = ({ sizes }) => {
               />
             );
           }
+          else{
+            return "";
+          }
         })}
       </li>
       <li className={`${wrapperMenuItem}`}>
@@ -99,6 +102,9 @@ const NavigationSection = ({ sizes }) => {
                 />
               );
             }
+            else{
+              return "";
+            }
           })}
         </div>
         <div className={`${menuItem}`}>
@@ -112,6 +118,9 @@ const NavigationSection = ({ sizes }) => {
                   setActiveBurger={setActiveBurger}
                 />
               );
+            }
+            else {
+              return "";
             }
           })}
         </div>
