@@ -1,6 +1,10 @@
 .form-location {
-  display: flex;
   width: 100%;
+  .location {
+    margin-bottom: 13px;
+    color: #125451;
+    font-size: 16px;
+  }
 
   i {
     position: absolute;
