@@ -1,0 +1,47 @@
+@import "layout/layout";
+
+.header {
+  background-color: $green-dark;
+}
+
+.container {
+  @extend %container-info;
+
+  @include breakpoint($xl) {
+    max-width: 1280px;
+  }
+
+  @include breakpoint ($lg) {
+    max-width: 1130px;
+  }
+
+  @include breakpoint($md) {
+    max-width: 100% //700px is ok
+  }
+
+  @include breakpoint($sm) {
+    max-width: 100%;
+  }
+}
+
+.lg-container {
+  @extend %container-info;
+
+  @include breakpoint($xl) {
+    max-width: 1280px;
+  }
+
+  @include breakpoint ($lg) {
+    max-width: 1130px;
+  }
+
+  @include breakpoint($md) {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  @include breakpoint($sm) {
+    max-width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../layout/layout';
+
+.home-page {
+  /*position: relative;*/
+  margin-bottom: 110px;
+
+  @include breakpoint($sm) {
+    margin-bottom: 41px;
+  }
+}

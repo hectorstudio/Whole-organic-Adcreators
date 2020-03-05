@@ -1,0 +1,119 @@
+@import "../../layout/layout";
+
+.activeRoute {
+  border-bottom: 1px solid $green-dark;
+}
+
+.menu__item-router-home {
+  @extend %flex-options;
+  width: 89px;
+  .router-container {
+    width: 100%;
+    border-right: 1px solid $green-dark;
+    .router__link {
+      @extend %link;
+    }
+
+    @include breakpoint($md) {
+      display: flex;
+      justify-content: center;
+      border-right: none;
+    }
+
+    @include breakpoint($sm) {
+      display: flex;
+      justify-content: center;
+      border-right: none;
+    }
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.menu__item-router {
+  @extend %flex-options;
+  width: 132px;
+  .router-container {
+    @extend %router-container;
+
+    @include breakpoint($md) {
+      border-right: none;
+    }
+
+    @include breakpoint($sm) {
+      border-right: none;
+    }
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+    border-right: none;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+    border-right: none;
+  }
+
+}
+
+.menu__item-router-faq-business {
+  @extend %flex-options;
+  width: 187px;
+  .router-container {
+    @extend %router-container;
+
+    @include breakpoint($md) {
+      border-right: none;
+    }
+
+    @include breakpoint($sm) {
+      border-right: none;
+    }
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.menu__item-router-contact {
+  @extend %flex-options;
+  width: 124px;
+  .router-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    .router__link {
+      @extend %link;
+    }
+
+    @include breakpoint($md) {
+      justify-content: center;
+      border-right: none;
+    }
+
+    @include breakpoint($sm) {
+      justify-content: center;
+      border-right: none;
+    }
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}

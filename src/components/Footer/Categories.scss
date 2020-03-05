@@ -1,0 +1,75 @@
+@import "../../layout/layout";
+
+.footer-categories-block {
+  z-index: 1000;
+  width: auto;
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.categories__title {
+  padding-top: 19.5px !important;
+  letter-spacing: -0.5px;
+  color: $white;
+  font-size: 18px;
+
+  @include breakpoint($md) {
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.footer-categories-list {
+  display: flex;
+  margin-top: 11px;
+  height: 74px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 541px;
+  border-right: 0.5px solid rgba(255, 255, 255, .3);
+
+  @include breakpoint($xl) {
+    width: 395px;
+  }
+
+  @include breakpoint($lg) {
+    width: 379px;
+  }
+
+  @include breakpoint($md) {
+    border: none;
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    height: auto;
+    width: 100%;
+    border: none;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.footer-categories__item {
+  margin-top: 12px;
+}
+
+.footer-categories__link {
+  color: $white;
+  text-decoration: none;
+  font: 15px Nexa-Light, sans-serif;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include breakpoint($sm) {
+    font-size: 15px;
+  }
+}

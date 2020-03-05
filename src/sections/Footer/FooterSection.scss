@@ -1,0 +1,61 @@
+@import "../../layout/layout";
+
+.footer {
+  position: relative;
+  background-color: $green-dark;
+  height: 219px;
+  width: 100%;
+
+  @include breakpoint($md) {
+    height: 400px;
+  }
+
+  @include breakpoint($sm) {
+    height: auto;
+  }
+}
+
+.footer__img {
+  position: absolute;
+  top: -83px;
+  left: -8px;
+
+  @include breakpoint($lg) {
+    display: none;
+  }
+
+  @include breakpoint($md) {
+    display: none;
+  }
+
+  @include breakpoint($sm) {
+    display: none;
+  }
+}
+
+.footer-block {
+  display: flex;
+  margin-left: 210px;
+  align-items: center;
+  height: 100%;
+
+  @include breakpoint($xl) {
+    margin-left: 219px;
+  }
+
+  @include breakpoint($lg) {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  @include breakpoint($md) {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  @include breakpoint($sm) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+

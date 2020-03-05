@@ -1,0 +1,21 @@
+@import "../../layout/layout";
+
+.logo-side-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 23px;
+
+  @include breakpoint($md) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include breakpoint($sm) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

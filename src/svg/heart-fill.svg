@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.674" height="22.7" viewBox="0 0 24.674 22.7">
+  <g id="favorite-heart-button" transform="translate(0 -20.4)">
+    <g id="favorite" transform="translate(0 20.4)">
+      <path id="Path_568" data-name="Path 568" d="M12.337,43.1,10.61,41.373C4.195,35.7,0,31.873,0,27.185A6.689,6.689,0,0,1,6.785,20.4a7.414,7.414,0,0,1,5.552,2.591A7.414,7.414,0,0,1,17.889,20.4a6.689,6.689,0,0,1,6.785,6.785c0,4.688-4.195,8.512-10.61,14.187Z" transform="translate(0 -20.4)" fill="#0cb69b"/>
+    </g>
+  </g>
+</svg>

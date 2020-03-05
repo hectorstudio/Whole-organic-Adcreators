@@ -1,0 +1,40 @@
+{
+  "mostPopular": [
+    {
+      "id": "7",
+      "img": "../images/product-photo-7.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Furniture",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "8",
+      "img": "../images/product-photo-8.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Beauty",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "9",
+      "img": "../images/product-photo-9.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Cleaning",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+@import "../../layout/layout";
+
+.logo-container {
+  margin: 49px 0 0 23px;
+
+  @include breakpoint($md) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  @include breakpoint($sm) {
+    margin: 10px 0 0 0;
+  }
+}
+
+.logo-container__link {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logo-container-link-img {
+  @include breakpoint($sm) {
+    width: 200px;
+    height: 70px;
+  }
+}

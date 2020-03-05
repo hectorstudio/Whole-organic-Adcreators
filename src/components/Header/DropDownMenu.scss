@@ -1,0 +1,111 @@
+@import "../../layout/layout";
+
+.dropdown-menu-container {
+  height: 638px;
+  width: 320px;
+  @include linear-gradient(to right, $cyan-secondary-color, $cyan-primary-color);
+
+    @include breakpoint($xl) {
+      height: 610px;
+      width: 270px;
+    }
+
+    @include breakpoint($lg) {
+      width: 230px;
+    }
+
+    @include breakpoint($md) {
+      width: 100%;
+    }
+
+    @include breakpoint($sm) {
+      width: 100%;
+    }
+  z-index: 5;
+}
+
+.drop-menu-lg {
+  position: absolute;
+  top: 60px;
+}
+
+.drop-menu-sm {
+  position: relative;
+  top: -1px;
+}
+
+.hide {
+  display: none;
+}
+
+.dropdown-menu-list {
+  margin: 44px 40px;
+
+  @include breakpoint($xl) {
+    margin: 18px 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include breakpoint($sm) {
+    margin: 20px 5px !important;
+  }
+}
+
+.dropdown-menu-list__item {
+  height: auto;
+  width: 100%;
+  margin-bottom: 32.4px;
+  &:last-child {
+    .dropdown-menu-list__link {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.dropdown-menu-list__link {
+  padding-bottom: 20.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: $white;
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
+
+  @include breakpoint($md) {
+    width: 70%;
+  }
+
+  @include breakpoint($sm) {
+    width: 70%;
+  }
+}
+
+.dropdown-menu__text {
+  letter-spacing: -0.4px;
+}
+
+.icon-arrow {
+  font-size: 12px;
+}

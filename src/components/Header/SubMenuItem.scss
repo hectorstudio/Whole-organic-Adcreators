@@ -1,0 +1,42 @@
+@import '../../layout/layout';
+
+.sub-menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: $white;
+  cursor: pointer;
+  background-color: $cyan-fourth-color;
+  &:hover {
+    opacity: 0.8;
+  }
+  .icon-burger {
+    margin-bottom: 4px;
+    margin-left: 38.4px;
+    font-size: 20px;
+
+    @include breakpoint($md) {
+      margin: 0;
+    }
+
+    @include breakpoint($sm) {
+      margin: 0;
+    }
+  }
+
+  .sub-menu__text {
+    margin-left: 25px;
+    font-size: 15px;
+  }
+
+  @include breakpoint($md) {
+    justify-content: center;
+  }
+
+  @include breakpoint($sm) {
+    justify-content: center;
+    height: 60px;
+  }
+}

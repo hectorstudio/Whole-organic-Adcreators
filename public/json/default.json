@@ -1,0 +1,210 @@
+[
+  {
+    "title": "All Categories",
+    "id": "1",
+    "subMenu": [
+      {
+        "title": "Food",
+        "path": "/food",
+        "id": "1",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Beauty",
+        "path": "/beauty",
+        "id": "2",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Suncare",
+        "path": "/suncare",
+        "id": "3",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Baby & Kids",
+        "path": "/baby&kids",
+        "id": "4",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Cleaning",
+        "path": "/cleaning",
+        "id": "5",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Furniture",
+        "path": "/furniture",
+        "id": "6",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Men’s Clothing",
+        "path": "/men's-clothing",
+        "id": "7",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      },
+      {
+        "title": "Women’s Clothing",
+        "path": "/women’s-clothing",
+        "id": "8",
+        "products": [
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          },
+          {
+            "title": "Yellow plastic chair",
+            "price": 56.99,
+            "subtitle": "Furniture",
+            "info": "From Location here,",
+            "link": "name of seller"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Home",
+    "id": "2",
+    "path": "/"
+  },
+  {
+    "title": "About",
+    "id": "3",
+    "path": "/about"
+  },
+  {
+    "title": "FAQs & Support",
+    "id": "4",
+    "path": "/faqs&support"
+  },
+  {
+    "title": "Legal",
+    "id": "5",
+    "path": "/legal"
+  },
+  {
+    "title": "For business",
+    "id": "6",
+    "path": "/business"
+  },
+  {
+    "title": "Contact us",
+    "id": "7",
+    "path": "/contact"
+  },
+  {
+    "title": "Search",
+    "id": "8"
+  }
+]

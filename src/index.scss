@@ -1,0 +1,38 @@
+@import "layout/layout";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font: 16px Nexa-Bold, sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+h1, h2, h3, h4,  h5, h6 {
+  font-family: Nexa-Bold, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}

@@ -1,0 +1,76 @@
+{
+  "recommended" : [
+    {
+      "id": "1",
+      "img": "../images/product-photo-1.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Furniture",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "2",
+      "img": "../images/product-photo-2.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Beauty",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "3",
+      "img": "../images/product-photo-3.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Cleaning",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "4",
+      "img": "../images/product-photo-4.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Furniture",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "5",
+      "img": "../images/product-photo-5.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Beauty",
+      "info": "From Location here",
+      "slug": "name of seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    },
+    {
+      "id": "6",
+      "img": "../images/product-photo-6.jpg",
+      "price": 56.99,
+      "title": "Yellow plastic chair",
+      "subtitle": "Cleaning",
+      "info": "From Location here",
+      "slug": "seller",
+      "titleLink" : "name of seller",
+      "iconDefault": "icon-heart",
+      "iconFill": "icon-heart-fill"
+    }
+  ]
+}

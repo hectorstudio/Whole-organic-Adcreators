@@ -1,0 +1,324 @@
+{
+  "categories" : [
+    {
+      "text": "Food",
+      "slug": "food",
+      "id": "1",
+      "subCategory": [
+        {
+          "text": "Dairy",
+          "id": "1"
+        },
+        {
+          "text": "Fish",
+          "id": "2"
+        },
+        {
+          "text": "Meat",
+          "id": "3"
+        },
+        {
+          "text": "Fruit and Vegetables",
+          "id": "4"
+        },
+        {
+          "text": "Pantry",
+          "id": "5"
+        },
+        {
+          "text": "Cooking",
+          "id": "6"
+        },
+        {
+          "text": "Beverages",
+          "id": "7"
+        },
+        {
+          "text": "Sweets & Snacks",
+          "id": "8"
+        },
+        {
+          "text": "Superfoods",
+          "id": "9"
+        },
+        {
+          "text": "Sports Nutrition",
+          "id": "10"
+        },
+        {
+          "text": "Ready to Eat",
+          "id": "11"
+        }
+      ]
+    },
+    {
+      "text": "Beauty",
+      "slug": "beauty",
+      "id": "2",
+      "subCategory": [
+        {
+          "text": "Bath + Shower",
+          "id": "1"
+        },
+        {
+          "text": "Body Care",
+          "id": "2"
+        },
+        {
+          "text": "Face Care",
+          "id": "3"
+        },
+        {
+          "text": "Lip Care & Beauty",
+          "id": "4"
+        },
+        {
+          "text": "Men Care",
+          "id": "5"
+        },
+        {
+          "text": "Oral Care",
+          "id": "6"
+        },
+        {
+          "text": "Perfume",
+          "id": "7"
+        }
+      ]
+    },
+    {
+      "text": "Suncare",
+      "slug": "suncare",
+      "id": "3",
+      "subCategory": [
+        {
+          "text": "Sunscreen",
+          "id": "1"
+        },
+        {
+          "text": "Lotions",
+          "id": "2"
+        },
+        {
+          "text": "Creams",
+          "id": "3"
+        },
+        {
+          "text": "Sprays",
+          "id": "4"
+        },
+        {
+          "text": "Gels",
+          "id": "5"
+        },
+        {
+          "text": "Body Wash",
+          "id": "6"
+        }
+      ]
+    },
+    {
+      "text": "Baby & Kids",
+      "slug": "baby&kids",
+      "id": "4",
+      "subCategory": [
+        {
+          "text": "Food & Snacks",
+          "id": "1"
+        },
+        {
+          "text": "Health",
+          "id": "2"
+        },
+        {
+          "text": "Oral Care",
+          "id": "3"
+        },
+        {
+          "text": "Skin Care",
+          "id": "4"
+        },
+        {
+          "text": "Soothers",
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "text": "Cleaning",
+      "slug": "cleaning",
+      "id": "5",
+      "subCategory": [
+        {
+          "text": "Bathroom",
+          "id": "1"
+        },
+        {
+          "text": "Home",
+          "id": "2"
+        },
+        {
+          "text": "Kitchen",
+          "id": "3"
+        },
+        {
+          "text": "Laundry",
+          "id": "4"
+        },
+        {
+          "text": "Pet Care",
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "text": "Furniture",
+      "slug": "furniture",
+      "id": "6",
+      "subCategory": [
+        {
+          "text": "Bedroom",
+          "id": "1"
+        },
+        {
+          "text": "Outdoors",
+          "id": "2"
+        },
+        {
+          "text": "Dining",
+          "id": "3"
+        },
+        {
+          "text": "Living Room",
+          "id": "4"
+        },
+        {
+          "text": "Pet Care",
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "text": "Men’s Clothing",
+      "slug": "men's-clothing",
+      "id": "7",
+      "subCategory": [
+        {
+          "text": "Tops",
+          "id": "1"
+        },
+        {
+          "text": "T-Shirts & Singlets",
+          "id": "2"
+        },
+        {
+          "text": "Coats & Jackets",
+          "id": "3"
+        },
+        {
+          "text": "Jumpers & Cardigans",
+          "id": "4"
+        },
+        {
+          "text": "Pants",
+          "id": "5"
+        },
+        {
+          "text": "Skirts",
+          "id": "6"
+        },
+        {
+          "text": "Jeans",
+          "id": "7"
+        },
+        {
+          "text": "Swimwear",
+          "id": "5"
+        },
+        {
+          "text": "Socks",
+          "id": "6"
+        },
+        {
+          "text": "Shorts",
+          "id": "7"
+        },
+        {
+          "text": "Sweats & Hoodies",
+          "id": "8"
+        },
+        {
+          "text": "Sleepwear",
+          "id": "9"
+        }
+      ]
+    },
+    {
+      "text": "Women’s Clothing",
+      "slug": "women’s-clothing",
+      "id": "8",
+      "subCategory": [
+        {
+          "text": "Dresses",
+          "id": "1"
+        },
+        {
+          "text": "Tops",
+          "id": "2"
+        },
+        {
+          "text": "T-Shirts & Singlets",
+          "id": "3"
+        },
+        {
+          "text": "Coats & Jackets",
+          "id": "4"
+        },
+        {
+          "text": "Jumpers & Cardigans",
+          "id": "5"
+        },
+        {
+          "text": "Pants",
+          "id": "6"
+        },
+        {
+          "text": "Skirts",
+          "id": "7"
+        },
+        {
+          "text": "Jeans",
+          "id": "5"
+        },
+        {
+          "text": "Swimwear",
+          "id": "6"
+        },
+        {
+          "text": "Socks & Tights",
+          "id": "7"
+        },
+        {
+          "text": "Shorts",
+          "id": "8"
+        },
+        {
+          "text": "Sweats & Hoodies",
+          "id": "9"
+        },
+        {
+          "text": "Jumpsuits & Playsuits",
+          "id": "10"
+        },
+        {
+          "text": "Lingerie",
+          "id": "11"
+        },
+        {
+          "text": "Sleepwear",
+          "id": "12"
+        }
+      ]
+    }
+  ]
+}

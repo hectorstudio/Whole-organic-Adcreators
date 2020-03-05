@@ -1,0 +1,9 @@
+@import "../../layout/layout";
+
+.most-popular-container {
+  margin-top: 47px;
+
+  @include breakpoint($sm) {
+    margin-top: 0;
+  }
+}

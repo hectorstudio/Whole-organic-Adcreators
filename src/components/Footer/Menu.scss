@@ -1,0 +1,67 @@
+@import '../../layout/layout';
+
+.menu-block {
+  z-index: 1000;
+  margin-left: 66px;
+  width: auto;
+
+  @include breakpoint($xl) {
+    margin-left: 41px;
+  }
+
+  @include breakpoint($lg) {
+    margin-left: 18px;
+  }
+
+  @include breakpoint($md) {
+    margin: 0;
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.footer-menu-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 74px;
+  width: 496px;
+
+  @include breakpoint($xl) {
+    width: 383px;
+  }
+
+  @include breakpoint($lg) {
+    width: 346px;
+  }
+
+  @include breakpoint($sm) {
+    height: auto;
+    border-top: 0.5px solid rgba(255, 255, 255, .3);
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.footer-menu__item {
+  margin-top: 13px;
+}
+
+.footer-menu__link {
+  color: $white;
+  text-decoration: none;
+  font: 15px Nexa-Light, sans-serif;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include breakpoint($sm) {
+     font-size: 14px;
+   }
+}

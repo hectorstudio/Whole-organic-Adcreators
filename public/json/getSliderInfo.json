@@ -1,0 +1,25 @@
+{
+  "sliderInfo" : [
+    {
+      "id" : "1",
+      "title": "organics at your fingertips",
+      "img": "../images/slider-photo-1.jpg"
+    },
+    {
+      "id" : "2",
+      "title": "organics at your fingertips",
+      "img": "../images/slider-photo-1.jpg"
+    },
+    {
+      "id" : "3",
+      "title": "organics at your fingertips",
+      "img": "../images/slider-photo-1.jpg"
+    },
+    {
+      "id" : "4",
+      "title": "organics at your fingertips",
+      "img": "../images/slider-photo-1.jpg"
+    }
+  ]
+
+}
