@@ -1,17 +1,18 @@
 import React from 'react';
 import './SocialMediaButton.scss'
-
 const SocialMediaButton = ({ name }) => {
   
   const handleClick = () => {
-    console.log("Button Clicked")
+    console.log("button " + name + "-button Clicked")
   }
-  console.log("button " + name + "-button")
+  const iconClassName = name === "Facebook" ? "icon-facebook" : "fab fa-google"
   return (
+    
     <button 
       className={"button " + name + "-button"} 
       onClick={handleClick}
     >
+      <i className={iconClassName} />
       {"Sign in with " + name}
     </button>
   )

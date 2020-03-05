@@ -5,11 +5,12 @@
   margin-bottom: 5px;
   width: 150px;
   height: 57px;
+  vertical-align: middle;
   background-color: #0CB69B;
   border: #707070;
   font-size: 16px;
   color: #FFFFFF;
-  :disabled {
+  &:disabled {
     opacity: .4;
     pointer-events: none;
   }

@@ -45,7 +45,7 @@
 
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: '#{$icomoon-font-family}' ;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -68,6 +68,9 @@ i {
 }
 .icon-linkedin:before {
   content: "\e909";
+}
+.icon-google:before {
+  content: "\f1a0";
 }
 .icon-facebook:before {
   content: "\e90a";

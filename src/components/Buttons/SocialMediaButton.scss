@@ -1,6 +1,9 @@
+@import "../../layout/layout";
+
 button {
   margin-bottom: 5px;
   margin-top: 5px;
+  vertical-align: middle;
   width: 301px;
   height: 64px;
   padding: 17px 41px;
@@ -8,12 +11,12 @@ button {
   border: none;
   font-size: 16px;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
   @media(max-width: 312px) {
     width: -webkit-fill-available;
     padding-left: 10px;
     text-align: center;
-    display: flex;
-    align-items: center;
   }
   &.Facebook-button {
     background-color: #4267B2;
