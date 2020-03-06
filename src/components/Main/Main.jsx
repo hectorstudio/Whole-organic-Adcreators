@@ -72,6 +72,7 @@ const Main = () => {
               key={item.id}
               path={item.path}
               exact={item.exact}
+              title={item.title}
               children={<item.component />}
             />
           ))}

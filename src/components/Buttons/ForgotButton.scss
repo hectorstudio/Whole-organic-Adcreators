@@ -9,9 +9,13 @@
   border: #707070;
   font: 16px Nexa-Bold, sans-serif;
   color: #FFFFFF;
+  cursor: pointer;
   &:disabled {
     opacity: .4;
     pointer-events: none;
+  }
+  &:hover {
+    opacity: .9;
   }
   @include breakpoint($sm) {
     margin: 25px 0 0;

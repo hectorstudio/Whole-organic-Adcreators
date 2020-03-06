@@ -1,0 +1,82 @@
+@import "../../layout/layout";
+
+.create-pass-block {
+  margin-top: 155px;
+  @include breakpoint($sm) {
+    margin-top: 180px;
+  }
+  h2.custom-title {
+    font-family: Nexa-Bold, sans-serif;
+    font-size: 31px;
+    color: #125451;
+    letter-spacing: -1.6px;
+    word-spacing: 2px;
+    @include breakpoint($md) {
+      text-align: center;
+    }
+    @include breakpoint($sm) {
+      text-align: center;
+      font-size: 26px;
+    }
+  }
+  
+  .custom-text {
+    margin-top: 10px;
+    letter-spacing: -.1px;
+    color: #0f4542;
+    font-family: Nexa-Light,sans-serif;
+    @include breakpoint($md) {
+      text-align: center;
+    }
+    @include breakpoint($sm) {
+      text-align: center;
+    }
+  }
+
+  .create-pass-block-form {
+    @include breakpoint($md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include breakpoint($sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .create-pass-input-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 42px;
+      @include breakpoint($md) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @include breakpoint($sm) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .create-pass-block-wrapper {
+        margin-right: 11px;
+        &.wrapper {
+          position: relative;
+          @include breakpoint($sm) {
+            width: 100%;
+          }
+        }
+        @include breakpoint($md) {
+          margin-top: 30px;
+        }
+        @include breakpoint($sm) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+
+
+
+}
+
