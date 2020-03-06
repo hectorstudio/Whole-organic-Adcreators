@@ -44,7 +44,7 @@ const routes = [
 const Main = () => {
   return (
     <main className={'main'}>
-      <div className="container">
+      <div className="form-container">
         <Switch>
           {routes.map(item => (
             <Route

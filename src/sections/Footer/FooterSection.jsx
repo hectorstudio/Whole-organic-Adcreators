@@ -17,7 +17,7 @@ const FooterSection = () => {
   return (
     <footer className="footer">
       <img src={footerLogo} alt="footer-logo" className="footer__img" />
-      <div className="container">
+      <div className="form-container">
         <div className="footer-block">
           <Categories footerItems={footerItems} />
           <Menu />

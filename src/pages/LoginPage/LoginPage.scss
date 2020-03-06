@@ -1,0 +1,35 @@
+@import "../../layout/layout";
+
+.login-in-account {
+  @include breakpoint($xl) {
+    max-width: 1380px;
+  }
+
+  @include breakpoint ($lg) {
+    max-width: 1130px;
+  }
+
+  @include breakpoint($md) {
+    max-width: 100% //700px is ok
+  }
+
+  @include breakpoint($sm) {
+    max-width: 100%;
+  }
+  .login-page {
+    padding-left: 5px;
+    padding-top: 58px;
+  }
+  ol.breadcrumb {
+    font-size: 13px;
+    font-family: Nexa-Bold,sans-serif;;
+    margin: 31px 0px 0px 0px;
+    padding: 0px;
+    background: transparent;
+    display: flex;
+    flex-wrap: none;
+    list-style: none; 
+    padding-left: 0px;
+  }
+}
+

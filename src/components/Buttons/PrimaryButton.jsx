@@ -1,15 +1,15 @@
 import React from "react";
 import "./PrimaryButton.scss";
 
-const PrimaryButton = ({ name, action, disabled }) => {
+const PrimaryButton = ({ text, action, disabled }) => {
 
   return (
     <button
       className="primarybutton"
-      onClick={action(name)}
+      onClick={action(text)}
       disabled={disabled ? true : false}
     >
-      {name}
+      {text}
     </button>
   );
 };

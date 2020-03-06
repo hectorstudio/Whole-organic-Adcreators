@@ -1,0 +1,45 @@
+.sign-in-form {
+  font-family: Nexa-Bold, sans-serif;
+  h2 {
+    font-size: 31px;
+    color: #125451;
+    letter-spacing: -1.6px;
+    word-spacing: 2px;
+  }
+  
+  .input-block-sign-in {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .input-block-sign-in-wrapper:first-child {
+    margin-top: 0;
+  }
+  
+  .input-block-sign-in-wrapper {
+    margin-top: 10px;
+  }
+  
+  a.input-block-sign-in__link {
+    margin-top: 34px;
+    color: #0f4542;
+    font-size: 13px;
+  }
+  
+  .bottom-block-sign-in {
+    margin-top: 30px;
+  }
+  
+  .bottom-block-sign-in__text {
+    margin-top: 57px;
+    margin-left: -4px;
+    letter-spacing: -.3px;
+    color: #0f4542;
+  }
+  
+  .bottom-block-sign-up__link {
+    color: #0f4542;
+  }
+}

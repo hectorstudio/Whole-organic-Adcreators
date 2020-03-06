@@ -1,15 +1,15 @@
 import React from 'react';
 import './FormInput.scss'
-const FormInput = ({ label, type, value, placeholder, action }) => {
-  
-  const handleChange = () => {
-    action("Changed")
+const FormInput = ({ label, type, value, placeholder }) => {
+  const handleChange = e => {
+    value = e.target.value
+    
   }
   
   return (
     <div>
-      <p className="textLabel">{label}</p>
-      <input type="text" placeholder={placeholder} onChange={handleChange}></input>
+      {label !== "" ? <p className="textLabel">{label}</p> : ''}
+      <input className="formInput" type={type} value={value} placeholder={placeholder} onChange={handleChange}></input>
     </div>
   )
 }
