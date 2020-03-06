@@ -1,22 +1,12 @@
-import React from 'react';
-import SignUpForm from '../../components/Forms/SignUpForm'
-import SocialMediaButton from '../../components/Buttons/SocialMediaButton'
-import './RegisterPage.scss'
+import React from "react";
+import SignUpForm from "../../components/Forms/SignUpForm";
+import SocialMediaButton from "../../components/Buttons/SocialMediaButton";
+import "./RegisterPage.scss";
+import Breadcrumbs from "../../components/Breadcrumbs";
 const RegisterPage = () => {
-  
   return (
     <div>
-      <div className="breadcrumbs">
-        <span className="breadcrumbs__text">
-          <a className="breadcrumbs__link" href="/">
-            <span>Home</span>
-          </a>
-        </span>
-        <i className="icon-arrow-bread"></i>
-        <span className="breadcrumbs__text">
-          <span>Register</span>
-        </span>
-      </div>
+      <Breadcrumbs parent="Home" child="Register" />
       <div className="create-account">
         <div className="create-account-wrapper">
           <SignUpForm title="Create an account" />
@@ -31,11 +21,8 @@ const RegisterPage = () => {
           </div>
         </div>
       </div>
-
     </div>
-  )
+  );
 };
-
-
 
 export default RegisterPage;

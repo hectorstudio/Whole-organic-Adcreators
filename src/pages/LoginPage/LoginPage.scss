@@ -1,24 +1,5 @@
 @import "../../layout/layout";
 
-div.breadcrumbs {
-  width: 100%;
-  margin-top: 31px;
-  .breadcrumbs__text:first-child {
-    margin-left: 0;
-  }
-  .breadcrumbs__text {
-    font: 13px Nexa-Bold,sans-serif;
-    margin-left: 14px;
-    color: #383838;
-  }
-  .active {
-    text-decoration: none;
-  }
-  
-  .breadcrumbs__link {
-    color: #383838;
-  }
-}
 .login-in-account {
   display: flex;
   padding-top: 58px;

@@ -1,22 +1,12 @@
-import React from 'react';
-import SignInForm from '../../components/Forms/SignInForm'
-import SocialMediaButton from '../../components/Buttons/SocialMediaButton'
-import './LoginPage.scss'
+import React from "react";
+import SignInForm from "../../components/Forms/SignInForm";
+import SocialMediaButton from "../../components/Buttons/SocialMediaButton";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import "./LoginPage.scss";
 const LoginPage = () => {
-   
   return (
     <div>
-      <div className="breadcrumbs">
-        <span className="breadcrumbs__text">
-          <a aria-current="page" className="breadcrumbs__link active" href="/">
-            <span>Home</span>
-          </a>
-        </span>
-        <i className="icon-arrow-bread"></i>
-        <span className="breadcrumbs__text">
-          <span>Login</span>
-        </span>
-      </div>
+      <Breadcrumbs parent="Home" child="Log in" />
       <div className="login-in-account">
         <div className="login-in-account-wrapper">
           <div className="login-page">
@@ -34,10 +24,7 @@ const LoginPage = () => {
         </div>
       </div>
     </div>
-    
-      
-    
-  )
+  );
 };
 
 export default LoginPage;
