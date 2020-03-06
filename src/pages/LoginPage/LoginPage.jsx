@@ -6,14 +6,14 @@ const LoginPage = () => {
    
   return (
     <div>
-      <div class="breadcrumbs">
-        <span class="breadcrumbs__text">
-          <a aria-current="page" class="breadcrumbs__link active" href="/">
+      <div className="breadcrumbs">
+        <span className="breadcrumbs__text">
+          <a aria-current="page" className="breadcrumbs__link active" href="/">
             <span>Home</span>
           </a>
         </span>
-        <i class="icon-arrow-bread"></i>
-        <span class="breadcrumbs__text">
+        <i className="icon-arrow-bread"></i>
+        <span className="breadcrumbs__text">
           <span>Login</span>
         </span>
       </div>
@@ -24,7 +24,7 @@ const LoginPage = () => {
           </div>
         </div>
         <div className="login-in-account-social-network-wrapper">
-          <h2 class="custom-title">Or login using</h2>
+          <h2 className="custom-title">Or login using</h2>
           <div className="facebook-block">
             <SocialMediaButton text="Facebook" />
           </div>

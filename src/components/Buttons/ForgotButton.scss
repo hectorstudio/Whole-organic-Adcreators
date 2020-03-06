@@ -1,0 +1,19 @@
+@import "../../layout/layout";
+
+.forgotbutton {
+  width: 160px;
+  height: 64px;
+  margin-left: 9px;
+  vertical-align: middle;
+  background-color: #0CB69B;
+  border: #707070;
+  font: 16px Nexa-Bold, sans-serif;
+  color: #FFFFFF;
+  &:disabled {
+    opacity: .4;
+    pointer-events: none;
+  }
+  @include breakpoint($sm) {
+    margin: 25px 0 0;
+  }
+}

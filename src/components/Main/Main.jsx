@@ -6,6 +6,7 @@ import AboutPage from '../../pages/AboutPage/AboutPage';
 import LoginPage from '../../pages/LoginPage/LoginPage'
 import RegisterPage from '../../pages/RegisterPage/RegisterPage'
 import SetupProfilePage from '../../pages/SetupProfilePage/SetupProfilePage';
+import ForgotPassPage from '../../pages/ForgotPassPage/ForogtPassPage';
 import './Main.scss';
 
 const routes = [
@@ -45,6 +46,12 @@ const routes = [
     path: '/profilesetup',
     title: 'ProfileSetup',
     component: SetupProfilePage
+  },
+  {
+    id: '7',
+    path: '/forgot-pass',
+    title: 'Register',
+    component: ForgotPassPage
   },
 ];
 
