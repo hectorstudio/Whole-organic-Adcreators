@@ -36,7 +36,12 @@ const SignUpForm = ({ title }) => {
         </div>
         <div className="bottom-block-sign-up">
           <PrimaryButton text="Register" action={handleClick} disabled={true} />
+          <p className="bottom-block-sign-up__text">
+            Already a member? Please <a className="bottom-block-sign-up__link" href="/login">login</a>
+          </p>
+          
         </div>
+
       </div>
     </form>
   )

@@ -22,7 +22,7 @@ const RegisterPage = () => {
           <SignUpForm title="Create an account" />
         </div>
         <div className="create-account-social-network-wrapper">
-          <h2 className="custom-title">Or login using</h2>
+          <h2 className="custom-title">Or register using</h2>
           <div className="facebook-block">
             <SocialMediaButton text="Facebook" />
           </div>

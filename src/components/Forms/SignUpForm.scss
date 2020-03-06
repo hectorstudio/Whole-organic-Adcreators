@@ -44,12 +44,39 @@
       font-family: "Nexa Light",sans-serif;
       @include breakpoint($md) {
         margin: 40px;
-        width: 70%;
+        width: auto;
         align-items: center;
       }
     }
     .captcha-block {
       margin-top: 55px;
+    }
+    .bottom-block-sign-up {
+      margin-top: 39px;
+      @include breakpoint($md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      @include breakpoint($sm) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .bottom-block-sign-up__text {
+        margin-top: 29px;
+        margin-bottom: 80px;
+        letter-spacing: -.5px;
+        color: #0f4542;
+        a.bottom-block-sign-up__link {
+          color: #0f4542;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
     }
 
   }
