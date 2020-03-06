@@ -13,7 +13,7 @@ const FormCheck = ({ title }) => {
   };
   return (
     <div className="checkbox-wrapper" onClick={handleChange}>
-      {title}
+      <p className="label">{title}</p>
       <input
         type="checkbox"
         checked={checked ? "checked" : ""}

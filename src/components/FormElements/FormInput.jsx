@@ -1,6 +1,6 @@
 import React from 'react';
 import './FormInput.scss'
-const FormInput = ({ label, type, value, placeholder, className }) => {
+const FormInput = ({ label="", type="text", value="", placeholder="", className="formInput" }) => {
 
   
   return (
