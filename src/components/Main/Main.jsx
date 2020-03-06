@@ -5,6 +5,7 @@ import CartPage from '../../pages/CartPage/CartPage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
 import LoginPage from '../../pages/LoginPage/LoginPage'
 import RegisterPage from '../../pages/RegisterPage/RegisterPage'
+import SetupProfilePage from '../../pages/SetupProfilePage/SetupProfilePage';
 import './Main.scss';
 
 const routes = [
@@ -38,6 +39,12 @@ const routes = [
     path: '/register',
     title: 'Register',
     component: RegisterPage
+  },
+  {
+    id: '6',
+    path: '/profilesetup',
+    title: 'ProfileSetup',
+    component: SetupProfilePage
   },
 ];
 
