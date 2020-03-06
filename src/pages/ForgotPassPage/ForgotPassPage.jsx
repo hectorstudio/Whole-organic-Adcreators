@@ -3,8 +3,10 @@ import PrimaryButton from '../../components/Buttons/PrimaryButton'
 import ForgotButton from '../../components/Buttons/ForgotButton'
 import FormInput from '../../components/FormElements/FormInput';
 import './ForgotPassPage.scss'
+import { useParams } from 'react-router-dom';
 
 const ForgotPassPage = () => {
+  
   const action = () => {
 
   }
