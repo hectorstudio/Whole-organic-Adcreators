@@ -2,7 +2,6 @@ import React from "react";
 import "./CreatePassBtn.scss";
 
 const CreatePassBtn = ({ text, action, disabled }) => {
-
   return (
     <button
       className="createpassbtn"

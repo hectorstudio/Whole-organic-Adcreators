@@ -3,7 +3,7 @@
 input.formInput {
   width: 412px;
   height: 64px;
-  background: #F4F4F4;
+  background: #f4f4f4;
   border: #656565;
   font-size: 13px;
   font-family: Nexa-Bold, sans-serif;
@@ -12,7 +12,6 @@ input.formInput {
     width: 100% !important;
   }
   &.input-block-sign-up__item {
-    
     @include breakpoint($xl) {
       width: 377px;
     }
@@ -32,6 +31,6 @@ p.textLabel {
   font-size: 13px;
   margin-top: 1px;
   margin-bottom: 1px;
-  color: #0F4542;
+  color: #0f4542;
   font-weight: bold;
 }

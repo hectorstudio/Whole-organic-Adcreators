@@ -5,16 +5,16 @@
   width: 219px;
   height: 57px;
   vertical-align: middle;
-  background-color: #0CB69B;
+  background-color: #0cb69b;
   border: #707070;
   font: 16px Nexa-Bold, sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   &:disabled {
-    opacity: .4;
+    opacity: 0.4;
     pointer-events: none;
   }
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 }

@@ -2,7 +2,6 @@ import React from "react";
 import "./PrimaryButton.scss";
 
 const PrimaryButton = ({ text, action, disabled }) => {
-
   return (
     <button
       className="primarybutton"

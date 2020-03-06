@@ -24,7 +24,6 @@
       @include breakpoint($sm) {
         width: 100%;
       }
-
     }
     a.input-block-sign-in__link {
       margin-top: 32px;
@@ -42,13 +41,12 @@
     margin-top: 31px;
     .bottom-block-sign-up__link {
       color: #0f4542;
-      
     }
   }
   .bottom-block-sign-in__text {
     margin-top: 56px;
     margin-left: -4px;
-    letter-spacing: -.3px;
+    letter-spacing: -0.3px;
     color: #0f4542;
     a.bottom-block-sign-up__link {
       color: #0f4542;
@@ -57,7 +55,7 @@
       }
     }
   }
-  @include breakpoint ($md) {
+  @include breakpoint($md) {
     width: 100%;
     align-items: center;
     h2 {
@@ -70,7 +68,7 @@
       text-align: center;
     }
   }
-  @include breakpoint ($sm) {
+  @include breakpoint($sm) {
     width: 100%;
     align-items: center;
     h2 {

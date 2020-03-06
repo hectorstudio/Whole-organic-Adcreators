@@ -31,7 +31,7 @@ const FormSelect = ({ placeholder, name }) => {
   const changeValue = (event, value) => {
     setOpened("down");
     setTitle(value);
-  }
+  };
 
   return (
     <div className="form-select">

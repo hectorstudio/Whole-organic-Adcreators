@@ -8,22 +8,22 @@ button.social {
   text-align: left;
   border: none;
   font: 16px Nexa-Bold, sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   cursor: pointer;
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
   &.Facebook-button {
-    background-color: #4267B2;
+    background-color: #4267b2;
     i {
       padding-right: 37px;
       font-size: 30px;
     }
   }
   &.Google-button {
-    background-color: #F14336;
+    background-color: #f14336;
     i {
       padding-right: 26.1px;
       font-size: 30px;

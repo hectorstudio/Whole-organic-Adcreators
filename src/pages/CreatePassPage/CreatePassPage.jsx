@@ -12,7 +12,8 @@ const CreatePassPage = () => {
       <div className="create-pass-block">
         <h2 className="custom-title">Create a new password</h2>
         <p className="custom-text">
-          Enter your email address and we will send you an email to reset your password
+          Enter your email address and we will send you an email to reset your
+          password
         </p>
         <form className="create-pass-block-form">
           <div className="create-pass-input-section">

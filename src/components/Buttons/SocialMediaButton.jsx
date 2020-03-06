@@ -1,21 +1,20 @@
-import React from 'react';
-import './SocialMediaButton.scss'
+import React from "react";
+import "./SocialMediaButton.scss";
 const SocialMediaButton = ({ text }) => {
-  
   const handleClick = () => {
-    console.log("button " + text + "-button Clicked")
-  }
-  const iconClassName = text === "Facebook" ? "social icon-facebook" : "social fab fa-google"
+    console.log("button " + text + "-button Clicked");
+  };
+  const iconClassName =
+    text === "Facebook" ? "social icon-facebook" : "social fab fa-google";
   return (
-    
-    <button 
-      className={"social button " + text + "-button" } 
+    <button
+      className={"social button " + text + "-button"}
       onClick={handleClick}
     >
       <i className={iconClassName} />
       {"Sign in with " + text}
     </button>
-  )
-}
+  );
+};
 
-export default SocialMediaButton
+export default SocialMediaButton;

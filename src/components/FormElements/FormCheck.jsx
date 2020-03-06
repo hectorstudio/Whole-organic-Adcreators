@@ -4,12 +4,10 @@ import "./FormCheck.style.scss";
 const FormCheck = ({ title }) => {
   const [checked, setChecked] = useState(true);
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     const status = event.target.getAttribute("value");
-    if(status === "true")
-      setChecked(false);
-    else
-      setChecked(true);
+    if (status === "true") setChecked(false);
+    else setChecked(true);
   };
   return (
     <div className="checkbox-wrapper" onClick={handleChange}>

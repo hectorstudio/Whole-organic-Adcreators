@@ -46,7 +46,7 @@
   }
   .create-account-social-network-wrapper {
     height: auto;
-    border-left: 1px solid hsla(0,0%,43.9%,.3);
+    border-left: 1px solid hsla(0, 0%, 43.9%, 0.3);
     padding-left: 102px;
     h2.custom-title {
       font-family: Nexa-Bold, sans-serif;
@@ -92,12 +92,12 @@
       margin-bottom: 100px;
     }
   }
-  
+
   @include breakpoint($xl) {
-    max-width: 1380px; 
+    max-width: 1380px;
   }
 
-  @include breakpoint ($lg) {
+  @include breakpoint($lg) {
     max-width: 1120px;
   }
 
@@ -109,7 +109,6 @@
     .sign-up-form {
       align-items: center;
     }
-    
   }
 
   @include breakpoint($sm) {
@@ -117,8 +116,4 @@
     max-width: 100%;
     align-items: center;
   }
-
-
-  
 }
-
