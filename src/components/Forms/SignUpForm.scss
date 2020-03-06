@@ -50,6 +50,33 @@
     }
     .captcha-block {
       margin-top: 55px;
+      p.captcha__title {
+        font-family: "Nexa Light",sans-serif;
+        font-size: 14px;
+        color: #121212;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+        @include breakpoint($sm) {
+          text-align: center;
+        }
+      }
+      @include breakpoint($md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      @include breakpoint($sm) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .captcha-wrapper {
+        margin-top: 13px;
+      }
+      
     }
     .bottom-block-sign-up {
       margin-top: 39px;

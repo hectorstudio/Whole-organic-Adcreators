@@ -1,4 +1,5 @@
 import React from "react";
+import Recaptcha from 'react-recaptcha';
 import "./SignUpForm.scss";
 import PrimaryButton from "../../components/Buttons/PrimaryButton";
 import FormInput from "../../components/FormElements/FormInput";
@@ -7,7 +8,9 @@ const SignUpForm = ({ title }) => {
   const handleClick = () => {
     console.log("btn Clicked");
   };
-
+  const recaptchaCallback = () => {
+    console.log("Recaptcha Callback")
+  }
   return (
     <form className="sign-up-form">
       <h2>{title}</h2>
@@ -55,7 +58,16 @@ const SignUpForm = ({ title }) => {
         <div className="checkbox-block">
           <FormCheck title="By Registering, you agree that you’ve read and accepted our User Agreement, you’re at least 18 years old, and you consent to our Privacy Notice and receiving marketing communications from us." />
         </div>
-        <div className="captcha-block"></div>
+        <div className="captcha-block">
+        <p className="captcha__title">Before you proceed please complete the captcha below</p>
+          <div className="captcha-wrapper">
+            <Recaptcha
+              sitekey="xxxxxxxxxx"
+              render="explicit"
+              onloadCallback={recaptchaCallback}
+            />
+          </div>
+        </div>
         <div className="bottom-block-sign-up">
           <PrimaryButton text="Register" action={handleClick} disabled={true} />
           <p className="bottom-block-sign-up__text">
