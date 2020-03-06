@@ -6,10 +6,11 @@
   vertical-align: middle;
   background-color: #0CB69B;
   border: #707070;
-  font-size: 16px;
+  font: 16px Nexa-Bold, sans-serif;
   color: #FFFFFF;
   &:disabled {
     opacity: .4;
     pointer-events: none;
   }
+
 }

@@ -9,7 +9,12 @@ const FormInput = ({ label, type, value, placeholder }) => {
   return (
     <div>
       {label !== "" ? <p className="textLabel">{label}</p> : ''}
-      <input className="formInput" type={type} value={value} placeholder={placeholder} onChange={handleChange}></input>
+      <input 
+        className="formInput" 
+        type={type} 
+        value={value} 
+        placeholder={placeholder} 
+      />
     </div>
   )
 }

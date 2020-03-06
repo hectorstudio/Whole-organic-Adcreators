@@ -9,7 +9,7 @@ const SocialMediaButton = ({ text }) => {
   return (
     
     <button 
-      className={"button " + text + "-button"} 
+      className={"social button " + text + "-button" } 
       onClick={handleClick}
     >
       <i className={iconClassName} />

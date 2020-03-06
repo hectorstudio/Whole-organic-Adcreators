@@ -1,11 +1,16 @@
+@import "../../layout/layout";
+
 input.formInput {
-  width: 383px;
+  width: 412px;
   height: 64px;
   background: #F4F4F4;
   border: #656565;
   font-size: 13px;
   font-family: Nexa-Bold, sans-serif;
-  padding-left: 29px;
+  padding: 22px 29px 25px;
+  @include breakpoint($sm) {
+    width: 100% !important;
+  }
 }
 p.textLabel {
   font-size: 13px;

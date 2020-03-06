@@ -1,20 +1,41 @@
 import React from 'react';
 import SignInForm from '../../components/Forms/SignInForm'
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import SocialMediaButton from '../../components/Buttons/SocialMediaButton'
 import './LoginPage.scss'
 const LoginPage = () => {
    
-
   return (
-    <div className="login-in-account">
-      <Breadcrumb>
-        <BreadcrumbItem><a href="#">Home</a></BreadcrumbItem>
-        <BreadcrumbItem active>Login</BreadcrumbItem>
-      </Breadcrumb>
-      <div className="login-page">
-        <SignInForm title="Welcome back" />
+    <div>
+      <div class="breadcrumbs">
+        <span class="breadcrumbs__text">
+          <a aria-current="page" class="breadcrumbs__link active" href="/">
+            <span>Home</span>
+          </a>
+        </span>
+        <i class="icon-arrow-bread"></i>
+        <span class="breadcrumbs__text">
+          <span>Login</span>
+        </span>
+      </div>
+      <div className="login-in-account">
+        <div className="login-in-account-wrapper">
+          <div className="login-page">
+            <SignInForm title="Welcome back" />
+          </div>
+        </div>
+        <div className="login-in-account-social-network-wrapper">
+          <h2 class="custom-title">Or login using</h2>
+          <div className="facebook-block">
+            <SocialMediaButton text="Facebook" />
+          </div>
+          <div className="google-block">
+            <SocialMediaButton text="Google" />
+          </div>
+        </div>
       </div>
     </div>
+    
+      
     
   )
 };

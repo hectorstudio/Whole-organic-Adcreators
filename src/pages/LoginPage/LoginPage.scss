@@ -1,35 +1,109 @@
 @import "../../layout/layout";
 
+div.breadcrumbs {
+  width: 100%;
+  margin-top: 31px;
+  .breadcrumbs__text:first-child {
+    margin-left: 0;
+  }
+  .breadcrumbs__text {
+    font: 13px Nexa-Bold,sans-serif;
+    margin-left: 14px;
+    color: #383838;
+  }
+  .active {
+    text-decoration: none;
+  }
+  
+  .breadcrumbs__link {
+    color: #383838;
+  }
+}
 .login-in-account {
+  display: flex;
+  padding-top: 58px;
+  .login-in-account-wrapper {
+    width: 412px;
+    margin-right: 131.5px;
+    @include breakpoint($md) {
+      margin-right: 0px;
+    }
+    @include breakpoint($sm) {
+      width: 100%;
+      margin-right: 0px;
+      
+    }
+  }
+  .login-in-account-social-network-wrapper {
+    height: auto;
+    border-left: 1px solid hsla(0,0%,43.9%,.3);
+    padding-left: 125.5px;
+    h2.custom-title {
+      font-family: Nexa-Bold, sans-serif;
+      font-size: 31px;
+      color: #125451;
+      letter-spacing: -1.6px;
+      word-spacing: 2px;
+    }
+    .facebook-block {
+      margin-top: 27px;
+      @include breakpoint($sm) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .google-block {
+      position: relative;
+      margin-top: 10px;
+      @include breakpoint($sm) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @include breakpoint($md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: none;
+      padding-left: 0;
+      margin-bottom: 100px;
+    }
+    @include breakpoint($sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: none;
+      padding-left: 0;
+      margin-bottom: 100px;
+    }
+  }
+  
   @include breakpoint($xl) {
-    max-width: 1380px;
+    max-width: 1380px; 
   }
 
   @include breakpoint ($lg) {
-    max-width: 1130px;
+    max-width: 1120px;
   }
 
   @include breakpoint($md) {
-    max-width: 100% //700px is ok
+    max-width: 100%; //700px is ok
+    flex-direction: column;
+    align-items: center;
+    border-left: none;
+    .sign-in-form {
+      align-items: center;
+    }
+    
   }
 
   @include breakpoint($sm) {
+    flex-direction: column;
     max-width: 100%;
+    align-items: center;
   }
-  .login-page {
-    padding-left: 5px;
-    padding-top: 58px;
-  }
-  ol.breadcrumb {
-    font-size: 13px;
-    font-family: Nexa-Bold,sans-serif;;
-    margin: 31px 0px 0px 0px;
-    padding: 0px;
-    background: transparent;
-    display: flex;
-    flex-wrap: none;
-    list-style: none; 
-    padding-left: 0px;
-  }
+
+
+  
 }
 

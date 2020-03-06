@@ -1,3 +1,4 @@
+@import "../../layout/layout";
 .sign-in-form {
   font-family: Nexa-Bold, sans-serif;
   h2 {
@@ -6,40 +7,80 @@
     letter-spacing: -1.6px;
     word-spacing: 2px;
   }
-  
   .input-block-sign-in {
     margin-top: 26px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    .input-block-sign-in-wrapper:first-child {
+      margin-top: 0;
+    }
+    .input-block-sign-in-wrapper {
+      margin-top: 10px;
+      @include breakpoint($md) {
+        flex-direction: column;
+        align-items: center;
+      }
+      @include breakpoint($sm) {
+        width: 100%;
+      }
+
+    }
+    a.input-block-sign-in__link {
+      margin-top: 32px;
+      color: #0f4542;
+      font-size: 13px;
+      &:hover {
+        text-decoration: none;
+      }
+      &.active {
+        text-decoration: none;
+      }
+    }
   }
-  
-  .input-block-sign-in-wrapper:first-child {
-    margin-top: 0;
-  }
-  
-  .input-block-sign-in-wrapper {
-    margin-top: 10px;
-  }
-  
-  a.input-block-sign-in__link {
-    margin-top: 34px;
-    color: #0f4542;
-    font-size: 13px;
-  }
-  
   .bottom-block-sign-in {
-    margin-top: 30px;
+    margin-top: 31px;
+    .bottom-block-sign-up__link {
+      color: #0f4542;
+      
+    }
   }
-  
   .bottom-block-sign-in__text {
-    margin-top: 57px;
+    margin-top: 56px;
     margin-left: -4px;
     letter-spacing: -.3px;
     color: #0f4542;
+    a.bottom-block-sign-up__link {
+      color: #0f4542;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
-  
-  .bottom-block-sign-up__link {
-    color: #0f4542;
+  @include breakpoint ($md) {
+    width: 100%;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    .input-block-sign-in {
+      align-items: center;
+    }
+    .bottom-block-sign-in__text {
+      text-align: center;
+    }
+  }
+  @include breakpoint ($sm) {
+    width: 100%;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    .input-block-sign-in {
+      align-items: center;
+    }
+    .bottom-block-sign-in__text {
+      text-align: center;
+    }
   }
 }
