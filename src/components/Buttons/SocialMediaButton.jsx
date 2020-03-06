@@ -5,7 +5,7 @@ const SocialMediaButton = ({ text }) => {
   const handleClick = () => {
     console.log("button " + text + "-button Clicked")
   }
-  const iconClassName = text === "Facebook" ? "icon-facebook" : "fab fa-google"
+  const iconClassName = text === "Facebook" ? "social icon-facebook" : "social fab fa-google"
   return (
     
     <button 

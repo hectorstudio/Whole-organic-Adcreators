@@ -11,6 +11,22 @@ input.formInput {
   @include breakpoint($sm) {
     width: 100% !important;
   }
+  &.input-block-sign-up__item {
+    
+    @include breakpoint($xl) {
+      width: 377px;
+    }
+    @include breakpoint($lg) {
+      width: 338px;
+    }
+    @include breakpoint($md) {
+      margin-top: 10px;
+      width: 412px;
+    }
+    @include breakpoint($sm) {
+      margin-top: 10px;
+    }
+  }
 }
 p.textLabel {
   font-size: 13px;

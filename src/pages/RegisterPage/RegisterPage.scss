@@ -1,0 +1,144 @@
+@import "../../layout/layout";
+
+div.breadcrumbs {
+  width: 100%;
+  margin-top: 31px;
+  .breadcrumbs__text:first-child {
+    margin-left: 0;
+  }
+  .breadcrumbs__text {
+    font: 13px Nexa-Bold,sans-serif;
+    margin-left: 14px;
+    color: #383838;
+  }
+  .active {
+    text-decoration: none;
+  }
+  
+  .breadcrumbs__link {
+    color: #383838;
+  }
+}
+
+.create-account {
+  display: flex;
+  padding: 58px 0 65px;
+  .create-account-wrapper {
+    width: 835px;
+    margin-right: 104px;
+    @include breakpoint($xl) {
+      width: 777px;
+      margin-right: 68px;
+    }
+    @include breakpoint($lg) {
+      width: 750px;
+      margin-right: 42px;
+    }
+    @include breakpoint($md) {
+      width: 100%;
+      margin-right: 0px;
+      text-align: center;
+    }
+    @include breakpoint($sm) {
+      width: 100%;
+      margin-right: 0px;
+    }
+    .input-block-sign-up {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      @include breakpoint($xl) {
+        width: auto;
+      }
+      .input-section:first-child {
+        margin-top: 0;
+      }
+      .input-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+    }
+  }
+  .create-account-social-network-wrapper {
+    height: auto;
+    border-left: 1px solid hsla(0,0%,43.9%,.3);
+    padding-left: 102px;
+    h2.custom-title {
+      font-family: Nexa-Bold, sans-serif;
+      font-size: 31px;
+      color: #125451;
+      letter-spacing: -1.6px;
+      word-spacing: 2px;
+    }
+    .facebook-block {
+      margin-top: 27px;
+      @include breakpoint($sm) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .google-block {
+      position: relative;
+      margin-top: 10px;
+      @include breakpoint($sm) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @include breakpoint($lg) {
+      padding-left: 63px;
+    }
+
+    @include breakpoint($md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: none;
+      padding-left: 0;
+      margin-bottom: 100px;
+    }
+    @include breakpoint($sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: none;
+      padding-left: 0;
+      margin-bottom: 100px;
+    }
+  }
+  
+  @include breakpoint($xl) {
+    max-width: 1380px; 
+  }
+
+  @include breakpoint ($lg) {
+    max-width: 1120px;
+  }
+
+  @include breakpoint($md) {
+    max-width: 100%; //700px is ok
+    flex-direction: column;
+    align-items: center;
+    border-left: none;
+    .sign-up-form {
+      align-items: center;
+    }
+    
+  }
+
+  @include breakpoint($sm) {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+  }
+
+
+  
+}
+

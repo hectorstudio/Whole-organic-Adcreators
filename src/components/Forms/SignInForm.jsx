@@ -17,10 +17,10 @@ const SignInForm = ({ title }) => {
       
       <div className="input-block-sign-in">
         <div class="input-block-sign-in-wrapper wrapper">
-          <FormInput label="" value="" type="email" placeholder="Email address" />
+          <FormInput label="" value="" type="email" placeholder="Email address" className="formInput" />
         </div>
         <div class="input-block-sign-in-wrapper wrapper">
-          <FormInput label="" value="" type="password" placeholder="Password" />
+          <FormInput label="" value="" type="password" placeholder="Password" className="formInput" />
         </div>
         <a class="input-block-sign-in__link" href="/forgot-pass">
           Forgot your password?
