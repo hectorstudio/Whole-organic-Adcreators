@@ -4,12 +4,15 @@ input.formInput {
   width: 412px;
   height: 64px;
   background: #f4f4f4;
-  border: #656565;
+  border:1px solid #f4f4f4;
   font-size: 13px;
   font-family: Nexa-Bold, sans-serif;
   padding: 22px 29px 25px;
   @include breakpoint($sm) {
     width: 100% !important;
+  }
+  &.alert-outline {
+    border: 1px solid #ff5757;
   }
   &.input-block-sign-up__item {
     @include breakpoint($xl) {
@@ -33,4 +36,8 @@ p.textLabel {
   margin-bottom: 1px;
   color: #0f4542;
   font-weight: bold;
+}
+span.error-message {
+  color: #ff5757;
+  font-size: 12px;
 }

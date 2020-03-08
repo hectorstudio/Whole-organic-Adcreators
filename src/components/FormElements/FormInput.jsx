@@ -5,12 +5,26 @@ const FormInput = ({
   type = "text",
   value = "",
   placeholder = "",
-  className = "formInput"
+  className = "formInput",
+  alert,
+  changeAction
 }) => {
+  const changeValue = event => {
+    changeAction(event.target.value);
+  };
+
   return (
     <div>
       {label !== "" ? <p className="textLabel">{label}</p> : ""}
-      <input className={className} type={type} placeholder={placeholder} />
+      <input
+        className={`${className}`}
+        style={alert ? { border: "1px solid #ff5757" } : { border: "none" }}
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        onChange={changeValue}
+      />
+      {alert ? <span className={"error-message"}>{alert}</span> : ""}
     </div>
   );
 };
