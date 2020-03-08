@@ -2,13 +2,12 @@ import React from "react";
 import FormCheck from "../FormElements/FormCheck";
 import "./ProfileForm.style.scss";
 import FormLocation from "../FormElements/FormLocation";
-import FormSelect from "../FormElements/FormSelect";
 import FormInput from "../FormElements/FormInput";
 import PrimaryButton from "../Buttons/PrimaryButton";
 
 const ProfileForm = () => {
   const handleClick = () => {
-    console.log("click");
+    
   };
   return (
     <div className="profile-form-container">

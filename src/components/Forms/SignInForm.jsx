@@ -5,7 +5,6 @@ import FormInput from "../../components/FormElements/FormInput";
 
 const SignInForm = ({ title }) => {
   const action = name => {};
-  const handleChange = () => {};
 
   return (
     <form className="sign-in-form">

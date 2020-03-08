@@ -1,14 +1,29 @@
 import React from "react";
 import ForgotButton from "../../components/Buttons/ForgotButton";
 import FormInput from "../../components/FormElements/FormInput";
-import Breadcrumbs from "../../components/Breadcrumbs";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import "./ForgotPassPage.scss";
+
+const breadCrumbs = [
+  {
+    id: '1',
+    title: 'Home',
+    path: '/',
+    active: ""
+  },
+  {
+    id: '2',
+    title: 'Forgot password',
+    path: '/forgot-pass',
+    active: "active"
+  }
+]
 
 const ForgotPassPage = () => {
   const action = () => {};
   return (
     <div>
-      <Breadcrumbs parent="Home" child="ForgotPassPage" />
+      <Breadcrumbs breadcrumbsItems={breadCrumbs} />
       <div className="forgot-pass-block">
         <h2 className="custom-title">Forgot your password?</h2>
         <p className="custom-text">
@@ -25,7 +40,7 @@ const ForgotPassPage = () => {
               className="formInput"
             />
           </div>
-          <ForgotButton text="Login" action={action} disabled={true} />
+          <ForgotButton text="Continue" action={action} disabled={true} />
         </form>
       </div>
     </div>

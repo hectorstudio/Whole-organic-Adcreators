@@ -8,6 +8,7 @@ import RegisterPage from '../../pages/RegisterPage/RegisterPage'
 import SetupProfilePage from '../../pages/SetupProfilePage/SetupProfilePage'
 import ForgotPassPage from '../../pages/ForgotPassPage/ForgotPassPage'
 import CreatePassPage from '../../pages/CreatePassPage/CreatePassPage'
+import MyProfilePage from '../../pages/MyaccountPages/MyProfilePage/MyProfilePage'
 import './Main.scss';
 
 const routes = [
@@ -60,6 +61,11 @@ const routes = [
     title: 'Create a new password',
     component: CreatePassPage
   },
+  {
+    id: '9',
+    path: '/my-account/my-profile',
+    component: MyProfilePage
+  }
 ];
 
 const Main = () => {

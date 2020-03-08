@@ -1,12 +1,26 @@
 import React from "react";
 import SignInForm from "../../components/Forms/SignInForm";
 import SocialMediaButton from "../../components/Buttons/SocialMediaButton";
-import Breadcrumbs from "../../components/Breadcrumbs";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import "./LoginPage.scss";
+const breadCrumbs = [
+  {
+    id: '1',
+    title: 'Home',
+    path: '/',
+    active: ""
+  },
+  {
+    id: '2',
+    title: 'Log in',
+    path: '/login',
+    active: "active"
+  }
+]
 const LoginPage = () => {
   return (
     <div>
-      <Breadcrumbs parent="Home" child="Log in" />
+      <Breadcrumbs breadcrumbsItems={breadCrumbs} />
       <div className="login-in-account">
         <div className="login-in-account-wrapper">
           <div className="login-page">

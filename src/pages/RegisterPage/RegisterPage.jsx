@@ -2,11 +2,25 @@ import React from "react";
 import SignUpForm from "../../components/Forms/SignUpForm";
 import SocialMediaButton from "../../components/Buttons/SocialMediaButton";
 import "./RegisterPage.scss";
-import Breadcrumbs from "../../components/Breadcrumbs";
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+const breadCrumbs = [
+  {
+    id: '1',
+    title: 'Home',
+    path: '/',
+    active: ""
+  },
+  {
+    id: '2',
+    title: 'Register',
+    path: '/register',
+    active: "active"
+  }
+]
 const RegisterPage = () => {
   return (
     <div>
-      <Breadcrumbs parent="Home" child="Register" />
+      <Breadcrumbs breadcrumbsItems={breadCrumbs} />
       <div className="create-account">
         <div className="create-account-wrapper">
           <SignUpForm title="Create an account" />

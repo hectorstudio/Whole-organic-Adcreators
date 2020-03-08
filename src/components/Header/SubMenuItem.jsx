@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 const SubMenuItem = ({ title, DropMenuData, sizes }) => {
   const [activeDropMenu, setActiveDropMenu] = useState(false);
-  console.log(activeDropMenu);
+  //console.log(activeDropMenu);
   const location = useLocation();
   let subMenu;
 
