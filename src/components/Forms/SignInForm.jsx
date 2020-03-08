@@ -8,7 +8,6 @@ import PasswordRules from "../../constants/validations/PasswordValidator";
 import RegExValidator from "../../constants/validations/RegExValidator";
 
 const SignInForm = ({ title }) => {
-  const action = name => {};
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [alertEmail, setAlertEmail] = useState("");
@@ -79,7 +78,7 @@ const SignInForm = ({ title }) => {
           Forgot your password?
         </a>
         <div className="bottom-block-sign-in">
-          <UserButton text="Login" action={action} disabled={true} varient="primary" />
+          <UserButton text="Login" action={clickSubmit} disabled={primaryDisable} varient="primary" />
         </div>
       </div>
       <p className="bottom-block-sign-in__text">
