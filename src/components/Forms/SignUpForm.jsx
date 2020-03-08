@@ -1,7 +1,7 @@
 import React from "react";
 import Recaptcha from 'react-recaptcha';
 import "./SignUpForm.scss";
-import PrimaryButton from "../../components/Buttons/PrimaryButton";
+import UserButton from "../../components/Buttons/UserButton";
 import FormInput from "../../components/FormElements/FormInput";
 import FormCheck from "../../components/FormElements/FormCheck";
 const SignUpForm = ({ title }) => {
@@ -69,7 +69,7 @@ const SignUpForm = ({ title }) => {
           </div>
         </div>
         <div className="bottom-block-sign-up">
-          <PrimaryButton text="Register" action={handleClick} disabled={true} />
+          <UserButton text="Register" action={handleClick} disabled={true} varient="primary" />
           <p className="bottom-block-sign-up__text">
             Already a member? Please{" "}
             <a className="bottom-block-sign-up__link" href="/login">

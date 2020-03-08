@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignInForm.scss";
-import PrimaryButton from "../../components/Buttons/PrimaryButton";
+import UserButton from "../../components/Buttons/UserButton";
 import FormInput from "../../components/FormElements/FormInput";
 import Rules from "../../constants/validations/LoginValidator";
 import EmailRules from "../../constants/validations/EmailValidator";
@@ -79,12 +79,7 @@ const SignInForm = ({ title }) => {
           Forgot your password?
         </a>
         <div className="bottom-block-sign-in">
-          <PrimaryButton
-            text="Login"
-            action={action}
-            disabled={primaryDisable}
-            clickAction={clickSubmit}
-          />
+          <UserButton text="Login" action={action} disabled={true} varient="primary" />
         </div>
       </div>
       <p className="bottom-block-sign-in__text">
