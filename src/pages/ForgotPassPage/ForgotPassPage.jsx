@@ -1,5 +1,5 @@
 import React from "react";
-import ForgotButton from "../../components/Buttons/ForgotButton";
+import UserButton from "../../components/Buttons/UserButton";
 import FormInput from "../../components/FormElements/FormInput";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import "./ForgotPassPage.scss";
@@ -40,7 +40,7 @@ const ForgotPassPage = () => {
               className="formInput"
             />
           </div>
-          <ForgotButton text="Continue" action={action} disabled={true} />
+          <UserButton text="Continue" action={action} disabled={true} varient="forgotpass" />
         </form>
       </div>
     </div>

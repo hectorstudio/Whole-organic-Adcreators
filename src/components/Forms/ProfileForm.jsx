@@ -3,7 +3,7 @@ import FormCheck from "../FormElements/FormCheck";
 import "./ProfileForm.style.scss";
 import FormLocation from "../FormElements/FormLocation";
 import FormInput from "../FormElements/FormInput";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import UserButton from "../Buttons/UserButton";
 
 const ProfileForm = () => {
   const handleClick = () => {
@@ -36,7 +36,7 @@ const ProfileForm = () => {
           <FormLocation />
         </div>
         <div className="profile-form-footer">
-          <PrimaryButton text="Start browsing" action={handleClick} />
+          <UserButton text="Start browsing" action={handleClick} varient="primary" />
         </div>
       </div>
     </div>
