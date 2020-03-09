@@ -1,0 +1,29 @@
+  .notify {
+    margin-top: 80px;
+    .notify__title {
+      font-size: 21px;
+      margin-left: 7px;
+      color: #125451;
+      letter-spacing: -.3px;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+    }
+    .notify-checkbox-block {
+      width: 533px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 31px 0 0 7px;
+
+      .notify-checkbox-block__item {
+        margin-bottom: 29px;
+      }
+
+      
+
+    }
+  }

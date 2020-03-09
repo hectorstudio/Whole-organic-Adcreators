@@ -1,0 +1,137 @@
+@import "../../layout/layout";
+
+.account-menu-list {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 36px 40px 49px;
+  height: 545px;
+  width: 321px;
+  background-color: $cyan-fourth-color;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px; //temporary
+
+  .BurgerInner {
+    background: $white;
+
+    &:after {
+      background: $white;
+    }
+
+    &:before {
+      background: $white;
+    }
+  }
+
+  @include breakpoint($xl) {
+    width: 270px;
+  }
+
+  @include breakpoint($lg) {
+    width: 230px;
+    padding: 52px 20px 40px 20px;
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    align-items: center;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    align-items: center;
+  }
+}
+
+.account-menu-list__burger-item {
+  display: none;
+
+  @include breakpoint($md) {
+    display: block;
+  }
+
+  @include breakpoint($sm) {
+    display: block;
+  }
+}
+
+.account-menu-list__item {
+  @include breakpoint($md) {
+    display: none;
+  }
+
+  @include breakpoint($sm) {
+    display: none;
+  }
+}
+
+.show-list-item {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.account-menu-list__item-blocks {
+  position: relative;
+  height: 29px;
+  margin-bottom: 31px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.account-menu-list__link {
+  height: auto;
+  font-family: Nexa-Light, sans-serif;
+  font-size: 20px;
+  color: $white;
+  text-decoration: none;
+  padding-bottom: 3px;
+  letter-spacing: -0.7px;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.active-account-menu-list__link {
+  border-bottom: 1px solid $white;
+
+  & + .fa-caret-right {
+    display: block;
+  }
+
+  @include breakpoint($md) {
+    & + .fa-caret-right {
+      display: none;
+    }
+  }
+
+  @include breakpoint($sm) {
+    & + .fa-caret-right {
+      display: none;
+    }
+  }
+}
+
+.fa-caret-right {
+  color: white;
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 20px;
+}

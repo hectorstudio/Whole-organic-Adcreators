@@ -1,55 +1,59 @@
 @import "../../layout/breakpoints";
-
-input.formInput {
-  width: 412px;
-  height: 64px;
-  background: #f4f4f4;
-  border:1px solid #f4f4f4;
-  font-size: 13px;
-  font-family: Nexa-Bold, sans-serif;
-  padding: 22px 29px 25px;
-  &.personal-block-input__item {
-    width: 385px;
-  }
-  @include breakpoint($sm) {
-    width: 100% !important;
-  }
-  &.alert-outline {
-    border: 1px solid #ff5757;
-  }
-  &.input-block-sign-up__item {
-    @include breakpoint($xl) {
-      width: 377px;
-    }
-    @include breakpoint($lg) {
-      width: 338px;
-    }
-    @include breakpoint($md) {
-      margin-top: 10px;
-      width: 412px;
+div.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  input.formInput {
+    width: 412px;
+    height: 64px;
+    background: #f4f4f4;
+    border:1px solid #f4f4f4;
+    font-size: 13px;
+    font-family: Nexa-Bold, sans-serif;
+    padding: 22px 29px 25px;
+    &.personal-block-input__item {
+      width: 385px;
     }
     @include breakpoint($sm) {
-      margin-top: 10px;
+      width: 100% !important;
     }
+    &.alert-outline {
+      border: 1px solid #ff5757;
+    }
+    &.input-block-sign-up__item {
+      @include breakpoint($xl) {
+        width: 377px;
+      }
+      @include breakpoint($lg) {
+        width: 338px;
+      }
+      @include breakpoint($md) {
+        margin-top: 10px;
+        width: 412px;
+      }
+      @include breakpoint($sm) {
+        margin-top: 10px;
+      }
+    }
+    &.product-input {
+      width: 333px;
+    }
+    
   }
-  &.product-input {
-    width: 333px;
+  .label-for-input {
+    position: relative;
+    left: 0;
+    font-family: "Roboto",sans-serif;
+    color: #0f4542;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  span.error-message {
+    color: #ff5757;
+    font-size: 12px;
   }
   
 }
-.label-for-input {
-  position: absolute;
-  top: -24px;
-  left: 0;
-  font-family: "Roboto",sans-serif;
-  color: #0f4542;
-  font-size: 13px;
-  font-weight: 700;
-}
 
 
 
-span.error-message {
-  color: #ff5757;
-  font-size: 12px;
-}
+

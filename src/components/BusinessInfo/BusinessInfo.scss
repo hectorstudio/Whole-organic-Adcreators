@@ -1,0 +1,264 @@
+@import '../../layout/layout';
+
+  .business-info {
+    margin-top: 55px;
+    @include breakpoint($md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include breakpoint($sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .business-info__title {
+    letter-spacing: -1.1px;
+    margin-left: 7px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+
+  .business-info-avatar {
+    margin-top: 33px;
+    .avatar-title {
+      font-size: 21px;
+      margin-left: 7px;
+      color: #125451;
+      letter-spacing: -.3px;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+    }
+    .my-account .avatar-block {
+      margin-top: 20px;
+      position: relative;
+      width: 141px;
+      height: 141px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid #1fc5cb;
+  }
+  }
+  
+
+  .business-block-input-section {
+    margin: 64px 0 0 8px;
+  
+    @include breakpoint($md) {
+      width: 100%;
+      margin: 64px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    @include breakpoint($sm) {
+      width: 100%;
+      margin: 64px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .business-block-input-section-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    @include breakpoint($md) {
+      flex-direction: column;
+    }
+  
+    @include breakpoint($sm) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+  .select__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font: 17px Nexa-Light, sans-serif;
+    width: 385px;
+    height: 64px;
+    background-color: $light-gray;
+  
+    .css-1wa3eu0-placeholder {
+      font-size: 13px;
+      font-family: Nexa-Bold, sans-serif;
+      color: #6a6a6a!important;
+    }
+  
+    .css-1hwfws3 {
+      padding: 0 0 0 28px !important;
+    }
+  
+    .icon-dropdown {
+      right: 26px;
+      top: 32px;
+    }
+  
+    @include breakpoint($md) {
+      border: none;
+      border-radius: 0;
+      width: 382px;
+      margin-bottom: 50px;
+    }
+  
+    @include breakpoint($sm) {
+      border: none;
+      border-radius: 0;
+      margin-bottom: 50px;
+      width: 100%;
+  
+      .css-yk16xz-control {
+        background: $light-gray !important;
+      }
+    }
+  }
+  
+  
+  .input-location__item-title, .select__item-title {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    font-family: "Roboto",sans-serif;
+    color: #0f4542;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .business-block-input-wrapper {
+    margin-left: 27px;
+    .wrapper {
+      position: relative;
+    }
+    @include breakpoint($lg) {
+      margin-left: 19px;
+    }
+  
+    @include breakpoint($md) {
+      margin-left: 0;
+    }
+  
+    @include breakpoint($sm) {
+      margin-left: 0;
+    }
+  }
+  
+  .business-block-input__item {
+    width: 387px;
+    &.custom-input {
+      height: 64px;
+      padding: 24px 0 24px 32px;
+      font-family: Nexa-Bold,sans-serif;
+      font-size: 13px;
+      color: #6a6a6a;
+      background-color: #f4f4f4;
+      border: none;
+    }
+    @include breakpoint($md) {
+      width: 100%;
+    }
+  
+    @include breakpoint($sm) {
+      width: 100%;
+    }
+  }
+  
+  .label-for-input {
+    position: absolute;
+    margin-top: -24px;
+    font-family: "Roboto",sans-serif;
+    color: #0f4542;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .text-area__item {
+    position: relative;
+    margin-top: 54px;
+    .textarea {
+      width: 797px;
+      height: 113px;
+      padding: 22px 29px 0;
+      resize: none;
+      background-color: #f4f4f4;
+      border: none;
+      font-size: 13px;
+      font-family: Nexa-Bold,sans-serif;
+      color: #6a6a6a;
+    }
+    .label-for-textarea {
+      position: absolute;
+      top: -24px;
+      left: 0;
+      font-family: "Roboto",sans-serif;
+      color: #0f4542;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    @include breakpoint($md) {
+      width: 505px
+    }
+  
+    @include breakpoint($sm) {
+      width: 100%;
+    }
+  }
+  
+  .input-location__item {
+    position: relative;
+    margin-top: 47px;
+  
+    @include breakpoint($sm) {
+      width: 100%;
+    }
+  }
+  
+  
+  .business-block-input-location__item {
+    width: 795px;
+  
+    @include breakpoint($md) {
+      width: 100%;
+    }
+  
+    @include breakpoint($sm) {
+      width: 100%;
+    }
+  }
+  
+  .business-block-input-section__btn {
+    letter-spacing: -.1px;
+    margin: 45px 0 0 1px;
+    padding-right: 10px;
+    width: 183px;
+    height: 57px;
+  }
+
+  .business-block-input-section__btn {
+    font-family: Nexa-Bold,sans-serif;
+    border: none;
+    background-color: #14bbc6;
+    background-image: -webkit-gradient(linear,left top,right top,from(#0cb69b),to(#14bbc6));
+    background-image: linear-gradient(90deg,#0cb69b,#14bbc6);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr="#0CB69B",EndColorStr="#14BBC6");
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+  }

@@ -1,0 +1,175 @@
+@import "../../layout/layout";
+
+.avatar-title {
+  font-size: 21px;
+  margin-left: 7px;
+  color: #125451;
+  letter-spacing: -.3px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.personal-info {
+  
+  display: inline;
+  .personal-info-avatar {
+    margin-top: 27px;
+  }
+
+  .personal-info__title {
+    
+  }
+
+  .personal-info-form {
+    
+    @include breakpoint($md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include breakpoint($sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+  }
+
+  .personal-block-input-section {
+    margin: 63px 0 32px 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($md) {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include breakpoint($sm) {
+      width: 100%;
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .personal-block-input-wrapper {
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include breakpoint($xl) {
+      margin-right: 0;
+
+      &:first-child {
+        margin-right: 19px;
+      }
+
+      &:last-child {
+        margin-top: 35px;
+      }
+    }
+
+    @include breakpoint($md) {
+      margin-top: 35px;
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+
+    @include breakpoint($sm) {
+      margin-top: 40px;
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .personal-block-input__item {
+    width: 385px;
+  }
+
+  .personal-info__link {
+    letter-spacing: -0.2px;
+    margin-left: 8px;
+    font-size: 13px;
+    color: $green-dark;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .personal-info__btn {
+    margin: 35px 0 0 9px;
+    padding-right: 22px;
+    letter-spacing: -1px;
+    word-spacing: 4px;
+    display: block;
+    width: 183px;
+    height: 57px;
+    //@extend  %auth-button;
+  }
+
+  .disabled {
+    //@extend %disabled;
+  }
+
+  @include breakpoint($md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include breakpoint($sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+.custom-title {
+  font-size: 31px;
+  color: $green-dark-section;
+  letter-spacing: -1.6px;
+  word-spacing: 2px;
+
+  @include breakpoint($md) {
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+.custom-text {
+  margin-top: 10px;
+  letter-spacing: -0.1px;
+  color: $green-dark;
+  font-family: Nexa-Light, sans-serif;
+
+  @include breakpoint($md) {
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    text-align: center;
+  }
+}

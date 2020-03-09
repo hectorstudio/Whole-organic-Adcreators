@@ -14,7 +14,8 @@ const FormInput = ({
   };
 
   return (
-    <div>
+    <div className="input-wrapper">
+      {label !== "" ? <label className="label-for-input">{label}</label> : ""}
       <input
         className={`${className}`}
         style={alert ? { border: "1px solid #ff5757" } : { border: "none" }}
@@ -23,7 +24,7 @@ const FormInput = ({
         value={value}
         onChange={changeValue}
       />
-      {label !== "" ? <label className="label-for-input">{label}</label> : ""}
+      
       {alert ? <span className={"error-message"}>{alert}</span> : ""}
     </div>
   );
