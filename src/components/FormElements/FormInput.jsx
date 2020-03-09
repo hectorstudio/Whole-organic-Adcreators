@@ -14,7 +14,7 @@ const FormInput = ({
   };
 
   return (
-    <div>
+    <div className="form-input-container">
       {label !== "" ? <p className="textLabel">{label}</p> : ""}
       <input
         className={`${className}`}

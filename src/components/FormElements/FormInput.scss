@@ -1,10 +1,13 @@
 @import "../../layout/breakpoints";
-
+.form-input-container {
+  display: inline-grid;
+  text-align: left;
+}
 input.formInput {
   width: 412px;
   height: 64px;
   background: #f4f4f4;
-  border:1px solid #f4f4f4;
+  border: 1px solid #f4f4f4;
   font-size: 13px;
   font-family: Nexa-Bold, sans-serif;
   padding: 22px 29px 25px;

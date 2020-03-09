@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./FormCheck.style.scss";
 
-const FormCheck = ({ title }) => {
-  const [checked, setChecked] = useState(true);
-
+const FormCheck = ({ title, checked, checkTerm }) => { 
   const handleChange = event => {
     const status = event.target.getAttribute("value");
-    if (status === "true") setChecked(false);
-    else setChecked(true);
+    if (status === "true") {
+      checkTerm(false);
+    } else {
+      checkTerm(true);
+    }
   };
   return (
     <div className="checkbox-wrapper" onClick={handleChange}>
