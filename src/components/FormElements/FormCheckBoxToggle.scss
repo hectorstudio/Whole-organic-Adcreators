@@ -1,0 +1,68 @@
+@import '../../layout/layout';
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+
+  @include breakpoint($sm) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.toggle-container__input[type=checkbox] {
+  display: none;
+}
+
+.toggle-container-circle {
+  cursor: pointer;
+  width: 101px;
+  text-indent: 117px;
+  height: 52px;
+  background: #EDEBEB;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 43px;
+    height: 43px;
+    @include linear-gradient(to right bottom, $cyan-primary-color, $cyan-secondary-color);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+
+  &:active:after {
+    width: 43px;
+  }
+}
+
+.toggle-container__input {
+  &:checked + .toggle-container-circle:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: #AAAAAA;
+  }
+}
+
+.toggle-container__text {
+  color: $text-color;
+  margin-left: 14px;
+  font-size: 17px;
+  font-family: Nexa-Light, sans-serif;
+
+  @include breakpoint($sm) {
+    width: 100%;
+    margin: 17px 0 0 0;
+    text-align: center;
+  }
+}

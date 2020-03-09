@@ -1,59 +1,55 @@
 @import "../../layout/layout";
 .btn {
+  vertical-align: middle;
+  background-color: #0cb69b;
+  border: #707070;
+  font: 16px Nexa-Bold, sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  width: 183px;
+  height: 57px;
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
   &.createpass {
     margin: 38px 0 0 -1px;
     width: 219px;
     height: 57px;
-    vertical-align: middle;
-    background-color: #0cb69b;
-    border: #707070;
-    font: 16px Nexa-Bold, sans-serif;
-    color: #ffffff;
-    cursor: pointer;
-    &:disabled {
-      opacity: 0.4;
-      pointer-events: none;
-    }
-    &:hover {
-      opacity: 0.9;
-    }
   }
 
   &.primary {
     width: 150px;
     height: 57px;
-    vertical-align: middle;
-    background-color: #0cb69b;
-    border: #707070;
-    font: 16px Nexa-Bold, sans-serif;
-    color: #ffffff;
-    cursor: pointer;
-    &:disabled {
-      opacity: 0.4;
-      pointer-events: none;
-    }
-    &:hover {
-      opacity: 0.9;
-    }
+  }
+
+  &.normal {
+    width: 183px;
+    height: 57px;
+    margin: 35px 0 0 9px;
+    padding-right: 22px;
+    letter-spacing: -1px;
+    word-spacing: 4px;
+    display: block;
+  }
+  &.add-search-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 70px;
+  }
+  &.select-products {
+    margin-top: 91px;
   }
 
   &.forgotpass {
     width: 160px;
     height: 64px;
     margin-left: 9px;
-    vertical-align: middle;
-    background-color: #0cb69b;
-    border: #707070;
-    font: 16px Nexa-Bold, sans-serif;
-    color: #ffffff;
-    cursor: pointer;
-    &:disabled {
-      opacity: 0.4;
-      pointer-events: none;
-    }
-    &:hover {
-      opacity: 0.9;
-    }
     @include breakpoint($sm) {
       margin: 25px 0 0;
     }

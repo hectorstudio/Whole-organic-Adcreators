@@ -8,6 +8,9 @@ input.formInput {
   font-size: 13px;
   font-family: Nexa-Bold, sans-serif;
   padding: 22px 29px 25px;
+  &.personal-block-input__item {
+    width: 385px;
+  }
   @include breakpoint($sm) {
     width: 100% !important;
   }
@@ -29,14 +32,23 @@ input.formInput {
       margin-top: 10px;
     }
   }
+  &.product-input {
+    width: 333px;
+  }
+  
 }
-p.textLabel {
-  font-size: 13px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+.label-for-input {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  font-family: "Roboto",sans-serif;
   color: #0f4542;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 700;
 }
+
+
+
 span.error-message {
   color: #ff5757;
   font-size: 12px;

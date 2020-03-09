@@ -8,7 +8,7 @@ import RegisterPage from '../../pages/RegisterPage/RegisterPage'
 import SetupProfilePage from '../../pages/SetupProfilePage/SetupProfilePage'
 import ForgotPassPage from '../../pages/ForgotPassPage/ForgotPassPage'
 import CreatePassPage from '../../pages/CreatePassPage/CreatePassPage'
-import MyProfilePage from '../../pages/MyaccountPages/MyProfilePage/MyProfilePage'
+import MyAccountPage from '../../pages/MyaccountPages/MyAccountPage'
 import './Main.scss';
 
 const routes = [
@@ -63,8 +63,8 @@ const routes = [
   },
   {
     id: '9',
-    path: '/my-account/my-profile',
-    component: MyProfilePage
+    path: '/my-account',
+    component: MyAccountPage
   }
 ];
 
