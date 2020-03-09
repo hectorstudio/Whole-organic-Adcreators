@@ -39,8 +39,8 @@ const SignInForm = ({ title }) => {
       setAlertPassword(validRes.errors.password);
     }
     else{
-      setAlertPassword("")
-;    }
+      setAlertPassword("");    
+    }
   };
 
   const clickSubmit = () => {
