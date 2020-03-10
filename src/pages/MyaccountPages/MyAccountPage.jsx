@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Switch, Route, useHistory, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom'
 
 import "./MyAccountPage.scss";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
@@ -64,7 +64,8 @@ const MyAccountPage = () => {
   const [address, setAddress] = useState([])
 
   const location = useLocation();
-
+  
+  
   return (
       <div>
         <Breadcrumbs breadcrumbsItems={breadCrumbs} />

@@ -24,6 +24,7 @@
     "react-file-reader": "^1.1.4",
     "react-files": "^2.4.8",
     "react-google-login": "^5.1.1",
+    "react-modal": "^3.11.2",
     "react-recaptcha": "^2.3.10",
     "react-redux": "^7.2.0",
     "react-resize-aware": "^3.0.0",

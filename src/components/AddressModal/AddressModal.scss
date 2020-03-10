@@ -1,0 +1,251 @@
+@import "../../layout/layout";
+
+
+.styles_overlay {
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding: 1.2rem;
+}
+
+
+.styles_modalCenter {
+  margin: auto;
+}
+.styles_modal {
+  max-width: 800px;
+  position: relative;
+  padding: 1.2rem;
+  background: #ffffff;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.styles_modal {
+  width: 1626px!important;
+  padding: 60px 0 74px;
+  max-width: none;
+}
+
+
+
+
+.my-addresses {
+  margin-top: 95px;
+  font-family: Nexa-Bold,sans-serif;
+  font-size: 16px;
+  @include breakpoint($md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include breakpoint($sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.custom-input {
+  width: 412px;
+  height: 64px;
+  padding: 24px 0 24px 32px;
+  font-family: Nexa-Bold,sans-serif;
+  font-size: 13px;
+  color: #6a6a6a;
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.addresses-input__item {
+  width: 522px;
+}
+
+.wrapper {
+  position: relative;
+}
+.my-addresses__title {
+  
+  padding-bottom: 37px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 21px;
+  margin-left: 7px;
+  color: #125451;
+  letter-spacing: -.3px;
+  @include breakpoint($md) {
+    text-align: center;
+    width: 100%;
+  }
+
+  @include breakpoint($sm) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+.my-addresses-list {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+.addresses-select__item {
+  font: 17px Nexa-Light,sans-serif;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 522px;
+  height: 64px;
+  background-color: #f4f4f4;
+}
+
+.addresses-select__item-title {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  font-family: "Roboto",sans-serif;
+  color: #0f4542;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.my-addresses-list__item {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 93px;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+
+  @include breakpoint($sm) {
+    height: 90px;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.my-addresses-list__text-info {
+  margin-left: 31px;
+  letter-spacing: -0.3px;
+  color: #383838;
+
+  @include breakpoint($sm) {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.my-addresses-list__text-functionality {
+  color: #0f4542;;
+  text-decoration: underline;
+  letter-spacing: -0.5px;
+  margin-right: 5px;
+  cursor: pointer;
+  &.edit {
+    margin-right: 29px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include breakpoint($sm) {
+    margin-top: 10px;
+  }
+}
+
+.my-addresses__btn {
+  margin: 37px 0 0 10px;
+  width: 183px;
+  height: 57px;
+  
+}
+
+.styles_closeButton__20ID4 {
+  top: 65px;
+  right: 57px;
+  cursor: pointer;
+
+  @include breakpoint($sm) {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.my-addresses-modal__title {
+  text-align: center;
+  border-bottom: 0.5px solid rgba(112, 112, 112, .5);
+  padding-bottom: 49.3px;
+}
+
+.my-addresses-modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 522px;
+  margin: 91px auto 0 auto;
+
+  @include breakpoint($md) {
+    width: auto;
+  }
+
+  @include breakpoint($sm) {
+    width: auto;
+    padding: 0 15px;
+  }
+}
+
+.my-addresses-modal-form__btn {
+  margin: 75px 12px 0 0;
+  width: 183px;
+  height: 57px;
+  
+}
+
+.my-addresses-modal-form__btn, .my-addresses__btn {
+  font-family: Nexa-Bold,sans-serif;
+  border: none;
+  background-color: #14bbc6;
+  background-image: linear-gradient(90deg,#0cb69b,#14bbc6);
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+.fa-times {
+  position: absolute;
+  font-size: 29px;
+  right: 57px;
+  top: 71px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @include breakpoint($sm) {
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+  }
+
+  
+
+}
