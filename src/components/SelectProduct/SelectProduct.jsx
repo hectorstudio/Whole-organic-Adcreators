@@ -26,13 +26,13 @@ const SelectProduct = () => {
           <FormSelect placeholder="Select a subcategory" name="subcategory" />
         </div>
         <div className="search-container__items input-products">
-          <div className="input select-products-block__input">
-            <FormInput className="formInput product-input" placeholder="Or type product name here..." type="text" changeAction={handleChange} />
+          <div className="ui input select-products-block__input">
+            <input placeholder="Or type product name here…" type="text" value="" onChange={handleChange} />
           </div>
           <UserButton varient="add-search-products" text="Add" action={handleClick}  />
         </div>
       </div>
-      <UserButton varient="select-products" text="Save changes" action={action} />
+      <button className="select-products_btn disabled" type="button">Save changes</button>
     </div>
   )
 }

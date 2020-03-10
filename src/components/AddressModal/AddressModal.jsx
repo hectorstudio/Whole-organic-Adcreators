@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './AddressModal.scss'
+import FormSelect from '../FormElements/FormSelect';
 
 const AddressModal = (props) => {
   var subtitle;
@@ -24,6 +25,13 @@ const AddressModal = (props) => {
     }]
   )
   
+  const handleChange = () => {
+
+  }
+
+  const handleInputChange = () => {
+    
+  }
   return (
     <div className="my-addresses">
       <p className="my-addresses__title">My addresses</p>
@@ -48,16 +56,19 @@ const AddressModal = (props) => {
               <form className="my-addresses-modal-form">
                 <div className="wrapper">
                   <label className="label-for-input">Street address</label>
-                  <input required="" type="text" className="addresses-input__item custom-input" value="sdfasdf" />
+                  <input required="" type="text" className="addresses-input__item custom-input" value="sdfasdf" onChange={handleInputChange} />
                 </div>
                 <div className="addresses-select__item">
                   <p className="addresses-select__item-title">City</p>
+                  <FormSelect placeholder="Select" name="subcategory" onChange={handleChange} />
                 </div>
                 <div className="addresses-select__item">
                   <p className="addresses-select__item-title">State/Province</p>
+                  <FormSelect placeholder="Select" name="subcategory" onChange={handleChange} />
                 </div>
                 <div className="addresses-select__item">
                   <p className="addresses-select__item-title">Country</p>
+                  <FormSelect placeholder="Select" name="subcategory" onChange={handleChange} />
                 </div>
                 <button type="button" className="my-addresses-modal-form__btn">Send address</button>
               </form>

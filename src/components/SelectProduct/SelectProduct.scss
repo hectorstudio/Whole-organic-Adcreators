@@ -28,7 +28,7 @@
 
 .select-products {
   margin-top: 91px;
-
+  font: 17px Nexa-Light, sans-serif;
   @include breakpoint($md) {
     display: flex;
     flex-direction: column;

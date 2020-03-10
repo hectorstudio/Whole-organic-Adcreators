@@ -37,7 +37,7 @@ const FormSelect = ({ placeholder, name }) => {
     <div className="form-select">
       <div className="select-title" onClick={handleClick}>
         {title}
-        <i className={`fas fa-chevron-${opened}`}></i>
+        <i className="icon-dropdown"></i>
       </div>
       <div
         className="select-body"
