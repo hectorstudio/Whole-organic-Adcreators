@@ -10,7 +10,8 @@ const FormInput = ({
   changeAction
 }) => {
   const changeValue = event => {
-    changeAction(event.target.value);
+    if (changeAction)
+      changeAction(event.target.value);
   };
 
   return (
@@ -21,7 +22,6 @@ const FormInput = ({
         style={alert ? { border: "1px solid #ff5757" } : { border: "none" }}
         type={type}
         placeholder={placeholder}
-        value={value}
         onChange={changeValue}
       />
       

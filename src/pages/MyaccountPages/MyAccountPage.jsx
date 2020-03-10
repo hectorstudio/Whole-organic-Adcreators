@@ -8,6 +8,7 @@ import MyProfilePage from "../../pages/MyaccountPages/MyProfilePage/MyProfilePag
 import FavourtesPage from "../../pages/MyaccountPages/FavouritesPage/FavouritesPage"
 import MyAdsPage from "../../pages/MyaccountPages/MyAdsPage/MyAdsPage"
 import RecentlyViewedPage from "../../pages/MyaccountPages/RecentlyViewedPage/RecentlyViewedPage"
+import PricingPage from "../../pages/MyaccountPages/PricingPage/PricingPage"
 //import ReactFileReader from "react-file-reader";
 
 const routes = [
@@ -45,6 +46,13 @@ const routes = [
     exact: true,
     title: 'Messages',
     component: MyProfilePage
+  },
+  {
+    id: '6',
+    path: '/my-account/pricing',
+    exact: true,
+    title: 'Pricing',
+    component: PricingPage
   },
 ]
 
