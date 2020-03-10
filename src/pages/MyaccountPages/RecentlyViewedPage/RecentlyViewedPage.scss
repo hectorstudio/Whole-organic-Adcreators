@@ -1,0 +1,14 @@
+@import "../../../layout/layout";
+
+.recently-view {
+  margin: 0 0 68px 8px;
+}
+
+.recently-view__title {
+  letter-spacing: -0.8px;
+
+  @include breakpoint($xl) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

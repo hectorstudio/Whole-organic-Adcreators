@@ -1,4 +1,4 @@
-import React, {useState, Fragment} from "react";
+import React, { Fragment } from "react";
 import { Switch, Route, useLocation } from 'react-router-dom'
 
 import "./MyAccountPage.scss";
@@ -7,6 +7,7 @@ import AccountMenu from "../../components/Header/AccountMenu";
 import MyProfilePage from "../../pages/MyaccountPages/MyProfilePage/MyProfilePage"
 import FavourtesPage from "../../pages/MyaccountPages/FavouritesPage/FavouritesPage"
 import MyAdsPage from "../../pages/MyaccountPages/MyAdsPage/MyAdsPage"
+import RecentlyViewedPage from "../../pages/MyaccountPages/RecentlyViewedPage/RecentlyViewedPage"
 //import ReactFileReader from "react-file-reader";
 
 const routes = [
@@ -33,10 +34,10 @@ const routes = [
   },
   {
     id: '4',
-    path: '/my-account/recentview',
+    path: '/my-account/recently-viewed',
     exact: true,
     title: 'Recently viewed',
-    component: MyProfilePage
+    component: RecentlyViewedPage
   },
   {
     id: '5',
@@ -50,7 +51,7 @@ const routes = [
 
 
 const MyAccountPage =() => {
-  const [address, setAddress] = useState([])
+//  const [address, setAddress] = useState([])
 
   const location = useLocation();
   const selectedCrumb = routes.find(route => route.path === location.pathname);
