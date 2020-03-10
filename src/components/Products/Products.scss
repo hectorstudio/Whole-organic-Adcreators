@@ -1,0 +1,240 @@
+@import "../../layout/layout";
+@import "../../layout/mixins";
+
+.products-list {
+  @extend %section-list;
+  margin: 23px 0 0 0;
+
+  @include breakpoint($xl) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include breakpoint($md) {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.products-list__item {
+  margin-bottom: 45px;
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.requests__item {
+  margin-bottom: 54px;
+
+  @include breakpoint($xl) {
+    &:last-child {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.products-list-product-header {
+  min-height: 370px;
+  position: relative;
+  z-index: 10;
+
+  @include breakpoint($md) {
+    min-height: auto;
+  }
+
+  @include breakpoint($sm) {
+    min-height: auto;
+  }
+}
+
+.products-list__img {
+  width: 570px;
+
+  @include breakpoint($md) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.products-list__text-price {
+  @extend %section-list__text-price;
+  width: 139px;
+  height: 55px;
+  bottom: 65px;
+  left: 0;
+
+  @include breakpoint($sm) {
+    bottom: 6px;
+    width: 30%;
+    height: 30px;
+  }
+}
+
+.products-list-price-block {
+  @extend %price-block;
+  font-size: 24px;
+
+  @include breakpoint($sm) {
+    font-size: 15px;
+  }
+}
+
+.products-list-price-block__text-dollar {
+  font-size: 16px;
+  padding: 0 1px 8px 0;
+
+  @include breakpoint($sm) {
+    font-size: 12px;
+  }
+}
+
+.products-product-footer {
+  margin-top: -10.2px;
+  @extend %product-footer;
+}
+
+.products-list__title {
+  @extend %section-list__title;
+  margin: 32px 0 0 19px;
+}
+
+.products-list__subtitle {
+  font-size: 18px;
+  margin-top: 2px;
+  color: $subtitle-color;
+  margin-left: 19px;
+  letter-spacing: -0.4px;
+
+  @include breakpoint($sm) {
+    font-size: 14px;
+  }
+}
+
+.products-list__text-info {
+  @extend %section-list__text-info;
+  margin: 22px 0 22px 19px;
+
+  @include breakpoint($sm) {
+    font-size: 14px;
+    margin: 12px 0 22px 19px;
+  }
+}
+
+.products-list__link {
+  @extend %section-list__link;
+}
+
+.products-icon {
+  right: 36px;
+  top: 62px;
+  font-size: 27px;
+
+  @include breakpoint($sm) {
+    font-size: 22px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.products-list__text-description {
+  @extend %products-list-description;
+  margin: 37px 0 0 20px;
+  width: 500px;
+
+  @include breakpoint($md) {
+    font-size: 14px;
+    width: 475px;
+  }
+
+  @include breakpoint($sm) {
+    text-align: center;
+    margin: 37px 20px 0 20px;
+    width: auto;
+  }
+}
+
+.products-list-btn-section {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: row;
+
+  @include breakpoint($sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.products-list-btn-section__edit {
+  margin: 0 0 38px 21px;
+  width: 150px;
+  height: 57px;
+  @extend %auth-button;
+
+  @include breakpoint($sm) {
+    margin: 0 0 20px 0;
+    width: 120px;
+  }
+}
+
+.products-list-btn-section__preview {
+  font-family: Nexa-Bold, sans-serif;
+  font-size: 16px;
+  margin-left: 13px;
+  width: 120px;
+  height: 57px;
+  border: 1px solid $ads-btn-text;
+  background-color: $white;
+  color: $acc-btn-border;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  @include breakpoint($sm) {
+    margin: 0 0 20px 0;
+  }
+}
+
+.products-list-btn-section__message {
+  @extend %auth-button;
+  padding-right: 13px;
+  letter-spacing: -0.1px;
+  margin: 0 0 0 21px;
+  width: 186px;
+  height: 57px;
+
+  @include breakpoint($sm) {
+    margin: 0 0 20px 0;
+    width: 130px;
+  }
+}
+
+.products-list-btn-section__feedback {
+  font-family: Nexa-Bold, sans-serif;
+  font-size: 16px;
+  margin: 0 0 40px 13px;
+  padding-right: 5px;
+  width: 186px;
+  height: 57px;
+  border: 1px solid $ads-btn-text;
+  background-color: $white;
+  color: $acc-btn-border;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  @include breakpoint($sm) {
+    margin: 0 0 40px 0;
+    width: 130px;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../layout/layout";
+
+.custom-title {
+  font-size: 31px;
+  color: $green-dark-section;
+  letter-spacing: -1.6px;
+  word-spacing: 2px;
+  //text-align: left;
+  @include breakpoint($md) {
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+.custom-text {
+  margin-top: 10px;
+  letter-spacing: -0.1px;
+  color: $green-dark;
+  font-family: Nexa-Light, sans-serif;
+
+  @include breakpoint($md) {
+    text-align: center;
+  }
+
+  @include breakpoint($sm) {
+    text-align: center;
+  }
+}

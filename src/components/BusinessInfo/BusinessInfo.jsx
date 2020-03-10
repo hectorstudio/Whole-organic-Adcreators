@@ -14,7 +14,7 @@ const BusinessInfo = () => {
   const [avatar, setAvatar] = useState(null);
   const [error, setError] = useState(null);
   const handleChange = () => {};
-
+  const defaultUserImg = require('../../images/default-user.jpg');
   return (
     <div className="business-info">
       <h2 className="business-info__title custom-title">My business account</h2>
@@ -30,7 +30,7 @@ const BusinessInfo = () => {
               multiple={false}
             >
               <Avatar
-                src={avatar ? avatar.preview.url : ""}
+                src={avatar ? avatar.preview.url : defaultUserImg}
                 size="129"
                 round={true}
               />

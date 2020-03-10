@@ -4,7 +4,7 @@ import Avatar from "react-avatar"
 import Files from "react-files"
 import FormInput from "../../components/FormElements/FormInput"
 import "./PersonalInfo.scss"
-
+const defaultUserImg = require('../../images/default-user.jpg');
 const PersonalInfo = () => {
   const [avatar, setAvatar] = useState(null)
   const [error, setError] = useState(null)
@@ -31,7 +31,7 @@ const PersonalInfo = () => {
               accepts={['image/*']}
               multiple={false}
             >
-              <Avatar src={avatar ? avatar.preview.url : ''} size="129" round={true} />
+              <Avatar src={avatar ? avatar.preview.url : defaultUserImg} size="129" round={true} />
             </Files>
           </div>
         </div>

@@ -5,6 +5,7 @@ import "./MyAccountPage.scss";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import AccountMenu from "../../components/Header/AccountMenu";
 import MyProfilePage from "../../pages/MyaccountPages/MyProfilePage/MyProfilePage"
+import FavourtesPage from "../../pages/MyaccountPages/FavouritesPage/FavouritesPage"
 //import ReactFileReader from "react-file-reader";
 
 const routes = [
@@ -20,7 +21,7 @@ const routes = [
     path: '/my-account/favourites',
     exact: true,
     title: 'Favourites',
-    component: MyProfilePage
+    component: FavourtesPage
   },
   {
     id: '3',
@@ -45,27 +46,49 @@ const routes = [
   },
 ]
 
-const breadCrumbs = [
-  {
-    id: '1',
-    title: 'Home',
-    path: '/',
-    active: ""
-  },
-  {
-    id: '2',
-    title: 'My account',
-    path: '/my-account',
-    active: "active"
-  }
-]
 
-const MyAccountPage = () => {
+
+const MyAccountPage =() => {
   const [address, setAddress] = useState([])
 
   const location = useLocation();
+  const selectedCrumb = routes.find(route => route.path === location.pathname);
+
   
-  
+  const breadCrumbs = selectedCrumb ? [
+    {
+      id: '1',
+      title: 'Home',
+      path: '/',
+      active: ""
+    },
+    {
+      id: '2',
+      title: 'My account',
+      path: '/my-account',
+      active: ""
+    },
+    {
+      id: '3',
+      title: selectedCrumb.title,
+      path: selectedCrumb.path,
+      active: "active"
+    }
+  ] : [
+    {
+      id: '1',
+      title: 'Home',
+      path: '/',
+      active: ""
+    },
+    {
+      id: '2',
+      title: 'My account',
+      path: '/my-account',
+      active: "active"
+    }
+  ]
+
   return (
       <Fragment>
         <Breadcrumbs breadcrumbsItems={breadCrumbs} />
