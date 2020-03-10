@@ -19,7 +19,9 @@
 }
 
 %list-item-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
@@ -34,7 +36,6 @@
 }
 
 %icon-container {
-  @extend %transform-translate;
   font-size: 19px;
 }
 
@@ -60,4 +61,119 @@
   .router__link {
     @extend %link;
   }
+}
+
+%auth-button {
+  font-family: Nexa-Bold, sans-serif;
+  border: none;
+  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  cursor: pointer;
+  color: $white;
+  font-size: 16px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+
+%focus-input {
+  top: -24px;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  color: $green-dark;
+  font-weight: bold;
+}
+
+%select-container {
+  display: flex;
+  height: 70px;
+  background-color: $light-gray;
+}
+
+%my-profile-title {
+  font-size: 21px;
+  margin-left: 7px;
+  color: $green-dark-section;
+  letter-spacing: -0.3px;
+}
+
+%account-title {
+  letter-spacing: -1.1px;
+  margin-left: 7px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+%label-inputs {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  color: $green-dark;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+%disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+%section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+%section-list__text-price {
+  position: absolute;
+  text-align: center;
+  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+}
+
+%price-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+%product-footer {
+  position: relative;
+  margin-top: -5px;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  border: 1px solid $border-color;
+}
+
+%section-list__title {
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  color: $green-dark-section;
+}
+
+%section-list__text-info {
+  font: 15px Nexa-Light, sans-serif;
+  color: $info-color;
+}
+
+%section-list__link {
+  color: $info-color;
+
+  &:hover {
+    color: $info-color;
+    text-decoration: none;
+  }
+}
+
+%products-list-description {
+  letter-spacing: -0.1px;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: Nexa-Light, sans-serif;
+  color: $info-color;
 }

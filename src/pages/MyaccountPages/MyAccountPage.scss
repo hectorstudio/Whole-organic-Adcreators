@@ -20,18 +20,22 @@
   .account-content {
     width: 1202px;
     margin-top: -10px;
-    
+  
+    @include breakpoint($xl) {
+      width: 890px;
+    }
+  
+    @include breakpoint($lg) {
+      width: 800px;
+    }
+  
+    @include breakpoint($md) {
+      width: 100%;
+    }
+  
+    @include breakpoint($sm) {
+      width: 100%;
+    }
   }
 
-}
-
-.account-menu {
-  display: flex;
-  flex-direction: column;
-  padding: 52px 36px 40px 49px;
-  height: 545px;
-  width: 321px;
-  background-color: #1fc5cb;
-  box-shadow: 0 3px 6px rgba(0,0,0,.2);
-  margin-bottom: 60px;
 }

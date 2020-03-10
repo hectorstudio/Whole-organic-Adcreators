@@ -2,10 +2,9 @@
 
 .header {
   background-color: $green-dark;
-  font-family: Nexa-Bold, sans-serif;
 }
 
-.form-container {
+.container {
   @extend %container-info;
 
   @include breakpoint($xl) {

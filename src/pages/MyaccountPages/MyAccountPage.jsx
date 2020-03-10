@@ -67,7 +67,7 @@ const MyAccountPage = () => {
   
   
   return (
-      <div>
+      <div className="container">
         <Breadcrumbs breadcrumbsItems={breadCrumbs} />
         <div className="my-account">
           <AccountMenu routes={routes} />

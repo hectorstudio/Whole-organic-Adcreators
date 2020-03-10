@@ -1,66 +1,255 @@
-.select-products {
-  margin-top: 91px;
-  .select-products__title {
-    font-size: 21px;
-    margin-left: 7px;
-    color: #125451;
-    letter-spacing: -.3px;
-  }
-  
-  .select-products-block {
-    margin: 30px 0 0 9px;
-    display: flex;
+@import "../../layout/layout";
+@import "../../layout/mixins";
+
+%select-content {
+  position: relative;
+  font: 17px Nexa-Light, sans-serif;
+
+  @include breakpoint($lg) {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: .28571429rem;
+    width: 60% !important;
     height: 70px;
-    background-color: #f4f4f4;
+    margin-top: 30px;
   }
 
-  .select-category-products {
-    width: 344px;
+  @include breakpoint($md) {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: .28571429rem;
+    width: 60% !important;
   }
-  .select-subcategory-products {
-    width: 379px;
+
+  @include breakpoint($sm) {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: .28571429rem;
+    width: 100% !important;
   }
-  .select-category-products, .select-subcategory-products {
-    position: relative;
-    font: 17px Nexa-Light,sans-serif;
-  }
-  
-  .search-container__items {
-    position: relative;
-    border-right: 2px solid #fff;
+}
+
+.select-products {
+  margin-top: 91px;
+
+  @include breakpoint($md) {
     display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  @include breakpoint($sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.select-products__title {
+  @extend %my-profile-title;
+  @include breakpoint($sm) {
+    text-align: center;
+  }
+}
+
+.select-products-block {
+  margin: 30px 0 0 9px;
+  @extend %select-container;
+
+  @include breakpoint($lg) {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include breakpoint($md) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+  }
+}
+
+.select-category-products {
+  width: 344px;
+  @extend %select-content;
+}
+
+.select-subcategory-products {
+  width: 379px;
+  @extend %select-content;
+}
+
+.input-products {
+  width: 470px;
+  border-right: none;
+
+  @include breakpoint($lg) {
+    width: 60%;
+    height: 70px;
+    border-right: none;
+    margin: 30px 0;
+  }
+
+  @include breakpoint($md) {
+    width: 60%;
+  }
+
+  @include breakpoint($sm) {
+    width: 100%;
+  }
+}
+
+.btn-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+
+  @include breakpoint($md) {
+    width: 90px;
+  }
+
+  @include breakpoint($sm) {
+    width: 75px;
+  }
+}
+
+.ui.input.select-products-block__input {
+  width: 349px;
+  padding: 0 0 0 15.6px;
+
+  @include breakpoint($lg) {
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include breakpoint($md) {
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include breakpoint($sm) {
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ui.input.select-products-block__input input {
+  padding: 5px 0 0 18px;
+  background-color: $light-gray;
+  border: none;
+  font: 17px Nexa-Light, sans-serif;
+  color: $text-color !important;
+  &::placeholder {
+    color: $text-color !important;
+    font: 17px Nexa-Light, sans-serif;
+
+    @include breakpoint($lg) {
+      padding: 0;
+    }
+
+    @include breakpoint($md) {
+      padding: 0;
+      font-size: 15.5px;
+    }
+
+    @include breakpoint($sm) {
+      font-size: 15px;
+    }
+  }
+
+  @include breakpoint($lg) {
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    padding-left: 20px;
+  }
+
+  @include breakpoint($md) {
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    padding-left: 8px;
+  }
+
+  @include breakpoint($sm) {
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    padding-left: 5px;
+    background-color: $white;
+  }
+}
+
+.selected-items {
+  margin: 26px 0 0 9px;
+  @include breakpoint($md) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
-  .input-products {
-    width: 470px;
-    border-right: none;
-    .input.select-products-block__input {
-      width: 349px;
-      padding: 0 0 0 15.6px;
-    }
-    .input {
-      font-size: 1em;
-      position: relative;
-      font-weight: 400;
-      font-style: normal;
-      display: inline-flex;
-      color: rgba(0,0,0,.87);
-    }
+  @include breakpoint($sm) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.selected-items-text-wrapper {
+  margin-left: 30.9px;
+  &:first-child {
+    margin-left: 0;
   }
 
-  .search-container-form__btn {
-      cursor: pointer;
-      position: relative;
-      font: 16px Nexa-Bold;
-      width: 189px;
-      height: 100%;
-      color: #fff;
-      border: none;
-      background-color: #14bbc6;
-      background-image: -webkit-gradient(linear,left top,right top,from(#0cb69b),to(#14bbc6));
-      background-image: linear-gradient(90deg,#0cb69b,#14bbc6);
-      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr="#0CB69B",EndColorStr="#14BBC6");
+  @include breakpoint($sm) {
+    margin: 20px 0 0 0;
   }
+}
+
+.selected-items__text {
+  font-size: 13px;
+  color: $green-dark;
+  letter-spacing: -0.1px;
+  text-decoration: underline;
+}
+
+.icon-remove-category {
+  color: $green-dark;
+  font-size: 9px;
+  margin-left: 9px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include breakpoint($sm) {
+    font-size: 12px;
+  }
+}
+
+.select-products_btn {
+  letter-spacing: -0.5px;
+  margin: 53px 0 0 9px;
+  padding-right: 15px;
+  width: 183px;
+  height: 57px;
+  @extend %auth-button;
+}
+
+.disabled {
+  @extend %disabled;
 }

@@ -1,5 +1,17 @@
 div.files-dropzone {
   width: 129px;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+.avatar-block {
+  margin-top: 20px;
+  position: relative;
+  width: 141px;
+  height: 141px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #1fc5cb;
 }
 
 .my-profile {

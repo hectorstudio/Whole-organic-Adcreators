@@ -9,7 +9,6 @@ const PersonalInfo = () => {
   const [avatar, setAvatar] = useState(null)
   const [error, setError] = useState(null)
   const handleFileChange = files => {
-    console.log(files)
     setAvatar(files[0])
   }
   const handleFileError = err => setError(err)
