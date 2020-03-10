@@ -9,7 +9,7 @@ const UserButton = ({ text, action, disabled, varient }) => {
   return (
     <button
       className={`btn ${varient || ''}`}
-      onClick={action(text)}
+      onClick={action}
       disabled={disabled ? true : false}
     >
       {text}
