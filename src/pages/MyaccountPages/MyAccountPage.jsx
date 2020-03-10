@@ -6,6 +6,7 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import AccountMenu from "../../components/Header/AccountMenu";
 import MyProfilePage from "../../pages/MyaccountPages/MyProfilePage/MyProfilePage"
 import FavourtesPage from "../../pages/MyaccountPages/FavouritesPage/FavouritesPage"
+import MyAdsPage from "../../pages/MyaccountPages/MyAdsPage/MyAdsPage"
 //import ReactFileReader from "react-file-reader";
 
 const routes = [
@@ -28,7 +29,7 @@ const routes = [
     path: '/my-account/my-ads',
     exact: true,
     title: 'My ads',
-    component: MyProfilePage
+    component: MyAdsPage
   },
   {
     id: '4',
