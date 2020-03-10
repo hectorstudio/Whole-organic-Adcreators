@@ -202,6 +202,25 @@
       font-size: 13px;
       font-family: Nexa-Bold,sans-serif;
       color: #6a6a6a;
+
+      &::placeholder {
+        font-size: 13px;
+        font-family: Nexa-Bold, sans-serif;
+        color: #6a6a6a;
+      }
+    
+      &:focus {
+        outline-color: #6a6a6a;
+      }
+
+      @include breakpoint($md) {
+        width: 100%;
+      }
+    
+      @include breakpoint($sm) {
+        width: 100%;
+      }
+
     }
     .label-for-textarea {
       position: absolute;

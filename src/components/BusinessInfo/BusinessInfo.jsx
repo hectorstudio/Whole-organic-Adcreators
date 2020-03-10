@@ -37,6 +37,7 @@ const BusinessInfo = () => {
         <div className="business-block-input-section-row">
           <div className="select__item">
             <p className="select__item-title">Select business type</p>
+            
           </div>
           <div className="business-block-input-wrapper wrapper">
             <label className="label-for-input">Add business name</label>
@@ -52,6 +53,7 @@ const BusinessInfo = () => {
           <div className="business-block-input-location__item select-wrapper">
             <FormLocation title="" />
           </div>
+          <button className="business-block-input-section__btn">Save changes</button>
         </div>
       </form>
     </div>

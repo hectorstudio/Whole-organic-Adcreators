@@ -71,13 +71,14 @@
   &:hover {
     text-decoration: none;
   }
-  &.active {
-    text-decoration: none;
-  }
 }
 
 .sign-up-text-between-link {
   padding-right: 2px;
+}
+
+.active {
+  text-decoration: none;
 }
 
 .cart-container {
@@ -87,7 +88,9 @@
     color: $white;
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
   }
 
@@ -102,16 +105,16 @@
 
 .counter-container {
   position: absolute;
-  top: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -2px;
   right: -12px;
   width: 24px;
   height: 24px;
   @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
   border-radius: 50%;
   border: 1px solid $green-dark;
-  .counter-text {
-    @extend %transform-translate;
-  }
 }
 
 .post-link {

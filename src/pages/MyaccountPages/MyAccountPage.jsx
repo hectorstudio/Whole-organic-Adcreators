@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, Fragment} from "react";
 import { Switch, Route, useLocation } from 'react-router-dom'
 
 import "./MyAccountPage.scss";
@@ -67,7 +67,7 @@ const MyAccountPage = () => {
   
   
   return (
-      <div className="container">
+      <Fragment>
         <Breadcrumbs breadcrumbsItems={breadCrumbs} />
         <div className="my-account">
           <AccountMenu routes={routes} />
@@ -85,7 +85,7 @@ const MyAccountPage = () => {
             </Switch>
           </div>
         </div>
-      </div>
+      </Fragment>
   );
 };
 

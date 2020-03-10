@@ -22,7 +22,7 @@ p {
   }
 
   .personal-info__title {
-    
+    @extend %account-title;
   }
 
   .personal-info-form {
@@ -39,7 +39,45 @@ p {
       align-items: center;
       width: 100%;
     }
-    
+  }
+  .personal-info__link {
+    letter-spacing: -0.2px;
+    margin-left: 8px;
+    font-size: 13px;
+    color: $green-dark;
+  
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  .personal-info__btn {
+    margin: 35px 0 0 9px;
+    padding-right: 22px;
+    letter-spacing: -1px;
+    word-spacing: 4px;
+    display: block;
+    width: 183px;
+    height: 57px;
+    @extend  %auth-button;
+  }
+  
+  .disabled {
+    @extend %disabled;
+  }
+
+  @include breakpoint($md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include breakpoint($sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .personal-block-input-section {
@@ -56,6 +94,7 @@ p {
     @include breakpoint($sm) {
       width: 100%;
       margin-top: 10px;
+      margin-left: 20px;
       flex-direction: column;
       align-items: center;
     }
@@ -90,7 +129,7 @@ p {
 
     @include breakpoint($sm) {
       margin-top: 40px;
-
+      width: 100%;
       &:first-child {
         margin-right: 0;
       }
@@ -123,23 +162,9 @@ p {
     //@extend  %auth-button;
   }
 
-  .disabled {
-    //@extend %disabled;
-  }
 
-  @include breakpoint($md) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 
-  @include breakpoint($sm) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+ 
 }
 
 
