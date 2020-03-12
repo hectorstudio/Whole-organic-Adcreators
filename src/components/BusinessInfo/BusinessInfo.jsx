@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import "./BusinessInfo.scss";
+import "../Search/SearchItems"
 import Avatar from "react-avatar";
 import Files from "react-files";
 import FormLocation from "../../components/FormElements/FormLocation";
-import FormSelect from "../FormElements/FormSelect";
+import Select from 'react-select'
 const BusinessInfo = () => {
   const handleFileChange = files => {
     console.log(files);
     setAvatar(files[0]);
   };
   const handleFileError = err => setError(err);
-
+  const selOptions = [
+    { text: "Sole Trader", value: "Sole Trader" },
+    { text: "Private Company", value: "Private Company" },
+    { text: "Partnership", value: "Partnership" }
+  ]
   const [avatar, setAvatar] = useState(null);
   const [error, setError] = useState(null);
   const handleChange = () => {};
@@ -42,7 +47,8 @@ const BusinessInfo = () => {
         <div className="business-block-input-section-row">
           <div className="select__item">
             <p className="select__item-title">Select business type</p>
-            <FormSelect placeholder="Select a category" name="category" />
+            <Select placeholder="Sole Trader" />
+            <i className="icon-dropdown" />
           </div>
           <div className="business-block-input-wrapper wrapper">
             <label className="label-for-input">Add business name</label>
@@ -66,10 +72,10 @@ const BusinessInfo = () => {
           <div className="business-block-input-location__item select-wrapper">
             <FormLocation title="" />
           </div>
-          <button className="business-block-input-section__btn">
+        </div>
+        <button className="business-block-input-section__btn">
             Save changes
           </button>
-        </div>
       </form>
     </div>
   );

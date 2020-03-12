@@ -9,6 +9,7 @@ import SetupProfilePage from '../../pages/SetupProfilePage/SetupProfilePage'
 import ForgotPassPage from '../../pages/ForgotPassPage/ForgotPassPage'
 import CreatePassPage from '../../pages/CreatePassPage/CreatePassPage'
 import MyAccountPage from '../../pages/MyaccountPages/MyAccountPage'
+import SearchListPage from '../../pages/SearchListPage/SearchListPage'
 import './Main.scss';
 
 const routes = [
@@ -65,6 +66,11 @@ const routes = [
     id: '9',
     path: '/my-account',
     component: MyAccountPage
+  },
+  {
+    id: '10',
+    path: '/search-list',
+    component: SearchListPage
   }
 ];
 

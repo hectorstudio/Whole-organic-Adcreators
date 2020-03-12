@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./AddressModal.scss";
-import FormSelect from "../FormElements/FormSelect";
+import Select from "react-select"
 
 const AddressModal = props => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const AddressModal = props => {
     },
     {
       id: "2",
-      street: "10B Random Street"
+      street: "9a Newcastle Street, Rose Bay 2029"
     }
   ];
 
@@ -70,27 +70,18 @@ const AddressModal = props => {
               </div>
               <div className="addresses-select__item">
                 <p className="addresses-select__item-title">City</p>
-                <FormSelect
-                  placeholder="Select"
-                  name="subcategory"
-                  onChange={handleChange}
-                />
+                <Select placeholder="Select" />
+                <i className="icon-dropdown" />
               </div>
               <div className="addresses-select__item">
                 <p className="addresses-select__item-title">State/Province</p>
-                <FormSelect
-                  placeholder="Select"
-                  name="subcategory"
-                  onChange={handleChange}
-                />
+                <Select placeholder="Select" />
+                <i className="icon-dropdown" />
               </div>
               <div className="addresses-select__item">
                 <p className="addresses-select__item-title">Country</p>
-                <FormSelect
-                  placeholder="Select"
-                  name="subcategory"
-                  onChange={handleChange}
-                />
+                <Select placeholder="Select" />
+                <i className="icon-dropdown" />
               </div>
               <button type="button" className="my-addresses-modal-form__btn">
                 Send address

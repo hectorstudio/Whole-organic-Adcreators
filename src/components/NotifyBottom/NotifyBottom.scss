@@ -1,7 +1,7 @@
 @import "../../layout/layout";
 
-.notify {
-  margin-top: 80px;
+.notify-bottom {
+  margin: 102px 0 0 2px;
 
   @include breakpoint($md) {
     display: flex;
@@ -18,20 +18,20 @@
   }
 }
 
-.notify__title {
+.notify-bottom__title {
   @extend %my-profile-title;
 }
 
-.notify-checkbox-block {
-  width: 533px;
+.notify-bottom-checkbox-block {
+  margin: 30px 0 0 7px;
+  width: 542px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 31px 0 0 7px;
 
   @include breakpoint($md) {
-    width: 504px;
+    width: 508px;
     margin: 31px 0 0 0;
   }
 
@@ -42,6 +42,8 @@
   }
 }
 
-.notify-checkbox-block__item {
-  margin-bottom: 29px;
+.notify-bottom-checkbox-block__item {
+  @include breakpoint($sm) {
+    margin-bottom: 40px;
+  }
 }
