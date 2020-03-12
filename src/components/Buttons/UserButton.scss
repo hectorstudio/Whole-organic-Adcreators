@@ -9,7 +9,7 @@
   width: 183px;
   height: 57px;
   &:disabled {
-    opacity: 0.4;
+    background-color: #0cb69b;
     pointer-events: none;
   }
   &:hover {
