@@ -23,6 +23,9 @@ const SelectProduct = ({ products = [] }) => {
   const [currentCat, setCurrentCat] = useState("");
   const [currentSub, setCurrentSub] = useState("");
   const [productName, setProductName] = useState("");
+  const [searchData, setSearchData] = useState("");
+  const [categoriesData, setCategoriesData] = useState("");
+  const [filterData, setFilterData] = useState("");
 
   const handleClick = () => {
     let data = [...selected];
