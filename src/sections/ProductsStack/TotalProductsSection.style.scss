@@ -1,0 +1,19 @@
+@import "../../layout/layout";
+
+.products-container {
+  width: 75%;
+
+  .section-list{
+    margin-top: 0px;
+    .section-list__item {
+      @include breakpoint($lg) {
+        width: 45%;
+      }
+    }
+  }
+  @include breakpoint($sm) {
+     margin-top: 0;
+   }
+}
+
+
