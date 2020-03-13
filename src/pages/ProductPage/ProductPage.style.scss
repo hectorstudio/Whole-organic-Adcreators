@@ -1,0 +1,27 @@
+@import "../../layout/layout";
+
+.product-search-section {
+  padding: 153px 0px 150px;
+  background: url(../../images/search-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.products-section {
+  .products-title {
+    display: flex;
+    align-items: center;
+    img {
+      width: 57px;
+      height: 67px;
+    }
+    h2 {
+      font-size: 30px;
+      font-family: Nexa-Bold, sans-serif;
+    }
+  }
+  .products-body{
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
