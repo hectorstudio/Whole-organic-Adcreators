@@ -11,6 +11,7 @@ import CreatePassPage from '../../pages/CreatePassPage/CreatePassPage'
 import MyAccountPage from '../../pages/MyaccountPages/MyAccountPage'
 import SearchListPage from '../../pages/SearchListPage/SearchListPage'
 import './Main.scss';
+import ProductPage from '../../pages/ProductPage/ProductPage'
 
 const routes = [
   {
@@ -71,7 +72,7 @@ const routes = [
     id: '10',
     path: '/search-list',
     component: SearchListPage
-  }
+  },
 ];
 
 const Main = () => {

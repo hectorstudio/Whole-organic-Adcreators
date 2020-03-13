@@ -3,7 +3,6 @@
 .section-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 20px;
 
   @include breakpoint($md) {
@@ -14,7 +13,9 @@
 }
 
 .section-list__item {
+  width: 30%;
   margin-bottom: 40px;
+  margin: 0px 30.8px 26.5px 0px;
 
   @include breakpoint($sm) {
     width: 100%;
@@ -26,6 +27,7 @@
 }
 
 .section-list__img {
+  width: 100%;
   @include breakpoint($sm) {
     width: 100%;
   }
@@ -36,7 +38,11 @@
   width: 124px;
   height: 50px;
   text-align: center;
-  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-primary-color,
+    $cyan-secondary-color
+  );
   bottom: 57px;
   left: 0;
 

@@ -3,6 +3,7 @@ import NavigationSection from './sections/Header/NavigationSection';
 import './App.scss';
 import FooterSection from './sections/Footer/FooterSection';
 import Main from './components/Main/Main';
+import Products from './components/Main/Products';
 import useResizeAware from 'react-resize-aware';
 import HeaderContainer from './sections/Header/HeaderContainer';
 
@@ -26,6 +27,7 @@ function App() {
         </div>
       </header>
       <Main />
+      <Products />
       <FooterSection />
     </React.Fragment>
   );
