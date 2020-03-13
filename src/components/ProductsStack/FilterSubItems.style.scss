@@ -1,0 +1,16 @@
+@import "../../layout/layout";
+
+.filter-sub-items {
+  margin-bottom: 37px;
+  .sub-title {
+    color: #17aaa6;
+    font-size: 15px;
+    font-family: Nexa-Bold, sans-serif;
+  }
+  .filter-item {
+    color: #383838;
+    span {
+      font-size: 15px;
+    }
+  }
+}
