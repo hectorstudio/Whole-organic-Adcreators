@@ -35,6 +35,7 @@ const PersonalInfo = () => {
             </Files>
           </div>
         </div>
+        <div className="error">{error}</div>
       </div>
       <form className="personal-info-form">
         <div className="personal-block-input-section">

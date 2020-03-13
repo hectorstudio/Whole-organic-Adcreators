@@ -1,9 +1,9 @@
-import React from 'react';
-import { Input } from 'semantic-ui-react';
-import Select from 'react-select';
-import PropTypes from 'prop-types';
-import 'semantic-ui-css/components/input.css';
-import '../Search/SearchItems.scss';
+import React from "react";
+import { Input } from "semantic-ui-react";
+import Select from "react-select";
+import PropTypes from "prop-types";
+import "semantic-ui-css/components/input.css";
+import "../Search/SearchItems.scss";
 
 const ProductSearchItems = ({
   btnTitle,
@@ -12,10 +12,9 @@ const ProductSearchItems = ({
   categoriesData,
   searchData,
   setSearchData,
-  setFilterData
+  handleClick
 }) => {
   let content;
-
   const categoryVal = searchData.selectedCategory;
   const subcategoryVal = searchData.selectedSubcategory;
   const searchVal = searchData.searchText;
@@ -73,17 +72,16 @@ const ProductSearchItems = ({
   };
 
   const addHandler = () => {
-    
-  }
-  
+    handleClick();
+  };
 
-  if (placeholderTitle === 'Select a category') {
+  if (placeholderTitle === "Select a category") {
     content = (
       <div className="search-container__items select-category-products">
         <Select
           placeholder={placeholderTitle}
           options={sortedData(categoriesData)}
-          onChange={categoryHandler}
+          onChange={event => categoryHandler(event, categoryVal)}
           value={categoryVal}
         />
         <i className="icon-dropdown" />
@@ -91,7 +89,7 @@ const ProductSearchItems = ({
     );
   }
 
-  if (placeholderTitle === 'Select sub-category') {
+  if (placeholderTitle === "Select sub-category") {
     content = (
       <div className="search-container__items select-subcategory-products">
         <Select
@@ -120,8 +118,10 @@ const ProductSearchItems = ({
           onChange={searchHandler}
         />
         <button
-          className={`search-container-form__btn btn-products ${!categoryVal && !searchVal ? 'disabled' : ''}`}
-          type={'button'}
+          className={`search-container-form__btn btn-products ${
+            !categoryVal && !searchVal ? "disabled" : ""
+          }`}
+          type={"button"}
           onClick={addHandler}
         >
           <i className={icon} />
@@ -140,10 +140,10 @@ ProductSearchItems.propTypes = {
   btnTitle: PropTypes.string,
   placeholderTitle: PropTypes.string,
   searchData: PropTypes.object,
-  setFilterData: PropTypes.func,
   setSearchData: PropTypes.func,
   categoriesData: PropTypes.arrayOf(Object),
-  icon: PropTypes.string
+  icon: PropTypes.string,
+  handleClick: PropTypes.func
 };
 
 export default ProductSearchItems;

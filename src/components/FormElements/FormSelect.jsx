@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./FormSelect.style.scss";
 
 const options = [
@@ -7,27 +7,9 @@ const options = [
   { value: "vanilla", label: "Vanilla" }
 ];
 
-const useOutsideDetect = (ref1, handleClick) => {
-  const handleClickOutside = (event) => {
-    if (ref1.current && !ref1.current.contains(event.target)) {
-      handleClick(false);
-    }
-  }
-  useEffect(() => {
-    // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  });
-};
-
 const FormSelect = ({ placeholder, defaultValue, name, setValue }) => {
   const [opened, setOpened] = useState("");
   const [title, setTitle] = useState("");
-
-  const selectDrop = useRef(null);
 
   useEffect(() => {
     if (opened === "") {

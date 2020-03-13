@@ -13,7 +13,7 @@ const routes = [
 
 const Products = () => {
   return (
-    <main className={'main'}>
+    <main className={'products'}>
       <Switch>
         {routes.map(item => (
           <Route

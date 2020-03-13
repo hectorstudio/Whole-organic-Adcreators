@@ -16,6 +16,14 @@ const BusinessInfo = () => {
     { text: "Private Company", value: "Private Company" },
     { text: "Partnership", value: "Partnership" }
   ]
+  const sortedData = arr => {
+    return arr.map(item => {
+      return {
+        label: item.text,
+        value: item.text
+      };
+    });
+  };
   const [avatar, setAvatar] = useState(null);
   const [error, setError] = useState(null);
   const handleChange = () => {};
@@ -42,12 +50,13 @@ const BusinessInfo = () => {
             </Files>
           </div>
         </div>
+        <div className="error">{error}</div>
       </div>
       <form className="business-block-input-section">
         <div className="business-block-input-section-row">
           <div className="select__item">
             <p className="select__item-title">Select business type</p>
-            <Select placeholder="Sole Trader" />
+            <Select placeholder="Sole Trader" options={sortedData(selOptions)}/>
             <i className="icon-dropdown" />
           </div>
           <div className="business-block-input-wrapper wrapper">
