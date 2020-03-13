@@ -1,0 +1,11 @@
+@import "../../layout/layout";
+
+.products-filter {
+  width: 22%;
+  background-color: #f4f4f4;
+  padding: 25px 25px 37px 37px;
+  @include breakpoint($lg) {
+    max-width: 267px;
+  }
+  margin-right: 46.6px;
+}
