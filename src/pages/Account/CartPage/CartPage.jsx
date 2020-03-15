@@ -19,7 +19,7 @@ const breadCrumbs = [
 
 const CartPage = () => {
   return (
-    <div className="cart-container">
+    <div>
       <Breadcrumb breadcrumbsItems={breadCrumbs} />
       <h2>My Cart</h2>
       <div className="row">

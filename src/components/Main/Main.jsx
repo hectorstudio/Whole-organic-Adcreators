@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router'
 import HomePage from '../../pages/Home/HomePage/HomePage'
-import CartPage from '../../pages/Home/CartPage/CartPage'
+import CartPage from '../../pages/Account/CartPage/CartPage'
 import AboutPage from '../../pages/Home/AboutPage/AboutPage'
 import LoginPage from '../../pages/Auth/LoginPage/LoginPage'
 import RegisterPage from '../../pages/Auth/RegisterPage/RegisterPage'
