@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./BusinessInfo.scss";
-import "../Search/SearchItems"
+import "../../Search/SearchItems"
 import Avatar from "react-avatar";
 import Files from "react-files";
-import FormLocation from "../../components/FormElements/FormLocation";
+import FormLocation from "../../../components/FormElements/FormLocation";
 import Select from 'react-select'
 const BusinessInfo = () => {
   const handleFileChange = files => {
@@ -27,7 +27,7 @@ const BusinessInfo = () => {
   const [avatar, setAvatar] = useState(null);
   const [error, setError] = useState(null);
   const handleChange = () => {};
-  const defaultUserImg = require('../../images/default-user.jpg');
+  const defaultUserImg = require('../../../images/default-user.jpg');
   return (
     <div className="business-info">
       <h2 className="business-info__title custom-title">My business account</h2>

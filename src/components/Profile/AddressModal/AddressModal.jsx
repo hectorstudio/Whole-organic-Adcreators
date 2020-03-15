@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./AddressModal.scss";
-import FormSelect from "../FormElements/FormSelect";
+import FormSelect from "../../FormElements/FormSelect";
 
 const AddressModal = props => {
   const [isOpen, setIsOpen] = useState(false);

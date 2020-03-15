@@ -1,7 +1,7 @@
 import React from "react";
 import "./SetupProfilePage.style.scss";
-import ProfileForm from "../../components/Forms/ProfileForm";
-import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import ProfileForm from "../../../components/Forms/ProfileForm";
+import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs";
 
 const breadCrumbs = [
   {

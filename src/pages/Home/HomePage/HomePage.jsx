@@ -1,10 +1,10 @@
 import React from "react";
-import SliderSection from "../../sections/Slider/SliderSection";
+import SliderSection from "../../../sections/Slider/SliderSection";
 import "./HomePage.scss";
-import SearchContainer from "../../sections/Search/SearchContainer";
-import RecommendedContainer from "../../sections/ProductsStack/RecommendedContainer";
-import MostPopularContainer from "../../sections/ProductsStack/MostPopularContainer";
-import DoNotMissContainer from "../../sections/ProductsStack/DoNotMissContainer";
+import SearchContainer from "../../../sections/Search/SearchContainer";
+import RecommendedContainer from "../../../sections/ProductsStack/RecommendedContainer";
+import MostPopularContainer from "../../../sections/ProductsStack/MostPopularContainer";
+import DoNotMissContainer from "../../../sections/ProductsStack/DoNotMissContainer";
 
 const HomePage = () => {
   return (

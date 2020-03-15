@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import UserButton from "../../components/Buttons/UserButton";
+import UserButton from "../../../components/Buttons/UserButton";
 import Avatar from "react-avatar"
 import Files from "react-files"
-import FormInput from "../../components/FormElements/FormInput"
+import FormInput from "../../../components/FormElements/FormInput"
 import "./PersonalInfo.scss"
-const defaultUserImg = require('../../images/default-user.jpg');
+const defaultUserImg = require('../../../images/default-user.jpg');
 const PersonalInfo = () => {
   const [avatar, setAvatar] = useState(null)
   const [error, setError] = useState(null)

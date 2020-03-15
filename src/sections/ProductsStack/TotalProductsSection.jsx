@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './TotalProductsSection.style.scss';
 import axios from 'axios';
-import SectionItemsContainer from '../../components/ProductsStack/SectionItemsContainer';
+import SectionItemsContainer from '../../components/Products/ProductsStack/SectionItemsContainer';
 
 const RecommendedSection = ({
   recommendedData,

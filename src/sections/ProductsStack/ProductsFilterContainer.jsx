@@ -1,5 +1,5 @@
 import React from "react";
-import FilterSubItems from "../../components/ProductsStack/FilterSubItems";
+import FilterSubItems from "../../components/Products/ProductsStack/FilterSubItems";
 import "./ProductsFilterContainer.style.scss";
 
 const items = ["All", "Sunscreen", "Lotions", "Creams", "Sprays", "Gels", "Body Wash"];

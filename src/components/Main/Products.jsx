@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router'
 import './Main.scss';
-import ProductPage from '../../pages/ProductPage/ProductPage'
+import ProductPage from '../../pages/Product/ProductPage'
 
 const routes = [
   {

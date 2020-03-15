@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import {
   setProductsId,
   filterProductsId
-} from '../../store/favorits/favoritsActions';
+} from '../../../store/favorits/favoritsActions';
 import SectionItems from './SectionItems';
 
 const mapStateToProps = state => {

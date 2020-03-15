@@ -3,7 +3,7 @@ import React from 'react';
 import './Head.scss';
 import PropTypes from 'prop-types';
 
-const sectionLogo = require('../../images/section-logo.png');
+const sectionLogo = require('../../../images/section-logo.png');
 
 const Head = ({ title }) => {
   return (

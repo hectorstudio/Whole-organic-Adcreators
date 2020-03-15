@@ -1,14 +1,14 @@
 import React from 'react'
 import { Switch, Route } from 'react-router'
-import HomePage from '../../pages/HomePage/HomePage'
-import CartPage from '../../pages/CartPage/CartPage'
-import AboutPage from '../../pages/AboutPage/AboutPage'
-import LoginPage from '../../pages/LoginPage/LoginPage'
-import RegisterPage from '../../pages/RegisterPage/RegisterPage'
-import SetupProfilePage from '../../pages/SetupProfilePage/SetupProfilePage'
-import ForgotPassPage from '../../pages/ForgotPassPage/ForgotPassPage'
-import CreatePassPage from '../../pages/CreatePassPage/CreatePassPage'
-import MyAccountPage from '../../pages/MyaccountPages/MyAccountPage'
+import HomePage from '../../pages/Home/HomePage/HomePage'
+import CartPage from '../../pages/Home/CartPage/CartPage'
+import AboutPage from '../../pages/Home/AboutPage/AboutPage'
+import LoginPage from '../../pages/Auth/LoginPage/LoginPage'
+import RegisterPage from '../../pages/Auth/RegisterPage/RegisterPage'
+import SetupProfilePage from '../../pages/Account/SetupProfilePage/SetupProfilePage'
+import ForgotPassPage from '../../pages/Auth/ForgotPassPage/ForgotPassPage'
+import CreatePassPage from '../../pages/Auth/CreatePassPage/CreatePassPage'
+import MyAccountPage from '../../pages/Account/MyAccountPage'
 import './Main.scss';
 
 const routes = [

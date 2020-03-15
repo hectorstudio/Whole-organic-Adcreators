@@ -1,5 +1,5 @@
 import React from "react";
-import Breadcrumb from "../../components/Breadcrumbs/Breadcrumbs";
+import Breadcrumb from "../../../components/Breadcrumbs/Breadcrumbs";
 import "./CartPage.scss";
 
 const breadCrumbs = [
