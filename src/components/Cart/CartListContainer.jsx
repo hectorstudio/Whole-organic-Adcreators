@@ -1,14 +1,17 @@
 import React from "react";
+import CartItem from "./CartItem";
 import "./CartListContainer.style.scss";
 
-const CartListContainer = () => {
+const CartListContainer = ({ items, cartInfo, removeItem }) => {
   return (
     <div className="cart-list">
-      <div className="cart-item">
-        <div className="item-image"></div>
-        <div className="item-detail"></div>
-        <div className="cart-action"></div>
-      </div>
+      {items.map((item, index) => (
+        <CartItem
+          key={`cart-item-${index}`}
+          item={item}
+          removeItem={removeItem}
+        />
+      ))}
     </div>
   );
 };
