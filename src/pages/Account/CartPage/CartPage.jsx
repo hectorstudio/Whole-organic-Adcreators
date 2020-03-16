@@ -62,14 +62,19 @@ const CartPage = () => {
   const [cartInfo, setCartInfo] = useState([]);
 
   useEffect(() => {
-    if (cartItems.length < 1) {
+    if (cartItems.length < 1 && !mockupCartItems.length < 1) {
       setCartItems(mockupCartItems);
       setCartInfo(mockupCartInfo);
     }
   }, [cartItems, cartInfo]);
 
   const removeItem = value => {
-    console.log("Remove Item:", value);
+    let data = [...cartItems];
+    data = data.filter(element => element.id !== value);
+    setCartItems(data);
+    let cart = [...cartInfo];
+    cart = cart.filter(element => element.id !== value);
+    setCartInfo(cart);
   };
 
   const clickCheckout = value => {
@@ -79,8 +84,8 @@ const CartPage = () => {
   return (
     <div className="cart-list-container">
       <Breadcrumb breadcrumbsItems={breadCrumbs} />
-      <h2 className="cart-title">My Cart{cartItems.length}</h2>
-      <div className="row">
+      <h2 className="cart-title">My Cart({cartItems.length})</h2>
+      <div className="row cart-body">
         <CartListContainer
           items={cartItems}
           cartInfo={cartInfo}
