@@ -19,12 +19,12 @@
       font-size: 26px;
     }
   }
-  
+
   .custom-text {
     margin-top: 10px;
-    letter-spacing: -.1px;
+    letter-spacing: -0.1px;
     color: #0f4542;
-    font-family: Nexa-Light,sans-serif;
+    font-family: Nexa-Light, sans-serif;
     @include breakpoint($md) {
       text-align: center;
     }
@@ -50,7 +50,4 @@
       width: 100% !important;
     }
   }
-
-
 }
-

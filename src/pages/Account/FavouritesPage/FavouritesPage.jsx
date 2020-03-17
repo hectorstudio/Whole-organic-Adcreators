@@ -1,7 +1,7 @@
-import React from 'react';
-import './FavouritesPage.style.scss'
-import '../../../constants/css/CustomTitle.style.scss'
-import Products from '../../../components/Products'
+import React from "react";
+import "./FavouritesPage.style.scss";
+import "../../../constants/css/CustomTitle.style.scss";
+import Products from "../../../components/Products";
 
 const productData = [
   {
@@ -52,8 +52,7 @@ const FavourtesPage = () => {
       <h2 className="favourites__title custom-title">Favourites</h2>
       <Products productData={productData} />
     </div>
-  )
-}
+  );
+};
 
-
-export default FavourtesPage
+export default FavourtesPage;

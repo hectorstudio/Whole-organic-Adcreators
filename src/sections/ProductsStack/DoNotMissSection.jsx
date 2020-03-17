@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
-import SectionItemsContainer from '../../components/Products/ProductsStack/SectionItemsContainer';
-import Head from '../../components/Products/ProductsStack/Head';
-import './DoNotMissSection.style.scss';
+import React, { useEffect } from "react";
+import axios from "axios";
+import SectionItemsContainer from "../../components/Products/ProductsStack/SectionItemsContainer";
+import Head from "../../components/Products/ProductsStack/Head";
+import "./DoNotMissSection.style.scss";
 
 const DoNotMissSection = ({
   doNotMissTitle,

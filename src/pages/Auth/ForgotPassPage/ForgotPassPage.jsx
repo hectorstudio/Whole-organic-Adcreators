@@ -6,18 +6,18 @@ import "./ForgotPassPage.style.scss";
 
 const breadCrumbs = [
   {
-    id: '1',
-    title: 'Home',
-    path: '/',
+    id: "1",
+    title: "Home",
+    path: "/",
     active: ""
   },
   {
-    id: '2',
-    title: 'Forgot password',
-    path: '/forgot-pass',
+    id: "2",
+    title: "Forgot password",
+    path: "/forgot-pass",
     active: "active"
   }
-]
+];
 
 const ForgotPassPage = () => {
   const action = () => {};
@@ -40,7 +40,12 @@ const ForgotPassPage = () => {
               className="formInput"
             />
           </div>
-          <UserButton text="Continue" action={action} disabled={true} varient="forgotpass" />
+          <UserButton
+            text="Continue"
+            action={action}
+            disabled={true}
+            varient="forgotpass"
+          />
         </form>
       </div>
     </div>

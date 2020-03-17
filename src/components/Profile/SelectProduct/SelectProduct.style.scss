@@ -6,7 +6,7 @@
 
   @include breakpoint($lg) {
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 60% !important;
     height: 70px;
     margin-top: 30px;
@@ -14,13 +14,13 @@
 
   @include breakpoint($md) {
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 60% !important;
   }
 
   @include breakpoint($sm) {
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 100% !important;
   }
 }
@@ -169,20 +169,20 @@
   }
 
   @include breakpoint($lg) {
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
     padding-left: 20px;
   }
 
   @include breakpoint($md) {
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
     padding-left: 8px;
   }
 
   @include breakpoint($sm) {
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
     padding-left: 5px;
     background-color: $white;
   }
@@ -264,13 +264,13 @@
     align-items: center;
     .product-name {
       font-size: 13px;
-      color: #0F4542;
+      color: #0f4542;
       text-decoration: underline;
     }
     span {
-      color: #0F4542;
+      color: #0f4542;
       font-size: 10px;
-      padding: 2px 0px 2px 17.6px
+      padding: 2px 0px 2px 17.6px;
     }
   }
 }

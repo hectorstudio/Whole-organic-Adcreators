@@ -12,8 +12,9 @@ const productData = [
     subtitle: "Beauty",
     textInfo: "From Location here, ",
     sellerLink: "/name of seller",
-    textDescription: "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
-    extend: true,
+    textDescription:
+      "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
+    extend: true
   },
   {
     id: "2",
@@ -24,8 +25,9 @@ const productData = [
     subtitle: "Beauty",
     textInfo: "From Location here, ",
     sellerLink: "/name of seller",
-    textDescription: "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
-    extend: true,
+    textDescription:
+      "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
+    extend: true
   },
   {
     id: "3",
@@ -36,8 +38,9 @@ const productData = [
     subtitle: "Beauty",
     textInfo: "From Location here, ",
     sellerLink: "/name of seller",
-    textDescription: "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
-    extend: true,
+    textDescription:
+      "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
+    extend: true
   },
   {
     id: "4",
@@ -48,8 +51,9 @@ const productData = [
     subtitle: "Beauty",
     textInfo: "From Location here, ",
     sellerLink: "/name of seller",
-    textDescription: "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
-    extend: true,
+    textDescription:
+      "Product description, dolor esse eu minim incididunt aliquip dolore magna eiusmod incididunt mollit et occaecat nisi ex aute elit velit cupidatat eiusmod excepteur incididunt nulla in tempor enim minim incididunt velit tempor irure mollit voluptate consequat commodo.",
+    extend: true
   }
 ];
 

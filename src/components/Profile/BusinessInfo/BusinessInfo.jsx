@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./BusinessInfo.style.scss";
-import "../../Search/SearchItems"
+import "../../Search/SearchItems";
 import Avatar from "react-avatar";
 import Files from "react-files";
 import FormLocation from "../../../components/FormElements/FormLocation";
-import Select from 'react-select'
+import Select from "react-select";
 const BusinessInfo = () => {
   const handleFileChange = files => {
     console.log(files);
@@ -15,7 +15,7 @@ const BusinessInfo = () => {
     { text: "Sole Trader", value: "Sole Trader" },
     { text: "Private Company", value: "Private Company" },
     { text: "Partnership", value: "Partnership" }
-  ]
+  ];
   const sortedData = arr => {
     return arr.map(item => {
       return {
@@ -27,7 +27,7 @@ const BusinessInfo = () => {
   const [avatar, setAvatar] = useState(null);
   const [error, setError] = useState(null);
   const handleChange = () => {};
-  const defaultUserImg = require('../../../images/default-user.jpg');
+  const defaultUserImg = require("../../../images/default-user.jpg");
   return (
     <div className="business-info">
       <h2 className="business-info__title custom-title">My business account</h2>
@@ -56,7 +56,10 @@ const BusinessInfo = () => {
         <div className="business-block-input-section-row">
           <div className="select__item">
             <p className="select__item-title">Select business type</p>
-            <Select placeholder="Sole Trader" options={sortedData(selOptions)}/>
+            <Select
+              placeholder="Sole Trader"
+              options={sortedData(selOptions)}
+            />
             <i className="icon-dropdown" />
           </div>
           <div className="business-block-input-wrapper wrapper">
@@ -83,8 +86,8 @@ const BusinessInfo = () => {
           </div>
         </div>
         <button className="business-block-input-section__btn">
-            Save changes
-          </button>
+          Save changes
+        </button>
       </form>
     </div>
   );

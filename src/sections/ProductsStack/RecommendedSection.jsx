@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import Head from '../../components/Products/ProductsStack/Head';
-import './RecommendedSection.style.scss';
-import axios from 'axios';
-import SectionItemsContainer from '../../components/Products/ProductsStack/SectionItemsContainer';
+import React, { useEffect } from "react";
+import Head from "../../components/Products/ProductsStack/Head";
+import "./RecommendedSection.style.scss";
+import axios from "axios";
+import SectionItemsContainer from "../../components/Products/ProductsStack/SectionItemsContainer";
 
 const RecommendedSection = ({
   recommendedData,

@@ -1,32 +1,37 @@
-import React from 'react';
-import './DropDownMenu.style.scss';
-import { NavLink, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./DropDownMenu.style.scss";
+import { NavLink, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const DropDownMenu = ({ DropMenuData, activeDropMenu, setActiveDropMenu, sizes }) => {
+const DropDownMenu = ({
+  DropMenuData,
+  activeDropMenu,
+  setActiveDropMenu,
+  sizes
+}) => {
   const location = useLocation();
   let classDropMenu;
 
-  if (location.pathname === '/') {
-    classDropMenu = 'dropdown-menu-container';
+  if (location.pathname === "/") {
+    classDropMenu = "dropdown-menu-container";
   } else if (!activeDropMenu) {
-    classDropMenu = 'dropdown-menu-container hide';
+    classDropMenu = "dropdown-menu-container hide";
   } else if (sizes.width > 1120) {
-    classDropMenu = 'dropdown-menu-container drop-menu-lg';
+    classDropMenu = "dropdown-menu-container drop-menu-lg";
   } else {
-    classDropMenu = 'dropdown-menu-container drop-menu-sm';
+    classDropMenu = "dropdown-menu-container drop-menu-sm";
   }
 
-  if (location.pathname === '/' && sizes.width < 1121 && activeDropMenu) {
-    classDropMenu = 'dropdown-menu-container drop-menu-sm';
+  if (location.pathname === "/" && sizes.width < 1121 && activeDropMenu) {
+    classDropMenu = "dropdown-menu-container drop-menu-sm";
   }
 
-  if (location.pathname === '/' && sizes.width < 1121 && !activeDropMenu) {
-    classDropMenu = 'dropdown-menu-container hide';
+  if (location.pathname === "/" && sizes.width < 1121 && !activeDropMenu) {
+    classDropMenu = "dropdown-menu-container hide";
   }
 
-  if (location.pathname === '/' && sizes.width > 1120) {
-    classDropMenu = 'dropdown-menu-container';
+  if (location.pathname === "/" && sizes.width > 1120) {
+    classDropMenu = "dropdown-menu-container";
   }
 
   return (
@@ -36,7 +41,7 @@ const DropDownMenu = ({ DropMenuData, activeDropMenu, setActiveDropMenu, sizes }
           return (
             <li className="dropdown-menu-list__item" key={item.id}>
               <NavLink
-                to={'/' + item.slug}
+                to={"/" + item.slug}
                 className="dropdown-menu-list__link"
                 onClick={() => setActiveDropMenu(false)}
               >

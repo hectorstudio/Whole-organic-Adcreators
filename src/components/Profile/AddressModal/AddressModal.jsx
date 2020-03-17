@@ -112,7 +112,7 @@ const AddressModal = props => {
                 placeholder="Type street..."
                 onChange={handleStreet}
               />
-              <div className="addresses-select__item" style={{zIndex:99}}>
+              <div className="addresses-select__item" style={{ zIndex: 99 }}>
                 <p className="addresses-select__item-title">City</p>
                 <FormSelect
                   placeholder="Select"
@@ -121,7 +121,7 @@ const AddressModal = props => {
                   setValue={setCurrentCity}
                 />
               </div>
-              <div className="addresses-select__item" style={{zIndex:98}}>
+              <div className="addresses-select__item" style={{ zIndex: 98 }}>
                 <p className="addresses-select__item-title">State/Province</p>
                 <FormSelect
                   placeholder="Select"
@@ -130,7 +130,7 @@ const AddressModal = props => {
                   setValue={setCurrentState}
                 />
               </div>
-              <div className="addresses-select__item" style={{zIndex:97}}>
+              <div className="addresses-select__item" style={{ zIndex: 97 }}>
                 <p className="addresses-select__item-title">Country</p>
                 <FormSelect
                   placeholder="Select"

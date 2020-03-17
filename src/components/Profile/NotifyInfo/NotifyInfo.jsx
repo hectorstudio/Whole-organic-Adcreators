@@ -1,9 +1,8 @@
-import React from "react"
-import './NotifyInfo.style.scss'
-import FormCheckBoxToggle from "../../../components/FormElements/FormCheckBoxToggle"
+import React from "react";
+import "./NotifyInfo.style.scss";
+import FormCheckBoxToggle from "../../../components/FormElements/FormCheckBoxToggle";
 
 const NotifyInfo = () => {
-  
   return (
     <div className="notify">
       <p className="notify__title">Notify me about</p>
@@ -14,7 +13,7 @@ const NotifyInfo = () => {
         <FormCheckBoxToggle text="New message" id="4" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NotifyInfo
+export default NotifyInfo;

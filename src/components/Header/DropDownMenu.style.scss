@@ -3,24 +3,28 @@
 .dropdown-menu-container {
   height: 638px;
   width: 320px;
-  @include linear-gradient(to right, $cyan-secondary-color, $cyan-primary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-secondary-color,
+    $cyan-primary-color
+  );
 
-    @include breakpoint($xl) {
-      height: 610px;
-      width: 270px;
-    }
+  @include breakpoint($xl) {
+    height: 610px;
+    width: 270px;
+  }
 
-    @include breakpoint($lg) {
-      width: 230px;
-    }
+  @include breakpoint($lg) {
+    width: 230px;
+  }
 
-    @include breakpoint($md) {
-      width: 100%;
-    }
+  @include breakpoint($md) {
+    width: 100%;
+  }
 
-    @include breakpoint($sm) {
-      width: 100%;
-    }
+  @include breakpoint($sm) {
+    width: 100%;
+  }
   z-index: 5;
 }
 
@@ -91,7 +95,7 @@
   height: 100%;
   text-decoration: none;
   color: $white;
-  border-bottom: 1px solid rgba(255, 255, 255, .4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   @include breakpoint($md) {
     width: 70%;

@@ -52,7 +52,7 @@
     justify-content: center;
     text-align: center;
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 48%;
   }
 
@@ -60,11 +60,10 @@
     display: flex;
     justify-content: center;
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 100%;
   }
 }
-
 
 .search-container__items.select {
   position: relative;
@@ -73,13 +72,13 @@
 
   @include breakpoint($md) {
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 48%;
   }
 
   @include breakpoint($sm) {
     border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: .28571429rem;
+    border-radius: 0.28571429rem;
     width: 100%;
   }
   i {
@@ -94,7 +93,6 @@
     }
   }
 }
-
 
 .search-container__items.input-text {
   width: 640px;
@@ -116,7 +114,6 @@
   @include breakpoint($lg) {
     width: 300px;
   }
-
 
   @include breakpoint($md) {
     padding-left: 0;
@@ -155,14 +152,14 @@
   }
 
   @include breakpoint($md) {
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
     padding-left: 20px;
   }
 
   @include breakpoint($sm) {
-    border: 1px solid rgba(34,36,38,.15);
-    border-radius: .28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
     padding-left: 5px;
     background-color: $white;
   }
@@ -176,7 +173,11 @@
   height: 100%;
   color: $white;
   border: none;
-  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-primary-color,
+    $cyan-secondary-color
+  );
   &:hover {
     opacity: 0.8;
   }
@@ -189,7 +190,6 @@
   @include breakpoint($md) {
     width: 30%;
   }
-
 
   @include breakpoint($sm) {
     width: 30%;
@@ -219,13 +219,13 @@
   top: 25px;
   left: 46px;
 
- @include breakpoint($md) {
-   font-size: 22px;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   padding-right: 0;
- }
+  @include breakpoint($md) {
+    font-size: 22px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 0;
+  }
 
   @include breakpoint($sm) {
     left: 50%;

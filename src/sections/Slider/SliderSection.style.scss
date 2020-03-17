@@ -1,4 +1,4 @@
-@import '../../layout/layout';
+@import "../../layout/layout";
 
 .slider-container {
   position: relative;
@@ -62,12 +62,11 @@
       bottom: 0;
     }
 
-
     .dot {
       width: 9px;
       height: 9px;
       margin: 0 6px 0 0;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
 
@@ -76,14 +75,11 @@
         height: 7px;
       }
     }
-
-
   }
   .slide {
     background: $white;
   }
 }
-
 
 .slider__img {
   width: auto;
@@ -93,8 +89,6 @@
     height: auto;
   }
 }
-
-
 
 .dropdown-item__title {
   position: absolute;
@@ -148,7 +142,11 @@
   left: 112px;
   text-decoration: none;
   color: $white;
-  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-primary-color,
+    $cyan-secondary-color
+  );
   &:hover {
     opacity: 0.8;
   }

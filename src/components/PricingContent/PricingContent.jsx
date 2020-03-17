@@ -68,7 +68,7 @@ const PricingContent = () => {
 
   return (
     <div className="pricing-content">
-      {contentItems.map( (item, index) => (
+      {contentItems.map((item, index) => (
         <PricingContentItems
           key={index}
           imgUrl={item.imgUrl}

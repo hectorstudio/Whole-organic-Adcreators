@@ -11,12 +11,12 @@
     max-width: 1280px;
   }
 
-  @include breakpoint ($lg) {
+  @include breakpoint($lg) {
     max-width: 1130px;
   }
 
   @include breakpoint($md) {
-    max-width: 100% //700px is ok
+    max-width: 100%; //700px is ok
   }
 
   @include breakpoint($sm) {
@@ -31,7 +31,7 @@
     max-width: 1280px;
   }
 
-  @include breakpoint ($lg) {
+  @include breakpoint($lg) {
     max-width: 1130px;
   }
 

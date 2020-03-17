@@ -67,7 +67,6 @@
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 .pricing-content-footer-list__item {
@@ -81,7 +80,7 @@
   line-height: 20px;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: -1px;
     top: 5px;

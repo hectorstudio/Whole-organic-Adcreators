@@ -81,7 +81,7 @@ const SelectProduct = ({ filterData = [] }) => {
         {selected.map((item, index) => (
           <div className="product-item" key={`product_item${index}`}>
             <div className="product-name">{item.searchText}</div>
-            <span onClick={event => removeItem(event,index)}>
+            <span onClick={event => removeItem(event, index)}>
               <i className="fas fa-times"></i>
             </span>
           </div>
@@ -95,6 +95,6 @@ const SelectProduct = ({ filterData = [] }) => {
 };
 
 SelectProduct.propTypes = {
-  filterData: PropTypes.array,
+  filterData: PropTypes.array
 };
 export default SelectProduct;

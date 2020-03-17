@@ -1,49 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import MenuItems from '../../components/Header/MenuItems';
-import SubMenuItem from '../../components/Header/SubMenuItem';
-import './NavigationSection.style.scss';
-import { Vortex } from 'react-burgers';
-import axios from 'axios';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from "react";
+import MenuItems from "../../components/Header/MenuItems";
+import SubMenuItem from "../../components/Header/SubMenuItem";
+import "./NavigationSection.style.scss";
+import { Vortex } from "react-burgers";
+import axios from "axios";
+import PropTypes from "prop-types";
 
 const menuItems = [
   {
-    title: 'All Categories',
-    id: '1'
+    title: "All Categories",
+    id: "1"
   },
   {
-    title: 'Home',
-    id: '2',
-    path: '/'
+    title: "Home",
+    id: "2",
+    path: "/"
   },
   {
-    title: 'About',
-    id: '3',
-    path: '/about'
+    title: "About",
+    id: "3",
+    path: "/about"
   },
   {
-    title: 'FAQs & Support',
-    id: '4',
-    path: '/faqs&support'
+    title: "FAQs & Support",
+    id: "4",
+    path: "/faqs&support"
   },
   {
-    title: 'Legal',
-    id: '5',
-    path: '/legal'
+    title: "Legal",
+    id: "5",
+    path: "/legal"
   },
   {
-    title: 'For business',
-    id: '6',
-    path: '/business'
+    title: "For business",
+    id: "6",
+    path: "/business"
   },
   {
-    title: 'Contact us',
-    id: '7',
-    path: '/contact'
+    title: "Contact us",
+    id: "7",
+    path: "/contact"
   },
   {
-    title: 'Burger',
-    id: '8'
+    title: "Burger",
+    id: "8"
   }
 ];
 
@@ -51,18 +51,18 @@ const NavigationSection = ({ sizes }) => {
   const [active, setActiveBurger] = useState(false);
   const [DropMenuData, setDropMenuData] = useState([]);
 
-  let menuItem = '';
-  let wrapperMenuItem = '';
+  let menuItem = "";
+  let wrapperMenuItem = "";
 
   if (sizes.width > 1120 && active) {
-    menuItem = 'menu__item';
-    wrapperMenuItem = 'wrapper-menu__item';
+    menuItem = "menu__item";
+    wrapperMenuItem = "wrapper-menu__item";
   } else if (!active) {
-    menuItem = 'menu__item';
-    wrapperMenuItem = 'wrapper-menu__item';
+    menuItem = "menu__item";
+    wrapperMenuItem = "wrapper-menu__item";
   } else {
-    menuItem = 'menu__item show';
-    wrapperMenuItem = 'wrapper-menu__item grow';
+    menuItem = "menu__item show";
+    wrapperMenuItem = "wrapper-menu__item grow";
   }
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const NavigationSection = ({ sizes }) => {
     <ul className="menu">
       <li className="menu-sub__item">
         {menuItems.map(item => {
-          if (item.title !== 'Burger' && !item.path) {
+          if (item.title !== "Burger" && !item.path) {
             return (
               <SubMenuItem
                 key={item.id}
@@ -84,8 +84,7 @@ const NavigationSection = ({ sizes }) => {
                 sizes={sizes}
               />
             );
-          }
-          else{
+          } else {
             return "";
           }
         })}
@@ -93,7 +92,7 @@ const NavigationSection = ({ sizes }) => {
       <li className={`${wrapperMenuItem}`}>
         <div className="menu__burger-item">
           {menuItems.map(item => {
-            if (item.title === 'Burger') {
+            if (item.title === "Burger") {
               return (
                 <Vortex
                   key={item.id}
@@ -101,8 +100,7 @@ const NavigationSection = ({ sizes }) => {
                   active={active}
                 />
               );
-            }
-            else{
+            } else {
               return "";
             }
           })}
@@ -118,8 +116,7 @@ const NavigationSection = ({ sizes }) => {
                   setActiveBurger={setActiveBurger}
                 />
               );
-            }
-            else {
+            } else {
               return "";
             }
           })}

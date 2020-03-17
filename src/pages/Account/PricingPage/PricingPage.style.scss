@@ -6,7 +6,7 @@
 
 .pricing__title {
   letter-spacing: -1.2px;
-  
+
   @include breakpoint($lg) {
     text-align: center;
   }

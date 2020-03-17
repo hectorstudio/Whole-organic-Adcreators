@@ -1,5 +1,5 @@
-import { connect } from 'react-redux';
-import { SideBlocksItem } from './SideBlocksItem';
+import { connect } from "react-redux";
+import { SideBlocksItem } from "./SideBlocksItem";
 
 const mapStateToProps = state => {
   return {

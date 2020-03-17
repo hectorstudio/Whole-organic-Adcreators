@@ -4,8 +4,6 @@
   margin-top: 82.4px;
 
   @include breakpoint($sm) {
-     margin-top: 0;
-   }
+    margin-top: 0;
+  }
 }
-
-

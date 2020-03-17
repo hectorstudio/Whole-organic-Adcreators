@@ -1,6 +1,6 @@
-import React from 'react'
-import './NotifyBottom.style.scss'
-import FormCheckBoxToggle from "../../../components/FormElements/FormCheckBoxToggle"
+import React from "react";
+import "./NotifyBottom.style.scss";
+import FormCheckBoxToggle from "../../../components/FormElements/FormCheckBoxToggle";
 const NotifyBottom = () => {
   return (
     <div className="notify-bottom">
@@ -10,7 +10,7 @@ const NotifyBottom = () => {
         <FormCheckBoxToggle text="New messages" id="6" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NotifyBottom
+export default NotifyBottom;

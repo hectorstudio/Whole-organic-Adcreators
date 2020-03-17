@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import { setCountValue } from '../../store/cart/cartActions';
-import { HeaderSection } from './HeaderSection';
+import { connect } from "react-redux";
+import { setCountValue } from "../../store/cart/cartActions";
+import { HeaderSection } from "./HeaderSection";
 
 const mapDispatchToProps = {
   setCountValue

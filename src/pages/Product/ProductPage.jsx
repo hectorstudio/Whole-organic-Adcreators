@@ -35,7 +35,11 @@ const ProductPage = () => {
       <div className="container products-section">
         <Breadcrumbs breadcrumbsItems={breadCrumbs} />
         <div className="products-title">
-          <img src={"/images/favicons/price-logo.jpg"} className="filter-logo" alt="filter-logo"/>
+          <img
+            src={"/images/favicons/price-logo.jpg"}
+            className="filter-logo"
+            alt="filter-logo"
+          />
           <h2>Filter products</h2>
         </div>
         <div className="products-body">

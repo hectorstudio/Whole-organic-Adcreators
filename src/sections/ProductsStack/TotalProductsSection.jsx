@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react';
-import './TotalProductsSection.style.scss';
-import axios from 'axios';
-import SectionItemsContainer from '../../components/Products/ProductsStack/SectionItemsContainer';
+import React, { useEffect } from "react";
+import "./TotalProductsSection.style.scss";
+import axios from "axios";
+import SectionItemsContainer from "../../components/Products/ProductsStack/SectionItemsContainer";
 
-const RecommendedSection = ({
-  recommendedData,
-  setRecommendedData
-}) => {
+const RecommendedSection = ({ recommendedData, setRecommendedData }) => {
   useEffect(() => {
     axios
       .get(`/json/getRecommended.json`)

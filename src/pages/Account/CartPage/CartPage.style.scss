@@ -6,7 +6,7 @@
     margin-bottom: 27.6px;
     font-family: Nexa-Bold, sans-serif;
   }
-  .cart-body{
+  .cart-body {
     display: flex;
     .cart-list {
       margin: 4px 38.1px 4px 0px;
@@ -17,13 +17,13 @@
       margin: 20.8px 0px 0px;
       .section {
         padding: 31.2px 5px;
-        border-top: 1px solid #DBDBDB;
+        border-top: 1px solid #dbdbdb;
         .title {
           font-family: Nexa-Bold, sans-serif;
           font-size: 20px;
-          color: #0F4542;
+          color: #0f4542;
         }
-        &.payment-method{
+        &.payment-method {
           .payment-item {
             display: flex;
             align-items: center;
@@ -33,10 +33,10 @@
           margin: 54.2px 5px;
           .address {
             margin: 19px 0px;
-            border: 1px solid #EFEFEF;
-            background-color: #FAFAFA;
+            border: 1px solid #efefef;
+            background-color: #fafafa;
             padding: 33px 45px;
-            .address-item{
+            .address-item {
               font-size: 16px;
               font-family: Nexa-Bold, sans-serif;
               color: #656464;
@@ -48,10 +48,10 @@
                 color: #383838;
               }
             }
-            .address-action{
+            .address-action {
               margin-top: 23px;
               span {
-                color: #33BCC1;
+                color: #33bcc1;
                 font-size: 15px;
                 font-family: Nexa-Bold, sans-serif;
                 text-decoration: underline;

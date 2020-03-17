@@ -1,9 +1,9 @@
-import React from 'react';
-import { Input } from 'semantic-ui-react';
-import Select from 'react-select';
-import PropTypes from 'prop-types';
-import 'semantic-ui-css/components/input.css';
-import './SearchItems.style.scss';
+import React from "react";
+import { Input } from "semantic-ui-react";
+import Select from "react-select";
+import PropTypes from "prop-types";
+import "semantic-ui-css/components/input.css";
+import "./SearchItems.style.scss";
 
 const SearchItems = ({
   title,
@@ -81,7 +81,7 @@ const SearchItems = ({
     );
   }
 
-  if (placeholderTitle === 'Select a category') {
+  if (placeholderTitle === "Select a category") {
     content = (
       <div className="search-container__items select">
         <Select
@@ -95,7 +95,7 @@ const SearchItems = ({
     );
   }
 
-  if (placeholderTitle === 'Select sub-category') {
+  if (placeholderTitle === "Select sub-category") {
     content = (
       <div className="search-container__items select">
         <Select
@@ -125,9 +125,9 @@ const SearchItems = ({
         />
         <button
           className="search-container-form__btn"
-          type={'button'}
+          type={"button"}
           onClick={() => setFilterData(categoryVal, subcategoryVal, searchVal)}
-          disabled={categoryVal === null && searchVal === ''}
+          disabled={categoryVal === null && searchVal === ""}
         >
           <i className={icon} />
           <span className="search-container-form__text">{btnTitle}</span>

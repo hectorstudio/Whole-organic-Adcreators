@@ -84,11 +84,11 @@ const SignUpForm = ({ title }) => {
     console.log("btn Clicked");
   };
 
-  const checkTerm= (value) => {
+  const checkTerm = value => {
     console.log(value);
     setTermCheck(value);
     validator();
-  }
+  };
 
   const recaptchaCallback = () => {
     console.log("Recaptcha Callback");
@@ -168,7 +168,7 @@ const SignUpForm = ({ title }) => {
           <UserButton
             text="Register"
             action={handleClick}
-            disabled={!(primaryDisable&&termChecked)}
+            disabled={!(primaryDisable && termChecked)}
             varient="primary"
           />
           <p className="bottom-block-sign-up__text">

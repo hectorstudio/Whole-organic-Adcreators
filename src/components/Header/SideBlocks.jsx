@@ -1,19 +1,19 @@
-import React from 'react';
-import SideBlocksItemContainer from './SideBlocksItemContainer';
-import './SideBlocks.style.scss';
+import React from "react";
+import SideBlocksItemContainer from "./SideBlocksItemContainer";
+import "./SideBlocks.style.scss";
 
 const items = [
   {
-    id: '1',
-    slug: ['login', 'register']
+    id: "1",
+    slug: ["login", "register"]
   },
   {
-    id: '2',
-    slug: 'cart'
+    id: "2",
+    slug: "cart"
   },
   {
-    id: '3',
-    slug: 'post'
+    id: "3",
+    slug: "post"
   }
 ];
 

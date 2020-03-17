@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import { setDoNotMissData } from '../../store/doNotMiss/doNotMissActions';
-import DoNotMissSection from './DoNotMissSection';
+import { connect } from "react-redux";
+import { setDoNotMissData } from "../../store/doNotMiss/doNotMissActions";
+import DoNotMissSection from "./DoNotMissSection";
 
 const mapStateToProps = state => {
   return {

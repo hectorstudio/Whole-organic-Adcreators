@@ -77,7 +77,11 @@
   position: relative;
   width: 27px;
   height: 27px;
-  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-primary-color,
+    $cyan-secondary-color
+  );
   border-radius: 50%;
 }
 

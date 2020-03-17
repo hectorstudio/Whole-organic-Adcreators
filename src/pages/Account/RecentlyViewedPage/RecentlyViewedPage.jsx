@@ -1,7 +1,7 @@
-import React from 'react';
-import './RecentlyViewedPage.style.scss'
-import '../../../constants/css/CustomTitle.style.scss'
-import Products from '../../../components/Products'
+import React from "react";
+import "./RecentlyViewedPage.style.scss";
+import "../../../constants/css/CustomTitle.style.scss";
+import Products from "../../../components/Products";
 
 const productData = [
   {
@@ -52,8 +52,7 @@ const RecentlyViewedPage = () => {
       <h2 className="recently-view__title custom-title">Recently viewed</h2>
       <Products productData={productData} />
     </div>
-  )
-}
+  );
+};
 
-
-export default RecentlyViewedPage
+export default RecentlyViewedPage;

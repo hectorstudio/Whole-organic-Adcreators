@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import { NavLink } from 'react-router-dom';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import axios from 'axios';
-import './SliderSection.style.scss';
+import React, { useEffect, useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import { NavLink } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import axios from "axios";
+import "./SliderSection.style.scss";
 
 const SliderSection = () => {
   const [sliderData, setSliderData] = useState([]);
@@ -20,7 +20,9 @@ const SliderSection = () => {
   });
 
   useEffect(() => {
-    axios.get(`/json/getSliderInfo.json`).then(res => setSliderData(res.data.sliderInfo));
+    axios
+      .get(`/json/getSliderInfo.json`)
+      .then(res => setSliderData(res.data.sliderInfo));
   }, []);
 
   return (

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import './SubMenuItem.style.scss';
-import PropTypes from 'prop-types';
-import DropDownMenu from './DropDownMenu';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import "./SubMenuItem.style.scss";
+import PropTypes from "prop-types";
+import DropDownMenu from "./DropDownMenu";
+import { useLocation } from "react-router-dom";
 
 const SubMenuItem = ({ title, DropMenuData, sizes }) => {
   const [activeDropMenu, setActiveDropMenu] = useState(false);
@@ -10,7 +10,7 @@ const SubMenuItem = ({ title, DropMenuData, sizes }) => {
   const location = useLocation();
   let subMenu;
 
-  if (location.pathname === '/' && sizes.width > 1120) {
+  if (location.pathname === "/" && sizes.width > 1120) {
     subMenu = (
       <div className="sub-menu-container">
         <i className="icon-burger" />
@@ -19,7 +19,7 @@ const SubMenuItem = ({ title, DropMenuData, sizes }) => {
     );
   }
 
-  if (location.pathname === '/' && sizes.width < 1121) {
+  if (location.pathname === "/" && sizes.width < 1121) {
     subMenu = (
       <div
         className="sub-menu-container"
@@ -31,7 +31,7 @@ const SubMenuItem = ({ title, DropMenuData, sizes }) => {
     );
   }
 
-  if (location.pathname !== '/') {
+  if (location.pathname !== "/") {
     subMenu = (
       <div
         className="sub-menu-container"

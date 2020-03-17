@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import { setMostPopularData } from '../../store/mostPopular/mostPopularActions';
-import MostPopularSection from './MostPopularSection';
+import { connect } from "react-redux";
+import { setMostPopularData } from "../../store/mostPopular/mostPopularActions";
+import MostPopularSection from "./MostPopularSection";
 
 const mapStateToProps = state => {
   return {

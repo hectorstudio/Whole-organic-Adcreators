@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import { setFilterData } from '../../store/filter/filterActions';
-import SearchSection from './SearchSection';
+import { connect } from "react-redux";
+import { setFilterData } from "../../store/filter/filterActions";
+import SearchSection from "./SearchSection";
 
 const mapDispatchToProps = {
   setFilterData

@@ -1,43 +1,51 @@
 @import "variables";
 
 @font-face {
-  font-family: '#{$nexa-font-family-bold}';
-  src: url('./#{$nexa-font-family}/#{$nexa-font-family-bold}.eot?#iefix');
-  src:
-      url('./#{$nexa-font-family}/#{$nexa-font-family-bold}.eot?#iefix') format('embedded-opentype'),
-      url('./#{$nexa-font-family}/#{$nexa-font-family-bold}.ttf?3vueiz') format('truetype'),
-      url('./#{$nexa-font-family}/#{$nexa-font-family-bold}.woff?3vueiz') format('woff'),
-      url('./#{$nexa-font-family}/#{$nexa-font-family-bold}.woff2?3vueiz') format('woff2');
+  font-family: "#{$nexa-font-family-bold}";
+  src: url("./#{$nexa-font-family}/#{$nexa-font-family-bold}.eot?#iefix");
+  src: url("./#{$nexa-font-family}/#{$nexa-font-family-bold}.eot?#iefix")
+      format("embedded-opentype"),
+    url("./#{$nexa-font-family}/#{$nexa-font-family-bold}.ttf?3vueiz")
+      format("truetype"),
+    url("./#{$nexa-font-family}/#{$nexa-font-family-bold}.woff?3vueiz")
+      format("woff"),
+    url("./#{$nexa-font-family}/#{$nexa-font-family-bold}.woff2?3vueiz")
+      format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: '#{$nexa-font-family-light}';
-  src: url('./#{$nexa-font-family}/#{$nexa-font-family-light}.eot?#iefix');
-  src:
-      url('./#{$nexa-font-family}/#{$nexa-font-family-light}.eot?#iefix') format('embedded-opentype'),
-      url('./#{$nexa-font-family}/#{$nexa-font-family-light}.ttf?3vueiz') format('truetype'),
-      url('./#{$nexa-font-family}/#{$nexa-font-family-light}.woff?3vueiz') format('woff'),
-      url('./#{$nexa-font-family}/#{$nexa-font-family-light}.woff2?3vueiz') format('woff2');
+  font-family: "#{$nexa-font-family-light}";
+  src: url("./#{$nexa-font-family}/#{$nexa-font-family-light}.eot?#iefix");
+  src: url("./#{$nexa-font-family}/#{$nexa-font-family-light}.eot?#iefix")
+      format("embedded-opentype"),
+    url("./#{$nexa-font-family}/#{$nexa-font-family-light}.ttf?3vueiz")
+      format("truetype"),
+    url("./#{$nexa-font-family}/#{$nexa-font-family-light}.woff?3vueiz")
+      format("woff"),
+    url("./#{$nexa-font-family}/#{$nexa-font-family-light}.woff2?3vueiz")
+      format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: '#{$quicksand-font-family-bold}';
-  src:
-          url('./#{$quicksand-font-family}/#{$quicksand-font-family-bold}.ttf?3vueiz') format('truetype');
+  font-family: "#{$quicksand-font-family-bold}";
+  src: url("./#{$quicksand-font-family}/#{$quicksand-font-family-bold}.ttf?3vueiz")
+    format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:
-     url('./#{$icomoon-font-family}/#{$icomoon-font-family}.ttf?3vueiz') format('truetype'),
-     url('./#{$icomoon-font-family}/#{$icomoon-font-family}.woff?3vueiz') format('woff'),
-     url('./#{$icomoon-font-family}/#{$icomoon-font-family}.svg?3vueiz##{$icomoon-font-family}') format('svg');
+  font-family: "#{$icomoon-font-family}";
+  src: url("./#{$icomoon-font-family}/#{$icomoon-font-family}.ttf?3vueiz")
+      format("truetype"),
+    url("./#{$icomoon-font-family}/#{$icomoon-font-family}.woff?3vueiz")
+      format("woff"),
+    url("./#{$icomoon-font-family}/#{$icomoon-font-family}.svg?3vueiz##{$icomoon-font-family}")
+      format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -45,7 +53,7 @@
 
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' ;
+  font-family: "#{$icomoon-font-family}";
   speak: none;
   font-style: normal;
   font-weight: normal;

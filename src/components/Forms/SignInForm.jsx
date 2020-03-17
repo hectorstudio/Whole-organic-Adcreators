@@ -15,18 +15,20 @@ const SignInForm = ({ title }) => {
   const [primaryDisable, setPrimaryDisable] = useState(true);
 
   const validator = () => {
-    const validRes = RegExValidator({ email: email, password: password }, Rules);
+    const validRes = RegExValidator(
+      { email: email, password: password },
+      Rules
+    );
     setPrimaryDisable(!validRes.isValid);
-  }
+  };
 
   const changeEmail = value => {
     setEmail(value);
     validator();
-    const validRes = RegExValidator({email: email}, EmailRules);
-    if(!validRes.isValid){
+    const validRes = RegExValidator({ email: email }, EmailRules);
+    if (!validRes.isValid) {
       setAlertEmail(validRes.errors.email);
-    }
-    else{
+    } else {
       setAlertEmail("");
     }
   };
@@ -34,12 +36,11 @@ const SignInForm = ({ title }) => {
   const changePassword = value => {
     setPassword(value);
     validator();
-    const validRes = RegExValidator({password: password}, PasswordRules);
-    if(!validRes.isValid){
+    const validRes = RegExValidator({ password: password }, PasswordRules);
+    if (!validRes.isValid) {
       setAlertPassword(validRes.errors.password);
-    }
-    else{
-      setAlertPassword("");    
+    } else {
+      setAlertPassword("");
     }
   };
 
@@ -78,7 +79,12 @@ const SignInForm = ({ title }) => {
           Forgot your password?
         </a>
         <div className="bottom-block-sign-in">
-          <UserButton text="Login" action={clickSubmit} disabled={primaryDisable} varient="primary" />
+          <UserButton
+            text="Login"
+            action={clickSubmit}
+            disabled={primaryDisable}
+            varient="primary"
+          />
         </div>
       </div>
       <p className="bottom-block-sign-in__text">

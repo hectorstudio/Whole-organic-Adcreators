@@ -45,9 +45,9 @@ const mockupCartInfo = [
   }
 ];
 
-const visaLogo = require('../../../images/visa.png');
-const masterLogo = require('../../../images/master.png');
-const paypalLogo = require('../../../images/paypal.png');
+const visaLogo = require("../../../images/visa.png");
+const masterLogo = require("../../../images/master.png");
+const paypalLogo = require("../../../images/paypal.png");
 
 const CheckoutPage = () => {
   const [cartInfo, setCartInfo] = useState([]);
@@ -62,18 +62,18 @@ const CheckoutPage = () => {
   const clickCheckout = () => {
     console.log("click Checkout");
   };
-  
+
   const changeAction = () => {
     console.log("change action");
-  }
+  };
 
   const clickAction = () => {
     console.log("click action");
-  }
+  };
 
   const handleChange = (event, value) => {
     setPayment(value);
-  }
+  };
 
   return (
     <div className="cart-list-container">
@@ -83,37 +83,36 @@ const CheckoutPage = () => {
         <div className="checkout-body">
           <div className="section payment-method">
             <div className="title">Pay with</div>
-              <div className="payment-item">
-                <GreenRadio
-                  checked={payment === 'visa'}
-                  onChange={event => handleChange(event, "visa")}
-                  value={payment}
-                  name="radio-button-demo"
-                  inputProps={{ 'aria-label': 'visa' }}
-                />
-                <img src={visaLogo} alt="payment visa" />
-              </div>
-              <div className="payment-item">
-                <GreenRadio
-                  checked={payment === 'master'}
-                  onChange={event => handleChange(event, "master")}
-                  value={payment}
-                  name="radio-button-demo"
-                  inputProps={{ 'aria-label': 'master' }}
-                />
-                <img src={masterLogo} alt="payment master" />
-              </div>
-              <div className="payment-item">
-                <GreenRadio
-                  checked={payment === 'paypal'}
-                  onChange={event => handleChange(event, "paypal")}
-                  value={payment}
-                  name="radio-button-demo"
-                  inputProps={{ 'aria-label': 'paypal' }}
-                />
-                <img src={paypalLogo} alt="payment paypal" />
-              </div>
-              
+            <div className="payment-item">
+              <GreenRadio
+                checked={payment === "visa"}
+                onChange={event => handleChange(event, "visa")}
+                value={payment}
+                name="radio-button-demo"
+                inputProps={{ "aria-label": "visa" }}
+              />
+              <img src={visaLogo} alt="payment visa" />
+            </div>
+            <div className="payment-item">
+              <GreenRadio
+                checked={payment === "master"}
+                onChange={event => handleChange(event, "master")}
+                value={payment}
+                name="radio-button-demo"
+                inputProps={{ "aria-label": "master" }}
+              />
+              <img src={masterLogo} alt="payment master" />
+            </div>
+            <div className="payment-item">
+              <GreenRadio
+                checked={payment === "paypal"}
+                onChange={event => handleChange(event, "paypal")}
+                value={payment}
+                name="radio-button-demo"
+                inputProps={{ "aria-label": "paypal" }}
+              />
+              <img src={paypalLogo} alt="payment paypal" />
+            </div>
           </div>
           <div className="section payment-address">
             <div className="title">Send to</div>
@@ -129,20 +128,34 @@ const CheckoutPage = () => {
                   Australia
                   <br />
                   47xxxxx44
-                </span>      
+                </span>
                 <i className="icon-dropdown" />
               </div>
               <div className="address-action">
                 <span>Edit</span>
               </div>
             </div>
-            <UserButton text="Add new address" varient="primary" disabled={false} action={clickAction}/>
+            <UserButton
+              text="Add new address"
+              varient="primary"
+              disabled={false}
+              action={clickAction}
+            />
           </div>
           <div className="section add-coupons">
             <div className="title">Add coupons</div>
             <div className="coupon-form">
-              <FormInput placeholder="Enter code" alert={false} changeAction={changeAction} />
-              <UserButton text="Apply" varient="primary" disabled={false} action={clickAction}/>
+              <FormInput
+                placeholder="Enter code"
+                alert={false}
+                changeAction={changeAction}
+              />
+              <UserButton
+                text="Apply"
+                varient="primary"
+                disabled={false}
+                action={clickAction}
+              />
             </div>
           </div>
         </div>

@@ -17,7 +17,6 @@
     margin-right: 0;
   }
 
-
   @include breakpoint($md) {
     padding: 0;
     margin: 20px 0 0 0;
@@ -53,7 +52,6 @@
   @include breakpoint($sm) {
     margin: 15px 0 0 0;
   }
-
 }
 
 .sign-up-link,
@@ -112,7 +110,11 @@
   right: -12px;
   width: 24px;
   height: 24px;
-  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-primary-color,
+    $cyan-secondary-color
+  );
   border-radius: 50%;
   border: 1px solid $green-dark;
 }
@@ -123,7 +125,11 @@
   width: 139px;
   height: 43px;
   text-decoration: none;
-  @include linear-gradient(to right, $green-lite-primary-color, $green-lite-secondary-color);
+  @include linear-gradient(
+    to right,
+    $green-lite-primary-color,
+    $green-lite-secondary-color
+  );
   &:hover {
     opacity: 0.9;
   }

@@ -4,7 +4,7 @@
   font-size: 21px;
   margin-left: 7px;
   color: #125451;
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
 }
 
 p {
@@ -14,11 +14,9 @@ p {
 }
 
 .personal-info {
-  
   display: inline;
   .personal-info-avatar {
     margin-top: 27px;
-    
   }
 
   .personal-info__title {
@@ -26,7 +24,6 @@ p {
   }
 
   .personal-info-form {
-    
     @include breakpoint($md) {
       display: flex;
       flex-direction: column;
@@ -45,12 +42,12 @@ p {
     margin-left: 8px;
     font-size: 13px;
     color: $green-dark;
-  
+
     &:hover {
       text-decoration: none;
     }
   }
-  
+
   .personal-info__btn {
     margin: 35px 0 0 9px;
     padding-right: 22px;
@@ -59,9 +56,9 @@ p {
     display: block;
     width: 183px;
     height: 57px;
-    @extend  %auth-button;
+    @extend %auth-button;
   }
-  
+
   .disabled {
     @extend %disabled;
   }
@@ -161,13 +158,7 @@ p {
     height: 57px;
     //@extend  %auth-button;
   }
-
-
-
- 
 }
-
-
 
 .custom-title {
   font-size: 31px;

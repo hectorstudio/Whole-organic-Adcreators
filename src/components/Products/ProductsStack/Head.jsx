@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 /*import { NavLink } from 'react-router-dom';*/
-import './Head.style.scss';
-import PropTypes from 'prop-types';
+import "./Head.style.scss";
+import PropTypes from "prop-types";
 
-const sectionLogo = require('../../../images/section-logo.png');
+const sectionLogo = require("../../../images/section-logo.png");
 
 const Head = ({ title }) => {
   return (

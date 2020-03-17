@@ -1,19 +1,19 @@
-import React from 'react'
-import { Switch, Route } from 'react-router'
-import './Main.style.scss';
-import ProductPage from '../../pages/Product/ProductPage'
+import React from "react";
+import { Switch, Route } from "react-router";
+import "./Main.style.scss";
+import ProductPage from "../../pages/Product/ProductPage";
 
 const routes = [
   {
-    id: '11',
-    path: '/products',
+    id: "11",
+    path: "/products",
     component: ProductPage
   }
 ];
 
 const Products = () => {
   return (
-    <main className={'products'}>
+    <main className={"products"}>
       <Switch>
         {routes.map(item => (
           <Route

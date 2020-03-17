@@ -1,8 +1,8 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 //import axios from 'axios';
-import './SectionItems.style.scss';
+import "./SectionItems.style.scss";
 
 const SectionItems = ({
   sectionData,
@@ -45,11 +45,8 @@ const SectionItems = ({
               <p className="section-list__title">{item.title}</p>
               <p className="section-list__subtitle">{item.subtitle}</p>
               <div className="section-list__text-info">
-                {item.info + ', '}
-                <NavLink
-                  to={'/' + item.slug}
-                  className="section-list__link"
-                >
+                {item.info + ", "}
+                <NavLink to={"/" + item.slug} className="section-list__link">
                   {item.titleLink}
                 </NavLink>
               </div>

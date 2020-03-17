@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import SearchItems from '../../components/Search/SearchItems';
-import './SearchSection.style.scss';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import SearchItems from "../../components/Search/SearchItems";
+import "./SearchSection.style.scss";
+import PropTypes from "prop-types";
 
 const listItems = [
   {
-    id: '1',
-    title: 'Search a product'
+    id: "1",
+    title: "Search a product"
   },
   {
-    id: '2',
-    placeholderTitle: 'Select a category'
+    id: "2",
+    placeholderTitle: "Select a category"
   },
   {
-    id: '3',
-    placeholderTitle: 'Select sub-category'
+    id: "3",
+    placeholderTitle: "Select sub-category"
   },
   {
-    id: '4',
-    btnTitle: 'Search',
-    placeholderTitle: 'Or type product name here…',
-    icon: 'icon-search'
+    id: "4",
+    btnTitle: "Search",
+    placeholderTitle: "Or type product name here…",
+    icon: "icon-search"
   }
 ];
 
@@ -30,7 +30,7 @@ const SearchSection = ({ setFilterData }) => {
     selectedCategory: null,
     selectedSubcategory: null,
     subcategories: null,
-    searchText: ''
+    searchText: ""
   });
   const [categoriesData, setCategoriesData] = useState([]);
 

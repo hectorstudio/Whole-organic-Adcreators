@@ -5,18 +5,18 @@ import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs";
 import "./LoginPage.style.scss";
 const breadCrumbs = [
   {
-    id: '1',
-    title: 'Home',
-    path: '/',
+    id: "1",
+    title: "Home",
+    path: "/",
     active: ""
   },
   {
-    id: '2',
-    title: 'Log in',
-    path: '/login',
+    id: "2",
+    title: "Log in",
+    path: "/login",
     active: "active"
   }
-]
+];
 const LoginPage = () => {
   return (
     <div>

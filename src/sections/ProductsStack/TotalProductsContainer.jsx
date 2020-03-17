@@ -1,10 +1,10 @@
-import { connect } from 'react-redux';
-import { setRecommendedData } from '../../store/recommended/recommendedActions';
-import TotalProductsSection from './TotalProductsSection';
+import { connect } from "react-redux";
+import { setRecommendedData } from "../../store/recommended/recommendedActions";
+import TotalProductsSection from "./TotalProductsSection";
 
 const mapStateToProps = state => {
   return {
-    recommendedData: state.recommendedReducer.recommendedData,
+    recommendedData: state.recommendedReducer.recommendedData
   };
 };
 

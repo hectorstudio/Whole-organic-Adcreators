@@ -6,18 +6,18 @@ import "./CreatePassPage.style.scss";
 
 const breadCrumbs = [
   {
-    id: '1',
-    title: 'Home',
-    path: '/',
+    id: "1",
+    title: "Home",
+    path: "/",
     active: ""
   },
   {
-    id: '2',
-    title: 'Create a new password',
-    path: '/create-pass',
+    id: "2",
+    title: "Create a new password",
+    path: "/create-pass",
     active: "active"
   }
-]
+];
 
 const CreatePassPage = () => {
   const action = () => {};
@@ -51,7 +51,12 @@ const CreatePassPage = () => {
               />
             </div>
           </div>
-          <UserButton text="Save password" action={action} disabled={true} varient="createpass" />
+          <UserButton
+            text="Save password"
+            action={action}
+            disabled={true}
+            varient="createpass"
+          />
         </form>
       </div>
     </div>

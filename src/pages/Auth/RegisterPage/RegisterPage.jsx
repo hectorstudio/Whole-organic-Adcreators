@@ -5,18 +5,18 @@ import "./RegisterPage.style.scss";
 import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs";
 const breadCrumbs = [
   {
-    id: '1',
-    title: 'Home',
-    path: '/',
+    id: "1",
+    title: "Home",
+    path: "/",
     active: ""
   },
   {
-    id: '2',
-    title: 'Register',
-    path: '/register',
+    id: "2",
+    title: "Register",
+    path: "/register",
     active: "active"
   }
-]
+];
 const RegisterPage = () => {
   return (
     <div>
