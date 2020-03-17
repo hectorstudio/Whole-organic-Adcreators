@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Logo from '../../components/Header/Logo';
 import SideBlocks from '../../components/Header/SideBlocks';
-import './HeaderSection.scss';
+import './HeaderSection.style.scss';
 import axios from 'axios';
 
 export const HeaderSection = ({ setCountValue }) => {

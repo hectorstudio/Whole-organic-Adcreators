@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     margin: 0 0 23.9px 0;
-    border: 1px solid #EFEFEF;
+    border: 1px solid #efefef;
     .item-image {
       flex: 4;
       display: flex;
@@ -22,7 +22,7 @@
       }
       .item-info {
         font-size: 13px;
-        color: #7C7B7B;
+        color: #7c7b7b;
         font-family: Nexa-Light, sans-serif;
         margin: 4px 0px;
         .item-slug {
@@ -35,7 +35,7 @@
         span {
           font-size: 13px;
           font-family: Nexa-Bold, sans-serif;
-          color: #4CBB75;
+          color: #4cbb75;
           text-decoration: underline;
           cursor: pointer;
           margin-right: 40px;
@@ -48,13 +48,13 @@
         font-family: Nexa-Bold, sans-serif;
         font-size: 21px;
         color: #ffffff;
-        background-color: #4CBB75;
+        background-color: #4cbb75;
         .currency {
           font-size: 14px;
         }
       }
       .quantities {
-        background-color: #F4F4F4;
+        background-color: #f4f4f4;
         color: #000000;
         position: relative;
         font: 17px Nexa-Light, sans-serif;

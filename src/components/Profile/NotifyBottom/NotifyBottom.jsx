@@ -1,5 +1,5 @@
 import React from 'react'
-import './NotifyBottom.scss'
+import './NotifyBottom.style.scss'
 import FormCheckBoxToggle from "../../../components/FormElements/FormCheckBoxToggle"
 const NotifyBottom = () => {
   return (

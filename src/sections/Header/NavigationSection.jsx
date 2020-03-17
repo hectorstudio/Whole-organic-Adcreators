@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MenuItems from '../../components/Header/MenuItems';
 import SubMenuItem from '../../components/Header/SubMenuItem';
-import './NavigationSection.scss';
+import './NavigationSection.style.scss';
 import { Vortex } from 'react-burgers';
 import axios from 'axios';
 import PropTypes from 'prop-types';

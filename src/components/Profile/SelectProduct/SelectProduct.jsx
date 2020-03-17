@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProductSearchItems from "./ProductSearchItems";
 import axios from "axios";
 import PropTypes from "prop-types";
-import "./SelectProduct.scss";
+import "./SelectProduct.style.scss";
 
 const listItems = [
   {

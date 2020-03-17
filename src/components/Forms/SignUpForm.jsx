@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Recaptcha from "react-recaptcha";
-import "./SignUpForm.scss";
+import "./SignUpForm.style.scss";
 import UserButton from "../../components/Buttons/UserButton";
 import FormInput from "../../components/FormElements/FormInput";
 import FormCheck from "../../components/FormElements/FormCheck";

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './FooterSection.scss';
+import './FooterSection.style.scss';
 import axios from 'axios';
 import Categories from '../../components/Footer/Categories';
 import Menu from '../../components/Footer/Menu';

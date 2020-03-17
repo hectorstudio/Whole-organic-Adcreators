@@ -1,5 +1,5 @@
 import React from "react";
-import "./PricingContent.scss";
+import "./PricingContent.style.scss";
 import PricingContentFooterList from "./PricingContentFooterList";
 
 const PricingContentItems = ({ imgUrl, title, subtitle, contentList }) => {

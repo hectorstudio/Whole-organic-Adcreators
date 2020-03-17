@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Breadcrumb from "../../../components/Breadcrumbs/Breadcrumbs";
 import CartListContainer from "../../../components/Cart/CartListContainer";
 import OrderSummary from "../../../components/Cart/OrderSummary";
-import "./CartPage.scss";
+import "./CartPage.style.scss";
 
 const breadCrumbs = [
   {

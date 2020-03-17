@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { NavLink } from 'react-router-dom';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import axios from 'axios';
-import './SliderSection.scss';
+import './SliderSection.style.scss';
 
 const SliderSection = () => {
   const [sliderData, setSliderData] = useState([]);

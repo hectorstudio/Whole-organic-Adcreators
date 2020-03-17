@@ -2,7 +2,7 @@ import React from "react";
 import SignInForm from "../../../components/Forms/SignInForm";
 import SocialMediaButton from "../../../components/Buttons/SocialMediaButton";
 import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs";
-import "./LoginPage.scss";
+import "./LoginPage.style.scss";
 const breadCrumbs = [
   {
     id: '1',

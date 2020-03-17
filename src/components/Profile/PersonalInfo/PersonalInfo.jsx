@@ -3,7 +3,7 @@ import UserButton from "../../../components/Buttons/UserButton";
 import Avatar from "react-avatar"
 import Files from "react-files"
 import FormInput from "../../../components/FormElements/FormInput"
-import "./PersonalInfo.scss"
+import "./PersonalInfo.style.scss"
 const defaultUserImg = require('../../../images/default-user.jpg');
 const PersonalInfo = () => {
   const [avatar, setAvatar] = useState(null)

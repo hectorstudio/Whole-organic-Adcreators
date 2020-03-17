@@ -1,7 +1,7 @@
-import React from 'react';
-import './Categories.scss';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./Categories.style.scss";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Categories = ({ footerItems }) => {
   return (
@@ -12,7 +12,7 @@ const Categories = ({ footerItems }) => {
           return (
             <li key={item.id} className="footer-categories__item">
               <Link
-                to={'/' + item.slug}
+                to={"/" + item.slug}
                 className="footer-categories__link"
                 onClick={() => window.scrollTo(0, 0)}
               >

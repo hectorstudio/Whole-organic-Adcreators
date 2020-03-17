@@ -3,7 +3,7 @@
 .profile-form-container {
   margin: 7px 0px;
   display: grid;
-  @media (max-width: 870px){
+  @media (max-width: 870px) {
     text-align: center;
   }
   .profile-form-title {
@@ -43,7 +43,7 @@
       .profile-form-location-title {
         margin: 13px 0px;
       }
-      @media(max-width: 870px){
+      @media (max-width: 870px) {
         max-width: 412px;
         margin: 22px auto;
       }
@@ -56,8 +56,8 @@
       display: flex;
       flex-wrap: wrap;
     }
-    .elements-body{
-      @media(max-width: 870px){
+    .elements-body {
+      @media (max-width: 870px) {
         justify-content: center;
       }
     }

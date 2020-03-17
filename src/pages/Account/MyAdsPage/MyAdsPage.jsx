@@ -1,5 +1,5 @@
 import React from "react";
-import "./MyAdsPage.scss";
+import "./MyAdsPage.style.scss";
 import Products from "../../../components/Products";
 
 const productData = [

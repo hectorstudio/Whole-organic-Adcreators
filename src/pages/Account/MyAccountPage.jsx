@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Switch, Route, useLocation } from 'react-router-dom'
 
-import "./MyAccountPage.scss";
+import "./MyAccountPage.style.scss";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import AccountMenu from "../../components/Header/AccountMenu";
 import MyProfilePage from "../../pages/Account/MyProfilePage/MyProfilePage"

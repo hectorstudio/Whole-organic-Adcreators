@@ -1,5 +1,5 @@
 import React from "react";
-import "./SocialMediaButton.scss";
+import "./SocialMediaButton.style.scss";
 const SocialMediaButton = ({ text }) => {
   const handleClick = () => {
     console.log("button " + text + "-button Clicked");

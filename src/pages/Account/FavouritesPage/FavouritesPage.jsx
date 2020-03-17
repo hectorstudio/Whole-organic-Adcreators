@@ -1,6 +1,6 @@
 import React from 'react';
-import './FavouritesPage.scss'
-import '../../../constants/css/CustomTitle.scss'
+import './FavouritesPage.style.scss'
+import '../../../constants/css/CustomTitle.style.scss'
 import Products from '../../../components/Products'
 
 const productData = [

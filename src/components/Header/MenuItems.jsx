@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import './MenuItems.scss';
+import './MenuItems.style.scss';
 
 const MenuItems = ({ path, title, setActiveBurger }) => {
   let container;

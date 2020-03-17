@@ -6,8 +6,8 @@ import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import rootReducer from './store/rootReducer';
 import { createLogger } from 'redux-logger';
-import './fonts/fonts.scss';
-import './index.scss';
+import './fonts/fonts.style.scss';
+import './index.style.scss';
 //import 'bootstrap/dist/css/bootstrap.min.css'
 const loggerMiddleware = createLogger();
 

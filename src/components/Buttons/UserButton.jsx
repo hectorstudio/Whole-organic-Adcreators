@@ -1,5 +1,5 @@
 import React from "react";
-import "./UserButton.scss";
+import "./UserButton.style.scss";
 
 /**
  * @varient - primary | createpass | forgotpass | normal | add-search-products | select-products | primary-white

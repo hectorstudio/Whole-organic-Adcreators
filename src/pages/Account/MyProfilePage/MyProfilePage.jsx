@@ -1,5 +1,5 @@
 import React from "react";
-import "./MyProfilePage.scss";
+import "./MyProfilePage.style.scss";
 import PersonalInfo from "../../../components/Profile/PersonalInfo/PersonalInfo";
 import AddressInfo from "../../../components/Profile/AddressModal/AddressModal";
 import SelectProduct from "../../../components/Profile/SelectProduct/SelectProduct";

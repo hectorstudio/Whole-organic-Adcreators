@@ -1,21 +1,21 @@
-import React from 'react';
-import './Social.scss';
+import React from "react";
+import "./Social.style.scss";
 
 const socialItem = [
   {
-    id: '1',
-    icon: 'icon-facebook',
-    path: 'https://www.facebook.com/'
+    id: "1",
+    icon: "icon-facebook",
+    path: "https://www.facebook.com/"
   },
   {
-    id: '2',
-    icon: 'icon-instagram',
-    path: 'https://www.instagram.com/'
+    id: "2",
+    icon: "icon-instagram",
+    path: "https://www.instagram.com/"
   },
   {
-    id: '3',
-    icon: 'icon-linkedin',
-    path: 'https://www.linkedin.com/'
+    id: "3",
+    icon: "icon-linkedin",
+    path: "https://www.linkedin.com/"
   }
 ];
 

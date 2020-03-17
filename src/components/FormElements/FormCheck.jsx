@@ -1,7 +1,7 @@
 import React from "react";
 import "./FormCheck.style.scss";
 
-const FormCheck = ({ title, checked, checkTerm }) => { 
+const FormCheck = ({ title, checked, checkTerm }) => {
   const handleChange = event => {
     const status = event.target.getAttribute("value");
     if (status === "true") {

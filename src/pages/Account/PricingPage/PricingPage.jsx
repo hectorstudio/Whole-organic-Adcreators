@@ -1,5 +1,5 @@
 import React from 'react'
-import './PricingPage.scss'
+import './PricingPage.style.scss'
 import PricingContent from '../../../components/PricingContent/PricingContent'
 
 const PricingPage = () => {

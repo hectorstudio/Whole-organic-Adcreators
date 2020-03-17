@@ -20,11 +20,9 @@ const FormSelect = ({ placeholder, defaultValue, name, setValue }) => {
   useEffect(() => {
     if (title === "" && defaultValue === "") {
       setTitle(placeholder);
-    }
-    else if(title === "" && defaultValue !== ""){
+    } else if (title === "" && defaultValue !== "") {
       setTitle(defaultValue);
-    }
-    else if(title !== "" && defaultValue === ""){
+    } else if (title !== "" && defaultValue === "") {
       setTitle(placeholder);
     }
   }, [title, placeholder, defaultValue]);

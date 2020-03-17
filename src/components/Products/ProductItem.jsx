@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./Products.scss";
+import "./Products.style.scss";
 
 const ProductItem = ({
   extend,

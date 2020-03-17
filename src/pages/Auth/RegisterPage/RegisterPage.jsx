@@ -1,7 +1,7 @@
 import React from "react";
 import SignUpForm from "../../../components/Forms/SignUpForm";
 import SocialMediaButton from "../../../components/Buttons/SocialMediaButton";
-import "./RegisterPage.scss";
+import "./RegisterPage.style.scss";
 import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs";
 const breadCrumbs = [
   {

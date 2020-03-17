@@ -1,5 +1,5 @@
 import React from 'react';
-import './DropDownMenu.scss';
+import './DropDownMenu.style.scss';
 import { NavLink, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 

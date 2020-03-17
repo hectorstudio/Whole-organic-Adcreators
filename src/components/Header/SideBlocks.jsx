@@ -1,6 +1,6 @@
 import React from 'react';
 import SideBlocksItemContainer from './SideBlocksItemContainer';
-import './SideBlocks.scss';
+import './SideBlocks.style.scss';
 
 const items = [
   {

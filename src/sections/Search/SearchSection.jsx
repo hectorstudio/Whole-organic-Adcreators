@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchItems from '../../components/Search/SearchItems';
-import './SearchSection.scss';
+import './SearchSection.style.scss';
 import PropTypes from 'prop-types';
 
 const listItems = [

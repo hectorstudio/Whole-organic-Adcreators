@@ -28,7 +28,11 @@
   align-items: center;
   width: 59px;
   height: 59px;
-  @include linear-gradient(to right, $cyan-primary-color, $cyan-secondary-color);
+  @include linear-gradient(
+    to right,
+    $cyan-primary-color,
+    $cyan-secondary-color
+  );
   border-radius: 50%;
   font-size: 21px;
   color: $white;

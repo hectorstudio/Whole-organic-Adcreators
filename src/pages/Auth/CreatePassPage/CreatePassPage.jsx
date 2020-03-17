@@ -2,7 +2,7 @@ import React from "react";
 import FormInput from "../../../components/FormElements/FormInput";
 import Breadcrumbs from "../../../components/Breadcrumbs/Breadcrumbs";
 import UserButton from "../../../components/Buttons/UserButton";
-import "./CreatePassPage.scss";
+import "./CreatePassPage.style.scss";
 
 const breadCrumbs = [
   {

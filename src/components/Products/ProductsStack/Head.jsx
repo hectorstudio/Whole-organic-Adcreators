@@ -1,6 +1,6 @@
 import React from 'react';
 /*import { NavLink } from 'react-router-dom';*/
-import './Head.scss';
+import './Head.style.scss';
 import PropTypes from 'prop-types';
 
 const sectionLogo = require('../../../images/section-logo.png');

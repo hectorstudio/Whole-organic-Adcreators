@@ -3,7 +3,7 @@ import { Input } from 'semantic-ui-react';
 import Select from 'react-select';
 import PropTypes from 'prop-types';
 import 'semantic-ui-css/components/input.css';
-import './SearchItems.scss';
+import './SearchItems.style.scss';
 
 const SearchItems = ({
   title,

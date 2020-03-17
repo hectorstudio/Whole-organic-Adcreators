@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SignInForm.scss";
+import "./SignInForm.style.scss";
 import UserButton from "../../components/Buttons/UserButton";
 import FormInput from "../../components/FormElements/FormInput";
 import Rules from "../../constants/validations/LoginValidator";

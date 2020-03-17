@@ -1,5 +1,5 @@
 import React from "react";
-import "./FormInput.scss";
+import "./FormInput.style.scss";
 const FormInput = ({
   label = "",
   type = "text",
@@ -10,8 +10,7 @@ const FormInput = ({
   changeAction
 }) => {
   const changeValue = event => {
-    if (changeAction)
-      changeAction(event.target.value);
+    if (changeAction) changeAction(event.target.value);
   };
 
   return (
@@ -24,7 +23,7 @@ const FormInput = ({
         placeholder={placeholder}
         onChange={changeValue}
       />
-      
+
       {alert ? <span className={"error-message"}>{alert}</span> : ""}
     </div>
   );

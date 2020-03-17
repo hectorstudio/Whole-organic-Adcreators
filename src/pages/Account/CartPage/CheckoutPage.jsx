@@ -7,7 +7,7 @@ import Radio from "@material-ui/core/Radio";
 import { withStyles } from "@material-ui/core/styles";
 import { green } from "@material-ui/core/colors";
 
-import "./CartPage.scss";
+import "./CartPage.style.scss";
 
 const GreenRadio = withStyles({
   root: {

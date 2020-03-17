@@ -10,7 +10,7 @@ import ForgotPassPage from "../../pages/Auth/ForgotPassPage/ForgotPassPage";
 import CreatePassPage from "../../pages/Auth/CreatePassPage/CreatePassPage";
 import MyAccountPage from "../../pages/Account/MyAccountPage";
 import CheckoutPage from "../../pages/Account/CartPage/CheckoutPage";
-import "./Main.scss";
+import "./Main.style.scss";
 
 const routes = [
   {

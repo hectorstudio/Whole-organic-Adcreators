@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Logo.scss';
+import './Logo.style.scss';
 
 const logo = require('../../images/logo.svg');
 

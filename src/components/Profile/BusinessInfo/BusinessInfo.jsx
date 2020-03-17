@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./BusinessInfo.scss";
+import "./BusinessInfo.style.scss";
 import "../../Search/SearchItems"
 import Avatar from "react-avatar";
 import Files from "react-files";

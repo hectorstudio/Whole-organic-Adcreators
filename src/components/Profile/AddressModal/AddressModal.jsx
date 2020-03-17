@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./AddressModal.scss";
+import "./AddressModal.style.scss";
 import FormSelect from "../../FormElements/FormSelect";
 
 const AddressModal = props => {

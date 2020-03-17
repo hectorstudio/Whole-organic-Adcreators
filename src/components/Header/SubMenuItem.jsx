@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SubMenuItem.scss';
+import './SubMenuItem.style.scss';
 import PropTypes from 'prop-types';
 import DropDownMenu from './DropDownMenu';
 import { useLocation } from 'react-router-dom';
